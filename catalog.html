@@ -71,6 +71,7 @@
       width: 100%;
       height: 23%;
       background: red;
+      opacity: .5;
 
     }
     .game {
@@ -91,20 +92,20 @@
       margin-left: -0.4%;
 
     }
-    .line1 {
+    .line {
       position: relative;
       display: flex;
       justify-content: space-between;
-      /* background: yellow; */
+      background: yellow;
       height: 26%;
       width: 100%;
-      /* margin: 0 1.1%; */
+      margin-bottom: 3.85%;
     }
-    .line1_item {
+    .line_item {
       position: relative;
       height: 100%;
       width: 31.85%;
-      /* background: red; */
+      background: red;
     }
     .item {
       position: relative;
@@ -117,7 +118,7 @@
       position: relative;
       width: 100%;
       height: 14%;
-      /* background: purple; */
+      background: purple;
       display: flex;
       justify-content: space-between;
     }
@@ -132,6 +133,12 @@
     }
     .item3 {
       background-image: url('images/item3.jpg');
+    }
+    .item4 {
+      background-image: url('images/item4.jpg');
+    }
+    .item5 {
+      background-image: url('images/item5.jpg');
     }
     .item_hover .p_tall, .item_hover ul {
       color: black;
@@ -158,6 +165,68 @@
       background: #FF83C1;
       opacity: 100%;
     }
+    .line2 {
+      height: 50.5%;
+      opacity: .5;
+    }
+    .line2_block {
+      width: 31.85%;
+    }
+    .line2_block2 {
+      width: 65.925%;
+    }
+    .line_item4 {
+      height: 52.5%;
+      display: block;
+      width: 100%;
+    }
+    .line_plus {
+      height: 47.5%;
+      display: block;
+      width: 100%;
+      background: blue;
+
+    }
+    .line_item5 {
+      display: block;
+      width: 100%;
+    }
+    .item5 {
+      height: 91.3%;
+    }
+    .item_info5 {
+      height: 8.7%;
+    }
+    .weight4 {
+      margin-top: 25%;
+    }
+    .item_hover5 {
+      padding: 4.4% 2.72%;
+    }
+    .weight5 {
+      margin-top: 48.5%;
+    }
+    .line_plus img {
+      position: relative;
+      display: inline-block;
+      width: 9.8%;
+
+      padding-bottom: 3.2%;
+    }
+    .line_plus p {
+      position: relative;
+      display: inline-block;
+      width: 80%;
+      margin-top: 18%;
+
+    }
+    .timeline img {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 13%;
+    }
+
   </style>
   <body>
     <div class="wrapper">
@@ -187,10 +256,10 @@
 
           </div>
           <div class="catp_content">
-            <div class="catalog_block">
+            <div class="catalog_block" id="catalog">
               <h1>Бестселлеры</h1>
-              <div class="line1">
-                <div class="line1_item">
+              <div class="line">
+                <div class="line_item">
                   <div class="item item1">
                     <div class="item_hover">
                       <p class="p_tall">Способности:</p>
@@ -207,7 +276,7 @@
                     <p class="p_tall">299&nbsp000&nbspр</p>
                   </div>
                 </div>
-                <div class="line1_item">
+                <div class="line_item">
                   <div class="item item2">
                     <div class="item_hover">
                       <p class="p_tall">Способности:</p>
@@ -223,7 +292,7 @@
                     <p class="p_tall">119&nbsp000&nbspр</p>
                   </div>
                 </div>
-                <div class="line1_item">
+                <div class="line_item">
                   <div class="item item3">
                     <div class="item_hover">
                       <p class="p_tall">Способности:</p>
@@ -235,14 +304,73 @@
                     </div>
                   </div>
                   <div class="item_info">
-                    <p class="p_tall">«Розовые»&nbspмозгиа</p>
+                    <p class="p_tall">«Розовые»&nbspмозги</p>
                     <p class="p_tall">99&nbsp000&nbspр</p>
+                  </div>
+                </div>
+              </div>
+              <h1>Инопланетная коллекция</h1>
+              <div class="line line2">
+                <div class="line2_block">
+                  <div class="line_item line_item4">
+                    <div class="item item4">
+                      <div class="item_hover">
+                        <p class="p_tall">Способности:</p>
+                        <ul>
+                          <li>Замедленное&nbspощущение времени</li>
+                          <li>Устойчивость&nbspк&nbspхолоду</li>
+                        </ul>
+                        <p class="p_tall weight4">Вес:    2.1 кг</p>
+                      </div>
+                    </div>
+                    <div class="item_info">
+                      <p class="p_tall">Мозги&nbspУранина</p>
+                      <p class="p_tall">149&nbsp000&nbspр</p>
+                    </div>
+                  </div>
+
+                  <div class="line_plus">
+                    <img src="images/plus.svg" alt="">
+                    <p class="p_tall">больше мозгов можно увидеть в&nbspоффлайн магазине</p>
+                  </div>
+                </div>
+                <div class="line2_block line2_block2">
+                  <div class="line_item line_item5">
+                    <div class="item item5">
+                      <div class="item_hover item_hover5">
+                        <p class="p_tall">Способности:</p>
+                        <ul>
+                          <li>Хороший&nbspвестибулярный&nbspаппарат</li>
+                          <li>Владение&nbspязыком&nbspжителей&nbspсатурна</li>
+                          <li>Устойчивость&nbspк&nbspхолоду</li>
+                        </ul>
+                        <p class="p_tall weight5">Вес:    5.2 кг</p>
+                      </div>
+                    </div>
+                    <div class="item_info item_info5">
+                      <p class="p_tall">Мозги&nbspСатурнянина</p>
+                      <p class="p_tall">159&nbsp000&nbspр</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="timeline">
+              <img src="images/timeline.svg" alt="">
+              <p class="p_tall">Не&nbspзнаешь с&nbspчего начать? Сделай три простых шага на&nbspпути к&nbspновой жизни!</p>
+              <h1>Шаг 1</h1>
+              <h1>Шаг 2</h1>
+              <h1>Шаг 3</h1>
+              <p class="p_tall">заполнение&nbspанкеты</p>
+              <p class="p_tall">выбор&nbspмозга</p>
+              <p class="p_tall">пересадка</p>
+              <a href="#">заполнить&nbspонлайн</a>
+              <a href="#catalog">каталог</a>
+              <a href="#">подробнее</a>
 
+              <div class="timeline_round"></div>
+              <div class="timeline_round"></div>
+              <div class="timeline_round"></div>
             </div>
             <div class="game">
 
