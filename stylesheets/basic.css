@@ -81,7 +81,7 @@ width: 8.49;
 .futter_left1 {
   margin-right: 4.3%;
 }
-.p_tall, ul {
+.p_tall {
   font-family: 'Montserrat', sans-serif;
   font-size: 24px;
   font-weight: 500;
@@ -124,4 +124,11 @@ h4 {
   line-height: 22px;
   color: #FF83C1;
   text-decoration: none;
+}
+ul, p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #FF83C1;
 }
