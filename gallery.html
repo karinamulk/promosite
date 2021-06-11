@@ -60,7 +60,61 @@
         background: green;
         opacity: .5;
       }
+      .birka1 {
+        position: absolute;
+        width: 20%;
+        height: 20%;
+        border: 8px solid #FF83C1;
+        border-top: 50px solid #FF83C1;
+        border-radius: 30px;
+        transition: transform 1.5s;
+        transform: rotateY(0deg);
+        transform-style: preserve-3d;
+        /* animation: rotate 2s linear infinite; */
+      }
+      .birka1_top {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url("images/posters1.jpg");
+        background-size: 600% 100%;
+        -webkit-backface-visibility: hidden;
+        transform: rotateY(0deg);
+
+      }
+      .birka1_back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: red;
+        -webkit-backface-visibility: hidden;
+        background-size: 600% 100%;
+        background-position: -200% top;
+        transform: rotateY(180deg);
+
+      }
+      @keyframes rotate {
+        0% {transform: rotateY(0deg);}
+        50% {transform: rotateY(-180deg);}
+        100% {transform: rotateY(0deg);}
+
+      }
+      .back {
+        transform: rotateY(-180deg);
+      }
     </style>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $(".birka1").click(function(){
+          $(".birka1").addClass("back");
+          setTimeout(function(){
+            $(".birka").removeClass("back");
+          }, 2000);
+
+        });
+
+      });
+    </script>
   </head>
   <body>
     <div class="wrapper">
@@ -90,7 +144,13 @@
 
           </div>
           <div class="birki">
+            <div class="birka1">
 
+              <div class="birka1_top"></div>
+              <div class="birka1_back">
+                <h1>Привет</h1>
+              </div>
+            </div>
           </div>
           <div class="gallery_row">
 
