@@ -138,6 +138,9 @@
       .item_hover ul {
         margin-left: 10%;
       }
+      .item_hover p {
+        color: black;
+      }
       .weight3 {
         margin-top: 21.7%;
       }
@@ -253,7 +256,7 @@
         font-size: 18px;
         font-weight: 500;
         line-height: 22px;
-        color: #B95E8B;
+        color: #A4DDD4;
         text-decoration: none;
       }
       .step1_a {
@@ -551,9 +554,28 @@
         bottom: 20%;
         left: 95%;
       }
+      .ul_big {
+        margin-left: 4.5% !important;
+      }
     </style>
     <script type="text/javascript">
-
+      $(function() {
+        var marquee = $("#game");
+        marquee.wrapInner("<span>");
+        marquee.find("span").css({ "width": "50%", "display": "inline-block", "text-align":"center" });
+        marquee.append(marquee.find("span").clone());
+        marquee.wrapInner("<div>");
+        marquee.find("div").css("width", "200%");
+        var reset = function() {
+        if ($(window).width() <= '800'){
+        $(this).stop();
+        } else {
+        $(this).css("margin-left", "0%");
+        $(this).animate({ "margin-left": "-100%" }, 13000, 'linear', reset);
+        }
+        };
+        reset.call(marquee.find("div"));
+      });
     </script>
   </head>
 
@@ -592,13 +614,13 @@
                 <div class="line_item">
                   <div class="item item1">
                     <div class="item_hover">
-                      <p class="p_tall">Способности:</p>
+                      <p>Способности:</p>
                       <ul>
                         <li>Философский&nbspталант</li>
                         <li>Знание&nbspмировой&nbspистории</li>
                         <li>Владение&nbsp24&nbspязыками</li>
                       </ul>
-                      <p class="p_tall weight3">Вес:    2.1 кг</p>
+                      <p class="weight3">Вес:    2.1 кг</p>
                     </div>
                   </div>
                   <div class="item_info">
@@ -609,12 +631,12 @@
                 <div class="line_item">
                   <div class="item item2">
                     <div class="item_hover">
-                      <p class="p_tall">Способности:</p>
+                      <p>Способности:</p>
                       <ul>
                         <li>Знание&nbspфизики</li>
                         <li>Умение&nbspиграть&nbspна&nbspскрипке</li>
                       </ul>
-                      <p class="p_tall weight2">Вес:    1.9 кг</p>
+                      <p class="weight2">Вес:    1.9 кг</p>
                     </div>
                   </div>
                   <div class="item_info">
@@ -625,12 +647,12 @@
                 <div class="line_item">
                   <div class="item item3">
                     <div class="item_hover">
-                      <p class="p_tall">Способности:</p>
+                      <p>Способности:</p>
                       <ul>
                         <li>Позитивное&nbspмышление</li>
                         <li>Хорошее&nbspнастроение</li>
                       </ul>
-                      <p class="p_tall weight2">Вес:    1.6 кг</p>
+                      <p class="weight2">Вес:    1.6 кг</p>
                     </div>
                   </div>
                   <div class="item_info">
@@ -645,12 +667,12 @@
                   <div class="line_item line_item4">
                     <div class="item item4">
                       <div class="item_hover">
-                        <p class="p_tall">Способности:</p>
+                        <p>Способности:</p>
                         <ul>
                           <li>Замедленное&nbspощущение времени</li>
                           <li>Устойчивость&nbspк&nbspхолоду</li>
                         </ul>
-                        <p class="p_tall weight4">Вес:    2.1 кг</p>
+                        <p class="weight4">Вес:    2.1 кг</p>
                       </div>
                     </div>
                     <div class="item_info">
@@ -661,20 +683,20 @@
 
                   <div class="line_plus">
                     <img src="images/plus.svg" alt="">
-                    <p class="p_tall">больше мозгов можно увидеть в&nbspоффлайн магазине</p>
+                    <p>больше мозгов можно увидеть в&nbspоффлайн магазине</p>
                   </div>
                 </div>
                 <div class="line2_block line2_block2">
                   <div class="line_item line_item5">
                     <div class="item item5">
                       <div class="item_hover item_hover5">
-                        <p class="p_tall">Способности:</p>
-                        <ul>
+                        <p>Способности:</p>
+                        <ul class="ul_big">
                           <li>Хороший&nbspвестибулярный&nbspаппарат</li>
                           <li>Владение&nbspязыком&nbspжителей&nbspсатурна</li>
                           <li>Устойчивость&nbspк&nbspхолоду</li>
                         </ul>
-                        <p class="p_tall weight5">Вес:    5.2 кг</p>
+                        <p class="weight5">Вес:    5.2 кг</p>
                       </div>
                     </div>
                     <div class="item_info item_info5">
