@@ -44,14 +44,32 @@
         width: 100%;
         height: 69.7%;
         background: blue;
-        opacity: .5;
+        /* opacity: .5; */
       }
-      .gallery_row {
+      .gallery_row_container {
         position: relative;
         width: 100%;
         height: 6.46%;
         background: red;
         opacity: .5;
+        padding: 1.5% 0;
+      }
+      .gallery_row {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: #FF83C1;
+        /* opacity: .5; */
+        mask-type: alpha;
+        -webkit-mask: url("https://raw.githubusercontent.com/karinamulk/promosite/b01da1c34dc60379f029f94f2f8767a467ae02ff/images/gallery_row.svg");
+        mask: url("https://raw.githubusercontent.com/karinamulk/promosite/b01da1c34dc60379f029f94f2f8767a467ae02ff/images/gallery_row.svg");
+        -webkit-mask-size: cover;
+        /* -webkit-mask-position: -378.5% top; */
+        animation: gallery_row_anim 15s linear infinite;
+      }
+      @keyframes gallery_row_anim {
+        0% {-webkit-mask-position: -378.5% top;}
+        100% {-webkit-mask-position: 0% top;}
       }
       .merch {
         position: relative;
@@ -59,57 +77,496 @@
         height: 21.004%;
         background: green;
         opacity: .5;
+        background-image: url('images/merch.jpg');
+        background-size: 500% 100%;
       }
-      .birka1 {
+      .birka {
         position: absolute;
-        width: 20%;
-        height: 20%;
-        border: 8px solid #FF83C1;
-        border-top: 50px solid #FF83C1;
-        border-radius: 30px;
+        border-radius: 20px;
         transition: transform 1.5s;
         transform: rotateY(0deg);
         transform-style: preserve-3d;
-        /* animation: rotate 2s linear infinite; */
       }
-      .birka1_top {
+      .birka1 {
+        width: 40.15%;
+        height: 34.13%;
+        left: 5.6%;
+        top: 7.1%;
+        background: #FF83C1;
+      }
+      .birka2 {
+        width: 25%;
+        height: 21.06%;
+        left: 37.15%;
+        top: 4.1%;
+      }
+      .birka3 {
+        width: 32.1%;
+        height: 27.26%;
+        right: 3.35%;
+        top: 12.5%;
+        background: #FF83C1;
+
+      }
+      .birka4 {
+        width: 25%;
+        height: 21.06%;
+        left: 48.9%;
+        top: 33.6%;
+      }
+      .birka5 {
+        width: 29.3%;
+        height: 24.7%;
+        left: 3.5%;
+        top: 47.3%;
+        background: #A4DDD4;
+
+      }
+      .birka6 {
+        width: 37%;
+        height: 31.2%;
+        right: 3.3%;
+        bottom: 24.9%;
+        background: #A4DDD4;
+
+      }
+      .birka7 {
+        width: 29.3%;
+        height: 24.7%;
+        right: 30.4%;
+        bottom: 17.1%;
+        background: #FF83C1;
+        
+      }
+      .birka8 {
+        width: 25%;
+        height: 21.06%;
+        left: 21.5%;
+        bottom: 4.2%;
+      }
+      .birka_front {
         position: absolute;
         width: 100%;
-        height: 100%;
-        background-image: url("images/posters1.jpg");
-        background-size: 600% 100%;
+        height: 88.5%;
+        bottom: 0;
+        border-radius: 20px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
         -webkit-backface-visibility: hidden;
         transform: rotateY(0deg);
 
       }
-      .birka1_back {
+      .birka_front1 {
+        background-image: url("images/posters1.jpg");
+        background-size: 600% 100%;
+      }
+      .birka_front2 {
+        background: #A4DDD4;
+        height: 90%;
+      }
+      .birka_front3 {
+        background-image: url("images/posters3.jpg");
+        background-size: 600% 100%;
+        height: 86.1%;
+        border: 8px solid #FF83C1;
+      }
+      .birka_front4 {
+        background: #FF83C1;
+        height: 90%;
+      }
+      .birka_front5 {
+        background-image: url("images/posters4.jpg");
+        background-size: 600% 100%;
+        height: 87%;
+        border-radius: 30px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border: 8px solid #A4DDD4;
+      }
+      .birka_front6 {
+        background-image: url("images/posters5.jpg");
+        background-size: 800% 100%;
+        height: 86.5%;
+        border-radius: 30px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border: 8px solid #A4DDD4;
+      }
+      .birka_front7 {
+        background-image: url("images/posters6.jpg");
+        background-size: 600% 100%;
+        height: 87%;
+        border-radius: 30px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border: 8px solid #FF83C1;
+      }
+      .birka_front8 {
+        background: #A4DDD4;
+        height: 90%;
+      }
+      .birka_back {
         position: absolute;
         width: 100%;
-        height: 100%;
-        background: red;
+        height: 90%;
+        bottom: 0%;
+        background: #FF83C1;
+        border-radius: 20px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
         -webkit-backface-visibility: hidden;
         background-size: 600% 100%;
         background-position: -200% top;
         transform: rotateY(180deg);
 
       }
-      @keyframes rotate {
-        0% {transform: rotateY(0deg);}
-        50% {transform: rotateY(-180deg);}
-        100% {transform: rotateY(0deg);}
-
+      .birka_back3 {
+        height: 86.1%;
+      }
+      .birka_back5 {
+        background: #A4DDD4;
+      }
+      .birka_back6 {
+        height: 86.5%;
+        background: #A4DDD4;
+      }
+      .birka_back8 {
+        background: #A4DDD4;
       }
       .back {
         transform: rotateY(-180deg);
       }
+
+      .birka_back > * {
+        color: black;
+      }
+      .rope {
+        position: absolute;
+        width: 8px;
+      }
+
+      .rope1 {
+        height: 20%;
+        top: -5%;
+        left: calc(25.675% - 4px);
+        background: #FF83C1;
+      }
+      .rope2 {
+        height: 20%;
+        top: -5%;
+        left: calc(49.65% - 4px);
+        background: #A4DDD4;
+      }
+      .rope3 {
+        height: 20%;
+        top: -5%;
+        right: calc(19.4% - 4px);
+        background: #FF83C1;
+      }
+      .rope4 {
+        height: 40%;
+        top: 0%;
+        left: calc(61.4% - 4px);
+        background: #FF83C1;
+      }
+      .rope5 {
+        height: 60%;
+        top: 0%;
+        left: calc(18.15% - 4px);
+        background: #A4DDD4;
+      }
+      .rope6 {
+        height: 50%;
+        top: 0%;
+        right: calc(21.8% - 4px);
+        background: #A4DDD4;
+      }
+      .rope7 {
+        height: 60%;
+        top: 0%;
+        right: calc(45.05% - 4px);
+        background: #FF83C1;
+      }
+      .rope8 {
+        height: 80%;
+        top: 0%;
+        left: calc(34% - 4px);
+        background: #A4DDD4;
+      }
+      .hole {
+        position: absolute;
+        border-radius: 50%;
+        background: black;
+      }
+      .hole1 {
+        height: 38.253%;
+        width: 7.71%;
+        top: 29%;
+        left: 46.1%;
+      }
+      .hole2 {
+        height: 41.5%;
+        width: 8.2%;
+        top: 32%;
+        left: 45.9%;
+      }
+      .hole3 {
+        height: 38.253%;
+        width: 9.19%;
+        top: 29%;
+        left: 45.405%;
+      }
+      .hole5 {
+        height: 38.253%;
+        width: 9.19%;
+        top: 34%;
+        left: 45.405%;
+      }
+      .hole6 {
+        height: 33.2%;
+        width: 7.71%;
+        top: 35%;
+        left: 46.1%;
+      }
+      .hole7 {
+        height: 38.253%;
+        width: 9.19%;
+        top: 34%;
+        left: 45.405%;
+      }
+      .birka_top {
+        position: absolute;
+        width: 100%;
+        height: 11.5%;
+        background: #FF83C1;
+        border-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+      .birka_top_green, .birka_back_green {
+        background: #A4DDD4;
+      }
+      .birka_top3 {
+        height: 13.9%;
+      }
+      .birka_top5 {
+        height: 13.6%;
+        background: #A4DDD4;
+      }
+      .birka_top6 {
+        height: 13.5%;
+        background: #A4DDD4;
+      }
+      .birka_top7 {
+        height: 13.6%;
+      }
+      .birka_back1 h1 {
+        margin-top: 7.7%;
+        margin-bottom: 4.5%;
+        margin-left: 4.4%;
+      }
+      .birka_back1 .p_tall {
+        margin-left: 4.4%;
+        margin-bottom: 22%;
+      }
+      .birka_back1 .p_date {
+        margin-left: 3.5%;
+      }
+      .birka_back1 .p_bron {
+        margin-left: 4.4%;
+        margin-top: 53%;
+      }
+
+      .birka_back3 h1 {
+        margin-top: 5.2%;
+        margin-left: 5.8%;
+        margin-bottom: 5.3%;
+      }
+      .birka_back3 .p_tall {
+        margin-left: 5.9%;
+        margin-bottom: 10%;
+      }
+      .birka_back3 .p_date {
+        margin-left: 5.9%;
+      }
+      .birka_back3 .p_bron {
+        margin-left: 5.9%;
+        margin-top: 54%;
+      }
+      .birka_back4 a, .birka_back8 a {
+        position: absolute;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 58px;
+        color: black;
+        text-decoration: none;
+        margin-top: 45.9%;
+        margin-left: 18.9%;
+      }
+      .birka_back8 a {
+        margin-top: 61%;
+      }
+      .birka_back5 h2 {
+        margin-top: 11.9%;
+        margin-left: 4.6%;
+        margin-bottom: 7.8%;
+      }
+      .birka_back5 .p_tall {
+        width: 80%;
+        margin-left: 4.6%;
+        margin-bottom: 12%;
+      }
+      .birka_back5 .p_date {
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 52px;
+        margin-left: 4.6%;
+      }
+
+      .birka_back6 h1 {
+        margin-top: 4.2%;
+        margin-bottom: 4.5%;
+        margin-left: 5.5%;
+      }
+      .birka_back6 .p_tall {
+        margin-left: 5.5%;
+        margin-bottom: 78%;
+      }
+      .birka_back6 .p_date {
+        margin-left: 56.6%;
+        line-height: 75px;
+      }
+      .birka_back7 h2 {
+        margin-top: 11.9%;
+        margin-left: 4.6%;
+        margin-bottom: 7.8%;
+      }
+      .birka_back7 .p_tall {
+        width: 80%;
+        margin-left: 4.6%;
+        margin-bottom: 19.5%;
+      }
+      .birka_back7 .p_date {
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 52px;
+        margin-left: 4.6%;
+      }
+      .img1 {
+        position: absolute;
+        width: 100%;
+        bottom: 16%;
+        margin-left: 0%;
+      }
+      .img2 {
+        position: absolute;
+        width: 86%;
+        left: 7%;
+        bottom: 5.5%;
+        margin-left: 0%;
+      }
+      .img2_back {
+        position: absolute;
+        width: 62.2%;
+        left: 17%;
+        bottom: 0%;
+        margin-left: 0%;
+      }
+      .img3 {
+        position: absolute;
+        width: 100%;
+        bottom: 19.5%;
+        margin-left: 0%;
+      }
+      .img4_1 {
+        position: absolute;
+        width: 65%;
+        top: 7.2%;
+        margin-left: 3%;
+      }
+      .img4_2 {
+        position: absolute;
+        width: 84.17%;
+        top: -11%;
+        margin-left: 0;
+      }
+      .img5 {
+        position: absolute;
+        width: 100%;
+        bottom: 16.9%;
+        margin-left: 0%;
+      }
+      .img6 {
+        position: absolute;
+        width: 100%;
+        bottom: 17%;
+        margin-left: 0%;
+      }
+      .img7 {
+        position: absolute;
+        width: 100%;
+        bottom: 8.45%;
+        margin-left: 0%;
+      }
+      .img8_1 {
+        position: absolute;
+        width: 94.44%;
+        bottom: 5.2%;
+        margin-left: 3%;
+      }
+      .img8_2 {
+        position: absolute;
+        width: 100%;
+        top: 7%;
+        margin-left: 0;
+      }
+      .merch_tablo {
+        position: absolute;
+        left: 3.5%;
+        bottom: 3.9%;
+        border-radius: 20px;
+        height: 17.4%;
+        width: 29.6%;
+        background: #FF83C1;
+        display: flex;
+        justify-content: space-between;
+        padding: 2.2%;
+
+      }
+      .merch_tablo > * {
+        color: black;
+      }
+      .merch_tablo1 {
+        text-align: right;
+      }
+      .strelka1, .strelka2 {
+        position: absolute;
+        width: 1.67%;
+        top: 49.958%;
+      }
+      .strelka1 {
+        left: 2.7%;
+      }
+      .strelka2 {
+        right: 2.7%;
+        transform: rotate(180deg);
+      }
+      .slider_left, .slider_right {
+        position: absolute;
+        width: 50%;
+        height: 100%;
+      }
     </style>
+
+
     <script type="text/javascript">
       $(document).ready(function(){
-        $(".birka1").click(function(){
-          $(".birka1").addClass("back");
+        $(".birka").click(function(){
+          $(this).addClass("back");
           setTimeout(function(){
-            $(".birka").removeClass("back");
-          }, 2000);
+            $(this).removeClass("back");
+          }, 20000);
 
         });
 
@@ -144,18 +601,144 @@
 
           </div>
           <div class="birki">
-            <div class="birka1">
+            <div class="rope rope1"></div>
+            <div class="rope rope2"></div>
+            <div class="rope rope3"></div>
+            <div class="rope rope4"></div>
+            <div class="rope rope5"></div>
+            <div class="rope rope6"></div>
+            <div class="rope rope7"></div>
+            <div class="rope rope8"></div>
 
-              <div class="birka1_top"></div>
-              <div class="birka1_back">
-                <h1>Привет</h1>
+            <div class="birka birka2">
+              <div class="birka_front birka_front2">
+                <img class="img2" src="images/birka2.svg" alt="">
+              </div>
+              <div class="birka_back birka_back_green">
+                <img class="img2_back" src="images/birka2_back.svg" alt="">
+              </div>
+              <div class="birka_top birka_top_green">
+                <div class="hole hole2"></div>
               </div>
             </div>
-          </div>
-          <div class="gallery_row">
+
+            <div class="birka birka4">
+              <div class="birka_front birka_front4">
+                <img src="images/birka4_1.svg" alt="" class="img4_1">
+                <img src="images/birka4_2.svg" alt="" class="img4_2">
+              </div>
+              <div class="birka_back birka_back4">
+                <a href="#">Перейти</a>
+              </div>
+              <div class="birka_top birka_top2">
+                <div class="hole hole2"></div>
+              </div>
+            </div>
+
+            <div class="birka birka1">
+              <div class="birka_front birka_front1"></div>
+              <div class="birka_back birka_back1">
+                <img class="img1" src="images/birka1.svg" alt="">
+                <h1>Киноночь</h1>
+                <p class="p_tall">закрытые показы просветительских фильмов в&nbspкинозале центра</p>
+                <p class="p_date">по&nbspсредам</p>
+                <p class="p_date">19:00</p>
+                <p class="p_bron">Бронирование билетов<br>по&nbspтелефону +7-925-242-46-46</p>
+              </div>
+              <div class="birka_top">
+                <div class="hole hole1"></div>
+              </div>
+            </div>
+
+
+
+            <div class="birka birka3">
+              <div class="birka_front birka_front3"></div>
+              <div class="birka_back birka_back3">
+                <img class="img3" src="images/birka3.svg" alt="">
+                <h1>Тест–драйв</h1>
+                <p class="p_tall">Взгляни на&nbspсебя по–новому с&nbspпомощью инновационных очков</p>
+                <p class="p_date">ежедневно</p>
+                <p class="p_bron">Бронирование билетов<br>по&nbspтелефону +7-925-242-46-46</p>
+              </div>
+              <div class="birka_top birka_top3">
+                <div class="hole hole3"></div>
+              </div>
+            </div>
+
+
+
+            <div class="birka birka5">
+              <div class="birka_front birka_front5"></div>
+              <div class="birka_back birka_back5">
+                <img class="img5" src="images/birka5.svg" alt="">
+                <h2>Распродажа</h2>
+                <p class="p_tall">Месяц скидок на&nbspвесь ассортимент в&nbspчесть прихода весны</p>
+                <p class="p_date">01.03–</p>
+                <p class="p_date">30.03</p>
+              </div>
+              <div class="birka_top birka_top5">
+                <div class="hole hole5"></div>
+              </div>
+            </div>
+
+            <div class="birka birka6">
+              <div class="birka_front birka_front6"></div>
+              <div class="birka_back birka_back6">
+                <img class="img6" src="images/birka6.svg" alt="">
+                <h1>Космонись</h1>
+                <p class="p_tall">Презентация коллекции инопланетных мозгов</p>
+                <p class="p_date">20.03</p>
+                <p class="p_date">18:00</p>
+              </div>
+              <div class="birka_top birka_top6">
+                <div class="hole hole6"></div>
+              </div>
+            </div>
+
+            <div class="birka birka8">
+              <div class="birka_front birka_front8">
+                <img src="images/birka8_1.svg" alt="" class="img8_1">
+                <img src="images/birka8_2.svg" alt="" class="img8_2">
+              </div>
+              <div class="birka_back birka_back8">
+                <a href="#">Перейти</a>
+              </div>
+              <div class="birka_top birka_top_green">
+                <div class="hole hole2"></div>
+              </div>
+            </div>
+
+            <div class="birka birka7">
+              <div class="birka_front birka_front7"></div>
+              <div class="birka_back birka_back7">
+                <img class="img7" src="images/birka7.svg" alt="">
+                <h2>Пробуй&nbspшкуру</h2>
+                <p class="p_tall">Презентация коллекции мозгов животных </p>
+                <p class="p_date">скоро</p>
+              </div>
+              <div class="birka_top birka_top7">
+                <div class="hole hole7"></div>
+              </div>
+            </div>
 
           </div>
+          <div class="gallery_row_container">
+            <div class="gallery_row"></div>
+          </div>
           <div class="merch">
+            <div class="slider_left"></div>
+            <div class="slider_right"></div>
+            <div class="merch_tablo">
+              <p class="p_tall">конверт<br>блокнот<br>карандаш</p>
+              <p class="p_tall merch_tablo1">90р<br>490р<br>90р</p>
+            </div>
+            <svg class="strelka1" width="24" height="37" viewBox="0 0 24 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M22.1134 1.76333C23.8707 3.52069 23.8707 6.36993 22.1134 8.12729L11.6728 18.5679L22.1134 29.0084C23.8707 30.7658 23.8707 33.615 22.1134 35.3724C20.356 37.1298 17.5068 37.1298 15.7494 35.3724L2.12686 21.7499C0.369498 19.9925 0.369498 17.1433 2.12686 15.3859L15.7494 1.76333C17.5068 0.00597274 20.356 0.00597274 22.1134 1.76333Z" fill="#FF83C1"/>
+            </svg>
+            <svg class="strelka2" width="24" height="37" viewBox="0 0 24 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M22.1134 1.76333C23.8707 3.52069 23.8707 6.36993 22.1134 8.12729L11.6728 18.5679L22.1134 29.0084C23.8707 30.7658 23.8707 33.615 22.1134 35.3724C20.356 37.1298 17.5068 37.1298 15.7494 35.3724L2.12686 21.7499C0.369498 19.9925 0.369498 17.1433 2.12686 15.3859L15.7494 1.76333C17.5068 0.00597274 20.356 0.00597274 22.1134 1.76333Z" fill="#FF83C1"/>
+            </svg>
 
           </div>
           <div class="futter">
