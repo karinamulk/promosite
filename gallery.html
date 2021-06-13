@@ -44,7 +44,7 @@
         width: 100%;
         height: 69.7%;
         background: blue;
-        /* opacity: .5; */
+        opacity: .5;
       }
       .gallery_row_container {
         position: relative;
@@ -136,7 +136,7 @@
         right: 30.4%;
         bottom: 17.1%;
         background: #FF83C1;
-        
+
       }
       .birka8 {
         width: 25%;
@@ -361,37 +361,50 @@
         height: 13.6%;
       }
       .birka_back1 h1 {
-        margin-top: 7.7%;
-        margin-bottom: 4.5%;
-        margin-left: 4.4%;
+        position: absolute;
+        top: 4.8%;
+        left: 5%;
       }
       .birka_back1 .p_tall {
-        margin-left: 4.4%;
-        margin-bottom: 22%;
+        position: absolute;
+        top: 16.2%;
+        left: 4.4%;
       }
-      .birka_back1 .p_date {
-        margin-left: 3.5%;
+      .birka_back1 .p_date1 {
+        top: 37%;
+        position: absolute;
+        left: 3.5%;
+      }
+      .birka_back1 .p_date2 {
+        top: 45.3%;
+        position: absolute;
+        left: 3.5%;
       }
       .birka_back1 .p_bron {
-        margin-left: 4.4%;
-        margin-top: 53%;
+        position: absolute;
+        left: 4.4%;
+        bottom: 5.2%;
       }
 
       .birka_back3 h1 {
-        margin-top: 5.2%;
-        margin-left: 5.8%;
-        margin-bottom: 5.3%;
+        position: absolute;
+        top: 3.5%;
+        left: 5.8%;
       }
       .birka_back3 .p_tall {
-        margin-left: 5.9%;
-        margin-bottom: 10%;
+        position: absolute;
+        top: 18.5%;
+        left: 5.9%;
       }
       .birka_back3 .p_date {
-        margin-left: 5.9%;
+        position: absolute;
+        top: 37.7%;
+        left: 5.9%;
       }
       .birka_back3 .p_bron {
-        margin-left: 5.9%;
-        margin-top: 54%;
+        position: absolute;
+        left: 5.9%;
+        bottom: 6.3%;
       }
       .birka_back4 a, .birka_back8 a {
         position: absolute;
@@ -401,58 +414,80 @@
         line-height: 58px;
         color: black;
         text-decoration: none;
-        margin-top: 45.9%;
-        margin-left: 18.9%;
+        top: 29.7%;
+        left: 18.9%;
       }
       .birka_back8 a {
-        margin-top: 61%;
+        position: absolute;
+        top: 39.5%;
       }
       .birka_back5 h2 {
-        margin-top: 11.9%;
-        margin-left: 4.6%;
-        margin-bottom: 7.8%;
+        position: absolute;
+        top: 7.6%;
+        left: 4.6%;
       }
       .birka_back5 .p_tall {
+        position: absolute;
         width: 80%;
-        margin-left: 4.6%;
-        margin-bottom: 12%;
+        top: 21.7%;
+        left: 4.6%;
       }
       .birka_back5 .p_date {
+        position: absolute;
         font-size: 48px;
         font-weight: 500;
         line-height: 52px;
-        margin-left: 4.6%;
       }
-
+      .birka_back5 .p_date1 {
+        left: 4.6%;
+        top: 43%;
+      }
+      .birka_back5 .p_date2 {
+        left: 4.6%;
+        top: 51%;
+      }
       .birka_back6 h1 {
-        margin-top: 4.2%;
-        margin-bottom: 4.5%;
-        margin-left: 5.5%;
+        position: absolute;
+        top: 2.8%;
+        left: 5.8%;
       }
       .birka_back6 .p_tall {
-        margin-left: 5.5%;
-        margin-bottom: 78%;
+        position: absolute;
+        left: 5.5%;
+        top: 15.6%;
       }
       .birka_back6 .p_date {
-        margin-left: 56.6%;
+        position: absolute;
         line-height: 75px;
       }
+      .birka_back6 .p_date1 {
+        right: 11.2%;
+        bottom: 14.8%;
+      }
+      .birka_back6 .p_date2 {
+        right: 12.5%;
+        bottom: 5.4%;
+      }
       .birka_back7 h2 {
-        margin-top: 11.9%;
-        margin-left: 4.6%;
-        margin-bottom: 7.8%;
+        position: absolute;
+        top: 7.6%;
+        left: 4.6%;
       }
       .birka_back7 .p_tall {
+        position: absolute;
         width: 80%;
-        margin-left: 4.6%;
-        margin-bottom: 19.5%;
+        top: 21.7%;
+        left: 4.6%;
       }
       .birka_back7 .p_date {
+        position: absolute;
         font-size: 48px;
         font-weight: 500;
         line-height: 52px;
-        margin-left: 4.6%;
+        left: 4.6%;
+        top: 43%;
       }
+      
       .img1 {
         position: absolute;
         width: 100%;
@@ -641,8 +676,8 @@
                 <img class="img1" src="images/birka1.svg" alt="">
                 <h1>Киноночь</h1>
                 <p class="p_tall">закрытые показы просветительских фильмов в&nbspкинозале центра</p>
-                <p class="p_date">по&nbspсредам</p>
-                <p class="p_date">19:00</p>
+                <p class="p_date p_date1">по&nbspсредам</p>
+                <p class="p_date  p_date2">19:00</p>
                 <p class="p_bron">Бронирование билетов<br>по&nbspтелефону +7-925-242-46-46</p>
               </div>
               <div class="birka_top">
@@ -674,8 +709,8 @@
                 <img class="img5" src="images/birka5.svg" alt="">
                 <h2>Распродажа</h2>
                 <p class="p_tall">Месяц скидок на&nbspвесь ассортимент в&nbspчесть прихода весны</p>
-                <p class="p_date">01.03–</p>
-                <p class="p_date">30.03</p>
+                <p class="p_date p_date1">01.03–</p>
+                <p class="p_date p_date2">30.03</p>
               </div>
               <div class="birka_top birka_top5">
                 <div class="hole hole5"></div>
@@ -688,8 +723,8 @@
                 <img class="img6" src="images/birka6.svg" alt="">
                 <h1>Космонись</h1>
                 <p class="p_tall">Презентация коллекции инопланетных мозгов</p>
-                <p class="p_date">20.03</p>
-                <p class="p_date">18:00</p>
+                <p class="p_date p_date1">20.03</p>
+                <p class="p_date p_date2">18:00</p>
               </div>
               <div class="birka_top birka_top6">
                 <div class="hole hole6"></div>
