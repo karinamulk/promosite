@@ -5,6 +5,9 @@
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/style.css">
@@ -111,6 +114,7 @@
         height: 100%;
         width: 31.85%;
         background: red;
+        padding: 1% 1.2%;
 
       }
       .questions_right {
@@ -142,19 +146,21 @@
         height: 100%;
         background: white;
         margin-right: 3.4%;
+        padding: 1.5% 0%;
       }
       .question3 {
         position: relative;
         width: 22.4%;
         height: 100%;
         background: red;
+        padding: 1.5% 2%;
       }
       .question4 {
         position: relative;
         width: 48.2%;
         height: 100%;
         background: green;
-        /* margin-right: 3.4%; */
+        padding: 1.6% 2.1%;
       }
       .questions_right_bottom_right {
         position: relative;
@@ -168,6 +174,8 @@
         width: 100%;
         height: 66%;
         background: white;
+        padding: 3.4% 4.1%;
+
       }
       .button {
         position: absolute;
@@ -211,7 +219,254 @@
         left: calc(50% - 52px);
         top:  calc(50% - 11px);
       }
+      .question_text {
+        font-weight: 700;
+      }
+      form p {
+        color: black;
+        width: auto;
+      }
+      .portrets_line {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        background-color: blue;
+        height: 44%;
+        margin-top: 6.2%;
+        padding: 0% 3.6%;
+      }
+      .line2 {
+        margin-top: 3.9%;
+      }
+      .portret_block {
+        position: relative;
+        height: 100%;
+        width: 48%;
+        background: yellow;
+      }
+      .portret {
+        position: relative;
+        width: 100%;
+        height: 86.3%;
+        background: green;
+        margin-bottom: 3%;
+        background-size: auto 100%;
+      }
+      #esenin {
+        background-image: url('images/esenin.jpg');
+      }
+      #kutuzov {
+        background-image: url('images/kutuzov.jpg');
+      }
+      #pushkin {
+        background-image: url('images/pushkin.jpg');
+      }
+      #puh {
+        background-image: url('images/puh.jpg');
+      }
+
+      .container {
+        display: block;
+        position: relative;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22px;
+      }
+      .portret .container {
+        position: absolute;
+        bottom: 13.5%;
+        right: 17%;
+      }
+      /* Hide the browser's default radio button */
+      .container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+      }
+
+      /* Create a custom radio button */
+      .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        background-color: black;
+        border-radius: 50%;
+      }
+
+      /* On mouse-over, add a grey background color */
+      .container:hover input ~ .checkmark {
+        background-color: #343434;
+      }
+
+      /* When the radio button is checked, add a blue background */
+      .container input:checked ~ .checkmark {
+        background-color: #A4DDD4;
+      }
+      .qualities_block {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 85%;
+        background: blue;
+        display: flex;
+        justify-content: space-between;
+        padding: 2% 0;
+      }
+      .qualities {
+        position: relative;
+        display: inline-block;
+        /* margin-top: 2.6%; */
+        background: red;
+        width: 45%;
+        height: 100%;
+      }
+      .qualities1 {
+        margin-left: 7.9%;
+      }
+      .qualities2 {
+        margin-left: 5.5%;
+        width: 41.2%;
+        /* margin-top: 2%; */
+
+      }
+      .qualities .container {
+        margin-top: 3%;
+        padding-left: 11%;
+      }
+      .qualities1 .container {
+        margin-bottom: 3.5%;
+      }
+      .qualities2 .container {
+        margin-bottom: 3.9%;
+      }
+      .question2 .question_text {
+        margin-left: 2.5%;
+      }
+      .question3 p {
+        margin-bottom: 20%;
+      }
+      .colors_line {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        height: 23.6%;
+        width: 100%;
+        background: yellow;
+      }
+      .colors_line1 {
+        margin-bottom: 8.5%;
+      }
+      .color {
+        width: 26.94%;
+        height: 100%;
+        border-radius: 50%;
+        background: green;
+      }
+      .color .container {
+        left: calc(50% - 9px);
+        top: calc(50% - 9px);
+      }
+      .color .checkmark {
+        width: 18px;
+        height: 18px;
+        background-color: inherit;
+      }
+      .color .container:hover input ~ .checkmark {
+        background-color: #343434;
+      }
+      .color .container input:checked ~ .checkmark {
+        background-color: black;
+      }
+
+      .drag_block p {
+        color: black;
+
+      }
+      .drag_block {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        width: 86%;
+        height: 52.6%;
+        margin-top: 15%;
+        margin-left: 7%;
+        background: red;
+      }
+      .drag_block_left {
+        width: 5%;
+        position: relative;
+        height: 100%;
+        margin-left: 2%;
+        background: yellow;
+      }
+      .drag_block_left p {
+        line-height: 37px;
+        margin-bottom: 60%;
+      }
+      .drag_block_right {
+        width: 84%;
+        position: relative;
+        height: 100%;
+        margin-right: 2%;
+        background: yellow;
+      }
+      .drag_varient {
+        position: relative;
+        width: 100%;
+        margin-top: 1%;
+        margin-bottom: 5.3%;
+        height: 18%;
+        border-radius: 40px;
+        background: blue;
+        padding: 1.6% 7%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22px;
+      }
+      .message {
+        position: relative;
+        margin-top: 6%;
+        background-color: #A4DDD4;
+        height: 71.5%;
+        width: 100%;
+        border: none;
+        padding: 1%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22px;
+        padding: 2%;
+
+      }
+      input[type="text"]::-moz-placeholder {
+         color: black; white-space: pre-wrap;
+      }
+      input[type="text"]::-webkit-input-placeholder { color: black; white-space: pre-wrap;}
+      input[type="text"]:-ms-input-placeholder { color: black; white-space: pre-wrap;}
+      input[type="text"]::-ms-input-placeholder { color: black; white-space: pre-wrap;}
+      input[type="text"]::placeholder { color: black; white-space: pre-wrap;}
+
     </style>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $( ".drag_varient" ).draggable({ axis: "y" });
+        $( ".drag_varient" ).draggable({ grid: [ 100, 47 ] });
+
+      });
+    </script>
   </head>
   <body>
     <div class="wrapper">
@@ -257,26 +512,160 @@
             </div>
           </div>
 
-          <div class="question_block">
-            <div class="question1">
 
+          <form class="question_block" action="index.html" method="post">
+            <div class="question1">
+              <p class="question_text">Кто импонирует Вам как&nbsp;личность?</p>
+              <div class="portrets_line line1">
+                <div class="portret_block">
+                  <div class="portret" id="esenin">
+                    <label class="container">
+                      <input type="radio" name="portret">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <p>С.&nbsp;Есенин</p>
+                </div>
+                <div class="portret_block">
+                  <div class="portret" id="kutuzov">
+                    <label class="container">
+                      <input type="radio" name="portret">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <p>М.&nbsp;Кутузов</p>
+                </div>
+              </div>
+              <div class="portrets_line line2">
+                <div class="portret_block">
+                  <div class="portret" id="pushkin">
+                    <label class="container">
+                      <input type="radio" name="portret">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <p>А.&nbsp;Пушкин</p>
+                </div>
+                <div class="portret_block">
+                  <div class="portret" id="puh">
+                    <label class="container">
+                      <input type="radio" name="portret">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <p>Винни–Пух</p>
+                </div>
+              </div>
             </div>
             <div class="questions_right">
               <div class="questions_right_top">
                 <div class="question2">
-
+                  <p class="question_text">Какими качествами вы хотите обладать?</p>
+                  <div class="qualities_block">
+                    <div class="qualities qualities1">
+                      <label class="container">креативность
+                        <input type="radio">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="container">эрудированность
+                        <input type="radio">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="container">проницательность
+                        <input type="radio">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="container">целеустремленность
+                        <input type="radio">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                    <div class="qualities qualities2">
+                      <label class="container">спокойствие
+                        <input type="radio">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="container">умение&nbsp;убеждать
+                        <input type="radio">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="container">доброта
+                        <input type="radio">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="container">чувство&nbsp;юмора
+                        <input type="radio">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                  </div>
                 </div>
                 <div class="question3">
-
+                  <p class="question_text">Выберите цвет.</p>
+                  <div class="colors_line colors_line1">
+                    <div class="color color1">
+                      <label class="container">
+                        <input type="radio" name="color">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                    <div class="color color2">
+                      <label class="container">
+                        <input type="radio" name="color">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                    <div class="color color3">
+                      <label class="container">
+                        <input type="radio" name="color">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="colors_line colors_line2">
+                    <div class="color color4">
+                      <label class="container">
+                        <input type="radio" name="color">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                    <div class="color color5">
+                      <label class="container">
+                        <input type="radio" name="color">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                    <div class="color color6">
+                      <label class="container">
+                        <input type="radio" name="color">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="questions_right_bottom">
                 <div class="question4">
-
+                  <p class="question_text">Раставьте сферы жизни<br>по&nbsp;приоритетности.</p>
+                  <div class="drag_block">
+                    <div class="drag_block_left">
+                      <p class="p_tall">1</p>
+                      <p class="p_tall">2</p>
+                      <p class="p_tall">3</p>
+                      <p class="p_tall">4</p>
+                    </div>
+                    <div class="drag_block_right">
+                      <div class="drag_varient">творчество</div>
+                      <div class="drag_varient">общение</div>
+                      <div class="drag_varient">работа/учеба</div>
+                      <div class="drag_varient">саморазвитие</div>
+                    </div>
+                  </div>
                 </div>
                 <div class="questions_right_bottom_right">
                   <div class="question5">
-
+                    <p class="question_text">Что вас не&nbsp;устраивает в&nbsp;вашем мозге?</p>
+                    <input class="message" type="text" name="" value="" placeholder="Напиши кратко, специалист проведет подробный разбор.">
                   </div>
                   <div class="button">
                     <div class="button_back"></div>
@@ -288,7 +677,8 @@
                 </div>
               </div>
             </div>
-          </div>
+          </form>
+
 
           <div class="futter">
             <div class="futter_left">
