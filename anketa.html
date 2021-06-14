@@ -38,6 +38,9 @@
         background: green;
         opacity: .5;
         height: 28.7%;
+        padding: 2.4% 3.8%;
+        display: flex;
+        justify-content: space-between;
       }
       .question_block {
         position: relative;
@@ -45,6 +48,168 @@
         background: blue;
         opacity: .5;
         height: 59.072%;
+        padding: 0% 3.5%;
+        display: flex;
+        justify-content: space-between;
+
+      }
+      h1 {
+        line-height: 59px;
+        margin-bottom: 5.2%;
+        width: 100%;
+      }
+      p {
+        width: 70%;
+
+
+      }
+      .text_left {
+        width: 50%;
+        height: 100%;
+      }
+      .icons_right {
+        width: 50%;
+        height: 100%;
+      }
+      .icon1 {
+        position: absolute;
+        width: 9%;
+        height: 47%;
+        right: 19%;
+        top: 12.3%;
+      }
+      .icon2 {
+        position: absolute;
+        width: 9%;
+        height: 47%;
+        right: 9.5%;
+        top: 12.3%;
+      }
+      .icon1 p, .icon2 p {
+        position: absolute;
+        width: auto;
+        bottom: 5%;
+      }
+      .icon1 p {
+        left: calc(50% - 44px);
+      }
+      .icon2 p {
+        left: calc(50% - 53px);
+      }
+      .icon1 img {
+        position: absolute;
+        width: 54%;
+        left: 23%;
+      }
+      .icon2 img {
+        position: absolute;
+        width: 78.71%;
+        left: 10.65%;
+      }
+      .question1 {
+        position: relative;
+        height: 100%;
+        width: 31.85%;
+        background: red;
+
+      }
+      .questions_right {
+        position: relative;
+        height: 100%;
+        width: 65.85%;
+        background: yellow;
+
+
+      }
+      .questions_right_top {
+        width: 100%;
+        height: 35%;
+        background: yellow;
+        margin-bottom: 3%;
+        display: flex;
+      }
+      .questions_right_bottom {
+        width: 100%;
+        height: 60.7%;
+        background: purple;
+        display: flex;
+        justify-content: space-between;
+
+      }
+      .question2 {
+        position: relative;
+        width: 74.2%;
+        height: 100%;
+        background: white;
+        margin-right: 3.4%;
+      }
+      .question3 {
+        position: relative;
+        width: 22.4%;
+        height: 100%;
+        background: red;
+      }
+      .question4 {
+        position: relative;
+        width: 48.2%;
+        height: 100%;
+        background: green;
+        /* margin-right: 3.4%; */
+      }
+      .questions_right_bottom_right {
+        position: relative;
+        width: 48.4%;
+        height: 100%;
+        background: red;
+
+      }
+      .question5 {
+        position: relative;
+        width: 100%;
+        height: 66%;
+        background: white;
+      }
+      .button {
+        position: absolute;
+        height: 15.2%;
+        width: 49.44%;
+        background: black;
+        left: 24.7%;
+        top: 75.4%;
+      }
+      .button_back {
+        position: absolute;
+        width: 100%;
+        height: 83%;
+        background: #B95E8B;
+        border-radius: 50px;
+        bottom: 0;
+        left: 0;
+      }
+      .button_front {
+        position: absolute;
+        width: 100%;
+        height: 83%;
+        background: #FF83C1;
+        border-radius: 50px;
+        top: 0;
+        left: 0;
+      }
+      .button_back_extra {
+        position: absolute;
+        width: 100%;
+        height: 15%;
+        background: #B95E8B;
+        bottom: 45%;
+        left: 0;
+      }
+      .button_front p {
+        font-weight: 700;
+        color: black;
+        width: auto;
+        position: absolute;
+        left: calc(50% - 52px);
+        top:  calc(50% - 11px);
       }
     </style>
   </head>
@@ -73,16 +238,56 @@
             </svg>
 
           </div>
-          <div class="menubar_extra">
-
-          </div>
+          <div class="menubar_extra"></div>
 
           <div class="text_block">
-
+            <div class="text_left">
+              <h1>Какой мозг<br>подходит Вам?</h1>
+              <p>Анкета поможет выявить предпочтения и&nbsp;учесть все пожелания при подборе мозга</p>
+            </div>
+            <div class="icons_right">
+              <div class="icon1">
+                <img src="images/watch.svg" alt="">
+                <p>3&nbsp;минуты</p>
+              </div>
+              <div class="icon2">
+                <img src="images/punkt.svg" alt="">
+                <p>5&nbsp;вопросов</p>
+              </div>
+            </div>
           </div>
 
           <div class="question_block">
+            <div class="question1">
 
+            </div>
+            <div class="questions_right">
+              <div class="questions_right_top">
+                <div class="question2">
+
+                </div>
+                <div class="question3">
+
+                </div>
+              </div>
+              <div class="questions_right_bottom">
+                <div class="question4">
+
+                </div>
+                <div class="questions_right_bottom_right">
+                  <div class="question5">
+
+                  </div>
+                  <div class="button">
+                    <div class="button_back"></div>
+                    <div class="button_back_extra"></div>
+                    <div class="button_front">
+                      <p>Отправить</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div class="futter">
