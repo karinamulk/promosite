@@ -38,7 +38,7 @@
       .text_block {
         position: relative;
         width: 100%;
-        background: green;
+        /* background: green; */
         opacity: .5;
         height: 28.7%;
         padding: 2.4% 3.8%;
@@ -48,7 +48,7 @@
       .question_block {
         position: relative;
         width: 100%;
-        background: blue;
+        /* background: blue; */
         opacity: .5;
         height: 59.072%;
         padding: 0% 3.5%;
@@ -113,7 +113,7 @@
         position: relative;
         height: 100%;
         width: 31.85%;
-        background: red;
+        background: #A4DDD4;
         padding: 1% 1.2%;
 
       }
@@ -121,21 +121,21 @@
         position: relative;
         height: 100%;
         width: 65.85%;
-        background: yellow;
+        /* background: yellow; */
 
 
       }
       .questions_right_top {
         width: 100%;
         height: 35%;
-        background: yellow;
+        /* background: yellow; */
         margin-bottom: 3%;
         display: flex;
       }
       .questions_right_bottom {
         width: 100%;
         height: 60.7%;
-        background: purple;
+        /* background: purple; */
         display: flex;
         justify-content: space-between;
 
@@ -144,7 +144,7 @@
         position: relative;
         width: 74.2%;
         height: 100%;
-        background: white;
+        background: #FF83C1;
         margin-right: 3.4%;
         padding: 1.5% 0%;
       }
@@ -152,28 +152,28 @@
         position: relative;
         width: 22.4%;
         height: 100%;
-        background: red;
+        background: #A4DDD4;
         padding: 1.5% 2%;
       }
       .question4 {
         position: relative;
         width: 48.2%;
         height: 100%;
-        background: green;
+        background:#A4DDD4;
         padding: 1.6% 2.1%;
       }
       .questions_right_bottom_right {
         position: relative;
         width: 48.4%;
         height: 100%;
-        background: red;
+        /* background: red; */
 
       }
       .question5 {
         position: relative;
         width: 100%;
         height: 66%;
-        background: white;
+        background: #FF83C1;
         padding: 3.4% 4.1%;
 
       }
@@ -231,7 +231,7 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
-        background-color: blue;
+        /* background-color: blue; */
         height: 44%;
         margin-top: 6.2%;
         padding: 0% 3.6%;
@@ -243,13 +243,13 @@
         position: relative;
         height: 100%;
         width: 48%;
-        background: yellow;
+        /* background: yellow; */
       }
       .portret {
         position: relative;
         width: 100%;
         height: 86.3%;
-        background: green;
+        /* background: green; */
         margin-bottom: 3%;
         background-size: auto 100%;
       }
@@ -318,7 +318,7 @@
         display: block;
         width: 100%;
         height: 85%;
-        background: blue;
+        /* background: blue; */
         display: flex;
         justify-content: space-between;
         padding: 2% 0;
@@ -327,7 +327,7 @@
         position: relative;
         display: inline-block;
         /* margin-top: 2.6%; */
-        background: red;
+        /* background: red; */
         width: 45%;
         height: 100%;
       }
@@ -362,7 +362,7 @@
         justify-content: space-between;
         height: 23.6%;
         width: 100%;
-        background: yellow;
+        /* background: yellow; */
       }
       .colors_line1 {
         margin-bottom: 8.5%;
@@ -371,8 +371,14 @@
         width: 26.94%;
         height: 100%;
         border-radius: 50%;
-        background: green;
+        /* background: green; */
       }
+      .color1 {background: #F8E436;}
+      .color2 {background: #FF83C1;}
+      .color3 {background: #FFA883;}
+      .color4 {background: #FFFFFF;}
+      .color5 {background: #000000;}
+      .color6 {background: #8683FF;}
       .color .container {
         left: calc(50% - 9px);
         top: calc(50% - 9px);
@@ -401,14 +407,14 @@
         height: 52.6%;
         margin-top: 15%;
         margin-left: 7%;
-        background: red;
+        /* background: red; */
       }
       .drag_block_left {
         width: 5%;
         position: relative;
         height: 100%;
         margin-left: 2%;
-        background: yellow;
+        /* background: yellow; */
       }
       .drag_block_left p {
         line-height: 37px;
@@ -419,7 +425,7 @@
         position: relative;
         height: 100%;
         margin-right: 2%;
-        background: yellow;
+        /* background: yellow; */
       }
       .drag_varient {
         position: relative;
@@ -428,7 +434,7 @@
         margin-bottom: 5.3%;
         height: 18%;
         border-radius: 40px;
-        background: blue;
+        background: #FF83C1;
         padding: 1.6% 7%;
         font-family: 'Montserrat', sans-serif;
         font-size: 18px;
@@ -450,21 +456,22 @@
 
       }
       input[type="text"]::-moz-placeholder {
-         color: black; white-space: pre-wrap;
+         color: black; white-space: pre-wrap; line-height: 10px;
       }
-      input[type="text"]::-webkit-input-placeholder { color: black; white-space: pre-wrap;}
-      input[type="text"]:-ms-input-placeholder { color: black; white-space: pre-wrap;}
-      input[type="text"]::-ms-input-placeholder { color: black; white-space: pre-wrap;}
-      input[type="text"]::placeholder { color: black; white-space: pre-wrap;}
+      input[type="text"]::-webkit-input-placeholder { color: black; white-space: pre-wrap; line-height: 10px;}
+      input[type="text"]:-ms-input-placeholder { color: black; white-space: pre-wrap; line-height: 10px;}
+      input[type="text"]::-ms-input-placeholder { color: black; white-space: pre-wrap; line-height: 10px;}
+      input[type="text"]::placeholder { color: black; white-space: pre-wrap; line-height: 10px;}
 
     </style>
 
     <script type="text/javascript">
       $(document).ready(function(){
-        $( ".drag_varient" ).draggable({ axis: "y" });
-        $( ".drag_varient" ).draggable({ grid: [ 100, 47 ] });
-
+        $(function() {
+             $('.drag_block_right').sortable();
+        });
       });
+
     </script>
   </head>
   <body>
