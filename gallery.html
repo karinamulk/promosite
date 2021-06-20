@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/style.css">
     <script src="js/all.js" charset="utf-8"></script>
-    
+
     <style media="screen">
       .gal_wrapper {
         position: relative;
@@ -46,14 +46,14 @@
         width: 100%;
         height: 69.7%;
         /* background: blue; */
-        opacity: .5;
+        /* opacity: .5; */
       }
       .gallery_row_container {
         position: relative;
         width: 100%;
         height: 6.46%;
         /* background: red; */
-        opacity: .5;
+        /* opacity: .5; */
         padding: 1.5% 0;
       }
       .gallery_row {
@@ -78,9 +78,10 @@
         width: 100%;
         height: 21.004%;
         /* background: green; */
-        opacity: .5;
+        /* opacity: .5; */
         background-image: url('images/merch.jpg');
         background-size: 500% 100%;
+        background-position: 0% 0;
       }
       .gal_birka {
         position: absolute;
@@ -237,6 +238,9 @@
       }
       .gal_back {
         transform: rotateY(-180deg);
+      }
+      .gal_back1 {
+        transform: rotateY(0deg);
       }
 
       .gal_birka_back > * {
@@ -581,6 +585,11 @@
         position: absolute;
         width: 1.67%;
         top: 49.958%;
+        z-index: 200;
+
+      }
+      .gal_strelka1 path, .gal_strelka2 path {
+        transition: all .4s;
       }
       .gal_strelka1 {
         left: 2.7%;
@@ -593,20 +602,103 @@
         position: absolute;
         width: 50%;
         height: 100%;
+        z-index: 100;
+      }
+
+      .gal_slider_left {
+        left: 0;
+      }
+      .gal_slider_right {
+        right: 0;
+      }
+      .gal_birka_back8 a:hover  {
+        color: #FF83C1;
+        transition: all .2s;
+      }
+      .gal_birka_back8 a, .gal_birka_back4 a {
+        transition: all .5s;
+      }
+      .gal_birka_back4 a:hover {
+        color: #A4DDD4;
+        transition: all .2s;
+      }
+      .gal_strelka1:hover path {
+        fill: black;
+        transition: all .2s;
+      }
+      .gal_strelka2:hover path {
+        fill: black;
+        transition: all .2s;
+
       }
     </style>
 
 
     <script type="text/javascript">
       $(document).ready(function(){
+        let a = 0;
+        let slider_merch = 0;
+        let slider_merch_result = 0;
+        let slider_merch_text = 0;
+        console.log(slider_merch);
+        console.log(slider_merch_result);
         $(".gal_birka").click(function(){
-          $(this).addClass("gal_back");
+            $(this).addClass("gal_back");
           setTimeout(function(){
-            $(this).removeClass("gal_back");
-          }, 20000);
-
+              $(this).removeClass("gal_back");
+              console.log(a);
+          }, 3000);
         });
 
+        $(".gal_strelka2, .gal_slider_right").click(function(){
+            slider_merch -= 100;
+            slider_merch_result = slider_merch+"%";
+            $(".gal_merch").css("background-position", slider_merch_result);
+            slider_merch_text += 1;
+            console.log(slider_merch_text);
+            if (slider_merch_text == 1) {
+              $(".slider_merch_text").html("конверт"+ "<br>" + "блокнот" + "<br>" + "карандаш");
+              $(".gal_merch_tablo1").html("90 р."+ "<br>" + "490 р." + "<br>" + "90 р.");
+            } else if (slider_merch_text == 2) {
+              $(".slider_merch_text").html("худи"+ "<br>" + "шапка");
+              $(".gal_merch_tablo1").html("2900 р."+ "<br>" + "990р.");
+            } else if (slider_merch_text == 3) {
+              $(".slider_merch_text").html("наклейки");
+              $(".gal_merch_tablo1").html("290 р.");
+            } else if (slider_merch_text == 4) {
+              $(".slider_merch_text").html("шопер");
+              $(".gal_merch_tablo1").html("1100 р.");
+              slider_merch_text = -1;
+            } else if (slider_merch_text == 0) {
+              $(".slider_merch_text").html("каталог" + "<br>" + "сертификат");
+              $(".gal_merch_tablo1").html("990 р.");
+            }
+        });
+        $(".gal_strelka1, .gal_slider_left").click(function(){
+            slider_merch += 100;
+            slider_merch_result = slider_merch+"%";
+            $(".gal_merch").css("background-position", slider_merch_result);
+            slider_merch_text -= 1;
+            console.log(slider_merch_text);
+            if (slider_merch_text == -4) {
+              $(".slider_merch_text").html("конверт"+ "<br>" + "блокнот" + "<br>" + "карандаш");
+              $(".gal_merch_tablo1").html("90 р."+ "<br>" + "490 р." + "<br>" + "90 р.");
+              slider_merch_text = 1;
+            } else if (slider_merch_text == -3) {
+              $(".slider_merch_text").html("худи"+ "<br>" + "шапка");
+              $(".gal_merch_tablo1").html("2900 р."+ "<br>" + "990р.");
+            } else if (slider_merch_text == -2) {
+              $(".slider_merch_text").html("наклейки");
+              $(".gal_merch_tablo1").html("290 р.");
+            } else if (slider_merch_text == -1) {
+              $(".slider_merch_text").html("шопер");
+              $(".gal_merch_tablo1").html("1100 р.");
+            } else if (slider_merch_text == 0) {
+              $(".slider_merch_text").html("каталог" + "<br>" + "сертификат");
+              $(".gal_merch_tablo1").html("990 р.");
+            }
+
+        });
       });
     </script>
   </head>
@@ -689,7 +781,7 @@
                 <img src="images/birka4_2.svg" alt="" class="gal_img4_2">
               </div>
               <div class="gal_birka_back gal_birka_back4">
-                <a href="#">Перейти</a>
+                <a href="https://karinamulk.github.io/webplakat/">Перейти</a>
               </div>
               <div class="gal_birka_top gal_birka_top2">
                 <div class="gal_hole gal_hole2"></div>
@@ -763,7 +855,7 @@
                 <img src="images/birka8_2.svg" alt="" class="gal_img8_2">
               </div>
               <div class="gal_birka_back gal_birka_back8">
-                <a href="#">Перейти</a>
+                <a href="https://karinamulk.github.io/webplakat_js/">Перейти</a>
               </div>
               <div class="gal_birka_top gal_birka_top_green">
                 <div class="gal_hole gal_hole2"></div>
@@ -791,8 +883,8 @@
             <div class="gal_slider_left"></div>
             <div class="gal_slider_right"></div>
             <div class="gal_merch_tablo">
-              <p class="p_tall">конверт<br>блокнот<br>карандаш</p>
-              <p class="p_tall gal_merch_tablo1">90р<br>490р<br>90р</p>
+              <p class="p_tall slider_merch_text">каталог<br>сертификат</p>
+              <p class="p_tall gal_merch_tablo1">990 р.</p>
             </div>
             <svg class="gal_strelka1" width="24" height="37" viewBox="0 0 24 37" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M22.1134 1.76333C23.8707 3.52069 23.8707 6.36993 22.1134 8.12729L11.6728 18.5679L22.1134 29.0084C23.8707 30.7658 23.8707 33.615 22.1134 35.3724C20.356 37.1298 17.5068 37.1298 15.7494 35.3724L2.12686 21.7499C0.369498 19.9925 0.369498 17.1433 2.12686 15.3859L15.7494 1.76333C17.5068 0.00597274 20.356 0.00597274 22.1134 1.76333Z" fill="#FF83C1"/>
