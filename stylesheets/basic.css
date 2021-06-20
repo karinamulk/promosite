@@ -65,15 +65,36 @@ html{
   line-height: 22px;
   color: #FF83C1;
   text-decoration: none;
+  transition: all .5s;
+}
+.futter a:hover {
+  color: #A4DDD4;
+  transition: all .2s;
 }
 .logo:hover path {
-  fill: black;
+  fill: #A4DDD4;
+  transition: all .2s;
+}
+.logo path {
+  transition: all .5s;
 }
 .logo {
-width: 8.49%;
+  width: 8.49%;
+  cursor: pointer;
+}
+.logo_img {
+  width: 100%;
 }
 .burger {
   width: 2.07%;
+  cursor: pointer;
+}
+.burger:hover rect {
+  fill: #A4DDD4;
+  transition: all .2s;
+}
+.burger rect {
+  transition: all .5s;
 }
 .futter_left {
   width: 40%;
@@ -146,8 +167,10 @@ ul, p {
   background: #FF83C1;
   z-index: 300;
   right: 0;
-  opacity: .8;
+  opacity: 0;
   display: none;
+  transition: all .3s;
+
 }
 .black_square {
   position: fixed;
@@ -156,9 +179,10 @@ ul, p {
   background: black;
   z-index: 300;
   left: 0;
-  opacity: .5;
+  opacity: 0;
   display: none;
-  
+  transition: all .3s;
+
 }
 .right_menu_img {
   position: absolute;
@@ -172,6 +196,8 @@ ul, p {
   height: 2.44%;
   background: black;
   border-radius: 50%;
+  transition: all .5s;
+
 }
 #menu_round1 {
   top: 4.85%;
@@ -206,6 +232,8 @@ ul, p {
   line-height: 18px;
   text-decoration: none;
   text-align: center;
+  transition: all .5s;
+
 }
 #menu_text1 {
   left: 32.9%;
@@ -239,4 +267,24 @@ ul, p {
 }
 .menu_krest_img {
   width: 100%;
+}
+.menu_krest_img path {
+  transition: .5s;
+}
+.menu_krest_img:hover path {
+  fill: #A4DDD4;
+  transition: .2s;
+}
+.menu_round  a {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.menu_round:hover {
+  background: #FF83C1;
+  transition: all .2s;
+}
+.right_menu a:hover {
+  color:  #A4DDD4;
+  transition: all .2s;
 }
