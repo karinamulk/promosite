@@ -7,24 +7,25 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="js/all.js" charset="utf-8"></script>
+    
     <style media="screen">
-      .wrapper {
+      .cat_wrapper {
         position: relative;
         width: 100%;
       }
-      .sootnosheniye {
+      .cat_sootnosheniye {
         position: relative;
         padding-bottom:  187.29%;
       }
-      .content {
+      .cat_content {
         position: absolute;
         top: 0; bottom: 0; left: 0; right: 0;
         padding: 0;
         /* overflow: hidden; */
       }
-      .menubar_extra {
+      .cat_menubar_extra {
         position: relative;
         width: 100%;
         height: 2.2%;
@@ -36,7 +37,7 @@
         /* background: green; */
         /* opacity: .5; */
       }
-      .futter {
+      .cat_futter {
         position: relative;
         width: 100%;
         height: 2.2%;
@@ -60,7 +61,7 @@
       .catalog_block h1 {
         margin-top: -0.8%;
       }
-      .timeline {
+      .cat_timeline {
         position: relative;
         width: 100%;
         height: 23%;
@@ -68,7 +69,7 @@
         /* opacity: .5; */
 
       }
-      .game {
+      .cat_game {
         position: relative;
         width: 100%;
         height: 23%;
@@ -78,7 +79,7 @@
       }
 
 
-      .line {
+      .cat_line {
         position: relative;
         display: flex;
         justify-content: space-between;
@@ -87,20 +88,20 @@
         width: 100%;
         margin-bottom: 3.85%;
       }
-      .line_item {
+      .cat_line_item {
         position: relative;
         height: 100%;
         width: 31.85%;
         /* background: red; */
       }
-      .item {
+      .cat_item {
         position: relative;
         width: 100%;
         height: 86%;
         background: #FF83C1;
         background-size: 100% 100% ;
       }
-      .item_info {
+      .cat_item_info {
         position: relative;
         width: 100%;
         height: 14%;
@@ -108,28 +109,28 @@
         display: flex;
         justify-content: space-between;
       }
-      .item_info .p_tall {
+      .cat_item_info .p_tall {
         margin-top: 2.5%;
       }
-      .item1 {
+      .cat_item1 {
         background-image: url('images/item1.jpg');
       }
-      .item2 {
+      .cat_item2 {
         background-image: url('images/item2.jpg');
       }
-      .item3 {
+      .cat_item3 {
         background-image: url('images/item3.jpg');
       }
-      .item4 {
+      .cat_item4 {
         background-image: url('images/item4.jpg');
       }
-      .item5 {
+      .cat_item5 {
         background-image: url('images/item5.jpg');
       }
-      .item_hover .p_tall, .item_hover ul {
+      .cat_item_hover .p_tall, .cat_item_hover ul {
         color: black;
       }
-      .item_hover {
+      .cat_item_hover {
         position: absolute;
         top: 0;
         left: 0;
@@ -138,71 +139,71 @@
         padding: 9% 5.5%;
         opacity: 0%;
       }
-      .item_hover ul {
+      .cat_item_hover ul {
         margin-left: 10%;
       }
-      .item_hover p {
+      .cat_item_hover p {
         color: black;
       }
-      .weight3 {
+      .cat_weight3 {
         margin-top: 21.7%;
       }
-      .weight2 {
+      .cat_weight2 {
         margin-top: 29.3%;
       }
-      .item:hover .item_hover {
+      .cat_item:hover .cat_item_hover {
         background: #FF83C1;
         opacity: 100%;
       }
-      .line2 {
+      .cat_line2 {
         height: 50.5%;
         /* opacity: .5; */
       }
-      .line2_block {
+      .cat_line2_block {
         width: 31.85%;
       }
-      .line2_block2 {
+      .cat_line2_block2 {
         width: 65.925%;
       }
-      .line_item4 {
+      .cat_line_item4 {
         height: 51.48%;
         display: block;
         width: 100%;
       }
-      .line_plus {
+      .cat_line_plus {
         height: 47.5%;
         display: block;
         width: 100%;
         /* background: blue; */
 
       }
-      .line_item5 {
+      .cat_line_item5 {
         display: block;
         width: 100%;
       }
-      .item5 {
+      .cat_item5 {
         height: 91.3%;
       }
-      .item_info5 {
+      .cat_item_info5 {
         height: 8.7%;
       }
-      .weight4 {
+      .cat_weight4 {
         margin-top: 25%;
       }
-      .item_hover5 {
+      .cat_item_hover5 {
         padding: 4.4% 2.72%;
       }
-      .weight5 {
+      .cat_weight5 {
         margin-top: 48.5%;
       }
-      .line_plus img {
+      .cat_line_plus img {
         position: relative;
         display: inline-block;
         width: 9.8%;
 
-        padding-bottom: 3.2%;
+        /* padding-bottom: 3.2%; */
       }
-      .line_plus p {
+      .cat_line_plus p {
         position: relative;
         display: inline-block;
         width: 80%;
@@ -210,7 +211,7 @@
         margin-left: 4%;
 
       }
-      .timeline img {
+      .cat_timeline img {
         position: absolute;
         width: 100%;
         left: 0;
@@ -219,41 +220,41 @@
       .item_info5 .p_tall {
         margin-top: 0.9%;
       }
-      .timeline .dontknow{
+      .cat_timeline .dontknow{
         margin-left: 3.5%;
         width: 29%;
       }
-      .step1 {
+      .cat_step1 {
         position: absolute;
         bottom: 19.5%;
         left: 7.18%;
       }
-      .step2 {
+      .cat_step2 {
         position: absolute;
         bottom: 39.5%;
         left: 48.3%;
       }
-      .step3 {
+      .cat_step3 {
         position: absolute;
         top: -2.2%;
         right: 6.82%;
       }
-      .step1_text {
+      .cat_step1_text {
         position: absolute;
         left: 4.95%;
         bottom: 8.2%;
       }
-      .step2_text {
+      .cat_step2_text {
         position: absolute;
         left: 49.35%;
         bottom: 27.8%;
       }
-      .step3_text {
+      .cat_step3_text {
         position: absolute;
         top: 21.8%;
         right: 8.92%;
       }
-      .timeline a {
+      .cat_timeline a {
         position:absolute;
         font-family: 'Montserrat', sans-serif;
         font-size: 18px;
@@ -262,44 +263,44 @@
         color: #A4DDD4;
         text-decoration: none;
       }
-      .step1_a {
+      .cat_step1_a {
         left: 7%;
         bottom: 4.2%;
       }
-      .step2_a {
+      .cat_step2_a {
         left: 52.42%;
         bottom: 23.75%;
       }
-      .step3_a {
+      .cat_step3_a {
         top: 27%;
         right: 9.9%;
       }
-      .timeline_round {
+      .cat_timeline_round {
         position: absolute;
         width: 2.084%;
         height: 5.06%;
         background: black;
         border-radius: 50%;
       }
-      .timeline_round1 {
+      .cat_timeline_round1 {
         left: 11.7%;
         bottom: 16.2%;
       }
-      .timeline_round2 {
+      .cat_timeline_round2 {
         left: 53.95%;
         bottom: 36.4%;
       }
-      .timeline_round3 {
+      .cat_timeline_round3 {
         right: 12.5%;
         top: 13%;
       }
-      .game_container {
+      .cat_game_container {
         position: relative;
         height: 100%;
         width: 300%;
         /* background: green; */
       }
-      .g_round1 {
+      .cat_g_round1 {
         position: absolute;
         height: 35.076%;
         width: 4.815%;
@@ -308,13 +309,13 @@
         bottom:27%;
         left: 0;
       }
-      .krest1 {
+      .cat_krest1 {
         position: absolute;
         width: 7.106%;
         left: 4.3%;
         top: 9%;
       }
-      .g_round2 {
+      .cat_g_round2 {
         position: absolute;
         height: 35.076%;
         width: 4.815%;
@@ -323,7 +324,7 @@
         top: 0;
         left: 11.5%;
       }
-      .g_card1 {
+      .cat_g_card1 {
         position: absolute;
         display: flex;
         justify-content: center;
@@ -335,24 +336,24 @@
         bottom: 18%;
         transform: rotate(-15deg);
       }
-      .g_card1 h4, .g_card2 h4, .g_card1 h2, .g_card2 h2, .g_card3 h2, .g_card3 h4, .g_card4 h2, .g_card4 h4, .g_card5 h2, .g_card5 h4 {
+      .cat_g_card1 h4, .cat_g_card2 h4, .cat_g_card1 h2, .cat_g_card2 h2, .cat_g_card3 h2, .cat_g_card3 h4, .cat_g_card4 h2, .cat_g_card4 h4, .cat_g_card5 h2, .cat_g_card5 h4 {
         color: black;
       }
-      .g_card1 h2 {
+      .cat_g_card1 h2 {
         margin-top: 5%;
         margin-left: calc(50% - 134px);
 
       }
-      .g_card1 h4 {
+      .cat_g_card1 h4 {
         margin-top: 1%;
         margin-left: calc(50% - 168px);
 
       }
-      .g_card1_content {
+      .cat_g_card1_content {
         margin: 7%;
 
       }
-      .g_round3 {
+      .cat_g_round3 {
         position: absolute;
         height: 19.22%;
         width: 2.639%;
@@ -361,7 +362,7 @@
         top: 26.5%;
         left: 20.6%;
       }
-      .g_round4 {
+      .cat_g_round4 {
         position: absolute;
         height: 19.22%;
         width: 2.639%;
@@ -370,7 +371,7 @@
         bottom: 20%;
         left: 23%;
       }
-      .g_card2 {
+      .cat_g_card2 {
         position: absolute;
         display: flex;
         justify-content: center;
@@ -382,28 +383,28 @@
         top: 9%;
         transform: rotate(15deg);
       }
-      .g_card1_content {
+      .cat_g_card1_content {
         margin: 7%;
       }
-      .g_card2 h2 {
+      .cat_g_card2 h2 {
         margin-top: 5%;
         margin-left: calc(50% - 154px);
       }
-      .g_card2 h4 {
+      .cat_g_card2 h4 {
         margin-top: 1%;
         margin-left: calc(50% - 138px);
       }
-      .krest2 {
+      .cat_krest2 {
         position: absolute;
         width: 7.106%;
         left: 27.5%;
         top: 17%;
         transform: rotate(30deg);
       }
-      .krest2 path {
+      .cat_krest2 path {
         fill: #FF83C1;
       }
-      .g_round5 {
+      .cat_g_round5 {
         position: absolute;
         height: 35.076%;
         width: 4.815%;
@@ -412,7 +413,7 @@
         bottom: 30%;
         left: 38%;
       }
-      .g_round6 {
+      .cat_g_round6 {
         position: absolute;
         height: 19.22%;
         width: 2.639%;
@@ -421,7 +422,7 @@
         top: 20%;
         left: 43%;
       }
-      .g_round7 {
+      .cat_g_round7 {
         position: absolute;
         height: 19.22%;
         width: 2.639%;
@@ -430,7 +431,7 @@
         bottom: 10%;
         left: 48%;
       }
-      .g_card3 {
+      .cat_g_card3 {
         position: absolute;
         display: flex;
         justify-content: center;
@@ -442,25 +443,25 @@
         top: 15%;
         transform: rotate(-20deg);
       }
-      .g_card3 h2 {
+      .cat_g_card3 h2 {
         margin-top: 5%;
         margin-left: calc(50% - 154px);
       }
-      .g_card3 h4 {
+      .cat_g_card3 h4 {
         margin-top: 1%;
         margin-left: calc(50% - 100px);
       }
-      .krest3 {
+      .cat_krest3 {
         position: absolute;
         width: 7.106%;
         left: 56%;
         bottom: 10%;
         transform: rotate(70deg);
       }
-      .krest3 path {
+      .cat_krest3 path {
         fill: #FF83C1;
       }
-      .g_card4 {
+      .cat_g_card4 {
         position: absolute;
         display: flex;
         justify-content: center;
@@ -472,17 +473,17 @@
         bottom: 18%;
         transform: rotate(15deg);
       }
-      .g_card4 h2 {
+      .cat_g_card4 h2 {
         margin-top: 5%;
         margin-left: calc(50% - 140px);
 
       }
-      .g_card4 h4 {
+      .cat_g_card4 h4 {
         margin-top: 1%;
         margin-left: calc(50% - 138px);
 
       }
-      .g_round8 {
+      .cat_g_round8 {
         position: absolute;
         height: 19.22%;
         width: 2.639%;
@@ -491,7 +492,7 @@
         top: 10%;
         left: 63%;
       }
-      .g_round9 {
+      .cat_g_round9 {
         position: absolute;
         height: 35.076%;
         width: 4.815%;
@@ -500,7 +501,7 @@
         bottom: 27%;
         left: 71%;
       }
-      .g_round10 {
+      .cat_g_round10 {
         position: absolute;
         height: 35.076%;
         width: 4.815%;
@@ -509,7 +510,7 @@
         top: 7%;
         left: 77%;
       }
-      .g_round11 {
+      .cat_g_round11 {
         position: absolute;
         height: 19.22%;
         width: 2.639%;
@@ -518,17 +519,17 @@
         bottom: 10%;
         left: 80%;
       }
-      .krest4 {
+      .cat_krest4 {
         position: absolute;
         width: 7.106%;
         left: 85%;
         bottom: 20%;
         transform: rotate(30deg);
       }
-      .krest4 path {
+      .cat_krest4 path {
         fill: #F8E436;
       }
-      .g_card5 {
+      .cat_g_card5 {
         position: absolute;
         display: flex;
         justify-content: center;
@@ -540,15 +541,15 @@
         top: 17%;
         transform: rotate(-15deg);
       }
-      .g_card5 h2 {
+      .cat_g_card5 h2 {
         margin-top: 5%;
         margin-left: calc(50% - 154px);
       }
-      .g_card5 h4 {
+      .cat_g_card5 h4 {
         margin-top: 1%;
         margin-left: calc(50% - 100px);
       }
-      .g_round12 {
+      .cat_g_round12 {
         position: absolute;
         height: 19.22%;
         width: 2.639%;
@@ -562,10 +563,10 @@
       }
 
       /* Вот это добавляем */
-      .game {
+      .cat_game {
         white-space: nowrap
       }
-      .game_container {
+      .cat_game_container {
         animation: marc 20s linear infinite;
         display: inline-block;
         vertical-align: top;
@@ -581,13 +582,13 @@
     <!-- И вот такой скрипт -->
     <script type="text/javascript">
       $(document).ready(function(){
-        $(".game_container").clone().appendTo(".game");
-        $(".game_container")
+        $(".cat_game_container").clone().appendTo(".cat_game");
+        $(".cat_game_container")
         .mouseover(function() {
-          $(".game_container").css("animation-play-state", "paused");
+          $(".cat_game_container").css("animation-play-state", "paused");
         })
         .mouseout(function() {
-          $(".game_container").css("animation-play-state", "running");
+          $(".cat_game_container").css("animation-play-state", "running");
         })
       });
 
@@ -603,21 +604,23 @@
 
 
   <body>
-    <div class="wrapper">
-      <div class="sootnosheniye">
-        <div class="content">
+    <div class="cat_wrapper">
+      <div class="cat_sootnosheniye">
+        <div class="cat_content">
           <div class="menubar">
-            <svg class="logo" width="124" height="20" viewBox="0 0 124 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M60.8887 3.33333V18.8889C60.8887 19.5025 61.3861 20 61.9998 20C62.6134 20 63.1109 19.5025 63.1109 18.8889V3.33333C63.1109 2.71968 63.6084 2.22222 64.222 2.22222C64.8357 2.22222 65.3331 2.71968 65.3331 3.33333V16.6667C65.3331 18.5076 66.8255 20 68.6664 20C70.5074 20 71.9998 18.5076 71.9998 16.6667V3.33333C71.9998 2.71968 72.4972 2.22222 73.1109 2.22222C73.7245 2.22222 74.222 2.71968 74.222 3.33333V18.8889C74.222 19.5025 74.7195 20 75.3331 20C75.9468 20 76.4442 19.5025 76.4442 18.8889V3.33333C76.4442 1.49238 74.9518 0 73.1109 0C71.2699 0 69.7776 1.49239 69.7776 3.33334V16.6667C69.7776 17.2803 69.2801 17.7778 68.6664 17.7778C68.0528 17.7778 67.5553 17.2803 67.5553 16.6667V3.33333C67.5553 1.49238 66.063 0 64.222 0C62.3811 0 60.8887 1.49238 60.8887 3.33333Z" fill="#FF83C1"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M78.6665 3.33333V16.6667C78.6665 18.5076 80.1589 20 81.9998 20C83.8408 20 85.3332 18.5076 85.3332 16.6667V3.33333C85.3332 1.49238 83.8408 0 81.9998 0C80.1589 0 78.6665 1.49238 78.6665 3.33333ZM81.9998 17.7778C82.6135 17.7778 83.1109 17.2803 83.1109 16.6667V3.33333C83.1109 2.71968 82.6135 2.22222 81.9998 2.22222V2.22222C81.3862 2.22222 80.8887 2.71968 80.8887 3.33333V16.6667C80.8887 17.2803 81.3862 17.7778 81.9998 17.7778V17.7778Z" fill="#FF83C1"/>
-            <path d="M34.2218 18.8889V2.22222H29.7774V18.8889C29.7774 19.5025 29.2799 20 28.6663 20C28.0526 20 27.5552 19.5025 27.5552 18.8889V2.22222C27.5552 0.994923 28.5501 0 29.7774 0H34.2218C35.4491 0 36.4441 0.994923 36.4441 2.22222V2.38173V18.8889C36.4441 19.5025 35.9466 20 35.333 20C34.7193 20 34.2218 19.5025 34.2218 18.8889Z" fill="#FF83C1"/>
-            <path d="M0.888672 18.8889V1.11111C0.888672 0.497461 1.38613 0 1.99978 0C2.61343 0 3.11089 0.497462 3.11089 1.11111V4.44444H7.55534V1.11111C7.55534 0.497461 8.0528 0 8.66645 0C9.2801 0 9.77756 0.497462 9.77756 1.11111V4.44444C9.77756 5.67174 8.78264 6.66667 7.55534 6.66667H3.11089V8.88889H9.77756C11.0049 8.88889 11.9998 9.88381 11.9998 11.1111V18.8889C11.9998 19.5025 11.5023 20 10.8887 20C10.275 20 9.77756 19.5025 9.77756 18.8889V11.1111H3.11089V18.8889C3.11089 19.5025 2.61343 20 1.99978 20C1.38613 20 0.888672 19.5025 0.888672 18.8889Z" fill="#FF83C1"/>
-            <path d="M100.889 2.22222V18.8889C100.889 19.5025 100.391 20 99.7776 20C99.164 20 98.6665 19.5025 98.6665 18.8889V2.22222C98.6665 0.994923 99.6614 0 100.889 0H106.444C107.058 0 107.555 0.497462 107.555 1.11111C107.555 1.72476 107.058 2.22222 106.444 2.22222H100.889Z" fill="#FF83C1"/>
-            <path d="M49.7776 15.5556H47.5554V17.7778C47.5554 19.0051 46.5605 20 45.3332 20H40.8887C39.6614 20 38.6665 19.0051 38.6665 17.7778V1.11111C38.6665 0.497461 39.164 0 39.7776 0C40.3913 0 40.8887 0.497462 40.8887 1.11111V17.7778H45.3332V15.5556C45.3332 14.3283 46.3281 13.3333 47.5554 13.3333H49.7776V1.11111C49.7776 0.497461 50.2751 0 50.8887 0C51.5024 0 51.9998 0.497461 51.9998 1.11111V18.8889C51.9998 19.5025 51.5024 20 50.8887 20C50.2751 20 49.7776 19.5025 49.7776 18.8889V15.5556Z" fill="#FF83C1"/>
-            <path d="M120.889 15.5556H118.667V17.7778C118.667 19.0051 117.672 20 116.444 20H112C110.773 20 109.778 19.0051 109.778 17.7778V1.11111C109.778 0.497461 110.275 0 110.889 0C111.503 0 112 0.497462 112 1.11111V17.7778H116.444V15.5556C116.444 14.3283 117.439 13.3333 118.667 13.3333H120.889V1.11111C120.889 0.497461 121.386 0 122 0C122.614 0 123.111 0.497461 123.111 1.11111V18.8889C123.111 19.5025 122.614 20 122 20C121.386 20 120.889 19.5025 120.889 18.8889V15.5556Z" fill="#FF83C1"/>
-            <path d="M23.1106 17.7778V8.88889H16.4439C15.2166 8.88889 14.2217 7.89397 14.2217 6.66667V1.11111C14.2217 0.497461 14.7191 0 15.3328 0C15.9464 0 16.4439 0.49746 16.4439 1.11111V6.66667H23.1106V1.11111C23.1106 0.497461 23.608 0 24.2217 0C24.8353 0 25.3328 0.497462 25.3328 1.11111V17.7778C25.3328 19.0051 24.3379 20 23.1106 20H15.3328C14.7191 20 14.2217 19.5025 14.2217 18.8889C14.2217 18.2752 14.7191 17.7778 15.3328 17.7778H23.1106Z" fill="#FF83C1"/>
-            <path d="M93.129 2.22222H88.6668C88.0531 2.22222 87.5557 1.72476 87.5557 1.11111C87.5557 0.497462 88.0531 0 88.6668 0H93.129C94.9601 0 96.4446 1.48441 96.4446 3.31551V3.96436C96.4446 5.43712 95.2506 6.63103 93.7779 6.63103H93.1112C92.4976 6.63103 92.0001 7.12849 92.0001 7.74214C92.0001 8.35579 92.4976 8.85325 93.1112 8.85325H94.2223C95.4496 8.85325 96.4446 9.84817 96.4446 11.0755V11.1976V17.7778C96.4446 19.0051 95.4496 20 94.2223 20H88.6668C88.0531 20 87.5557 19.5025 87.5557 18.8889C87.5557 18.2752 88.0531 17.7778 88.6668 17.7778H94.2223V11.1976H93.1723C91.2976 11.1976 89.7779 9.67787 89.7779 7.8032V7.07547C89.7779 5.60271 90.9718 4.4088 92.4446 4.4088H93.129C93.7328 4.4088 94.2223 3.91932 94.2223 3.31551C94.2223 2.71171 93.7328 2.22222 93.129 2.22222Z" fill="#FF83C1"/>
-            </svg>
+            <a href="index.html" class="logo">
+              <svg class="logo_img" width="124" height="20" viewBox="0 0 124 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M60.8887 3.33333V18.8889C60.8887 19.5025 61.3861 20 61.9998 20C62.6134 20 63.1109 19.5025 63.1109 18.8889V3.33333C63.1109 2.71968 63.6084 2.22222 64.222 2.22222C64.8357 2.22222 65.3331 2.71968 65.3331 3.33333V16.6667C65.3331 18.5076 66.8255 20 68.6664 20C70.5074 20 71.9998 18.5076 71.9998 16.6667V3.33333C71.9998 2.71968 72.4972 2.22222 73.1109 2.22222C73.7245 2.22222 74.222 2.71968 74.222 3.33333V18.8889C74.222 19.5025 74.7195 20 75.3331 20C75.9468 20 76.4442 19.5025 76.4442 18.8889V3.33333C76.4442 1.49238 74.9518 0 73.1109 0C71.2699 0 69.7776 1.49239 69.7776 3.33334V16.6667C69.7776 17.2803 69.2801 17.7778 68.6664 17.7778C68.0528 17.7778 67.5553 17.2803 67.5553 16.6667V3.33333C67.5553 1.49238 66.063 0 64.222 0C62.3811 0 60.8887 1.49238 60.8887 3.33333Z" fill="#FF83C1"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M78.6665 3.33333V16.6667C78.6665 18.5076 80.1589 20 81.9998 20C83.8408 20 85.3332 18.5076 85.3332 16.6667V3.33333C85.3332 1.49238 83.8408 0 81.9998 0C80.1589 0 78.6665 1.49238 78.6665 3.33333ZM81.9998 17.7778C82.6135 17.7778 83.1109 17.2803 83.1109 16.6667V3.33333C83.1109 2.71968 82.6135 2.22222 81.9998 2.22222V2.22222C81.3862 2.22222 80.8887 2.71968 80.8887 3.33333V16.6667C80.8887 17.2803 81.3862 17.7778 81.9998 17.7778V17.7778Z" fill="#FF83C1"/>
+              <path d="M34.2218 18.8889V2.22222H29.7774V18.8889C29.7774 19.5025 29.2799 20 28.6663 20C28.0526 20 27.5552 19.5025 27.5552 18.8889V2.22222C27.5552 0.994923 28.5501 0 29.7774 0H34.2218C35.4491 0 36.4441 0.994923 36.4441 2.22222V2.38173V18.8889C36.4441 19.5025 35.9466 20 35.333 20C34.7193 20 34.2218 19.5025 34.2218 18.8889Z" fill="#FF83C1"/>
+              <path d="M0.888672 18.8889V1.11111C0.888672 0.497461 1.38613 0 1.99978 0C2.61343 0 3.11089 0.497462 3.11089 1.11111V4.44444H7.55534V1.11111C7.55534 0.497461 8.0528 0 8.66645 0C9.2801 0 9.77756 0.497462 9.77756 1.11111V4.44444C9.77756 5.67174 8.78264 6.66667 7.55534 6.66667H3.11089V8.88889H9.77756C11.0049 8.88889 11.9998 9.88381 11.9998 11.1111V18.8889C11.9998 19.5025 11.5023 20 10.8887 20C10.275 20 9.77756 19.5025 9.77756 18.8889V11.1111H3.11089V18.8889C3.11089 19.5025 2.61343 20 1.99978 20C1.38613 20 0.888672 19.5025 0.888672 18.8889Z" fill="#FF83C1"/>
+              <path d="M100.889 2.22222V18.8889C100.889 19.5025 100.391 20 99.7776 20C99.164 20 98.6665 19.5025 98.6665 18.8889V2.22222C98.6665 0.994923 99.6614 0 100.889 0H106.444C107.058 0 107.555 0.497462 107.555 1.11111C107.555 1.72476 107.058 2.22222 106.444 2.22222H100.889Z" fill="#FF83C1"/>
+              <path d="M49.7776 15.5556H47.5554V17.7778C47.5554 19.0051 46.5605 20 45.3332 20H40.8887C39.6614 20 38.6665 19.0051 38.6665 17.7778V1.11111C38.6665 0.497461 39.164 0 39.7776 0C40.3913 0 40.8887 0.497462 40.8887 1.11111V17.7778H45.3332V15.5556C45.3332 14.3283 46.3281 13.3333 47.5554 13.3333H49.7776V1.11111C49.7776 0.497461 50.2751 0 50.8887 0C51.5024 0 51.9998 0.497461 51.9998 1.11111V18.8889C51.9998 19.5025 51.5024 20 50.8887 20C50.2751 20 49.7776 19.5025 49.7776 18.8889V15.5556Z" fill="#FF83C1"/>
+              <path d="M120.889 15.5556H118.667V17.7778C118.667 19.0051 117.672 20 116.444 20H112C110.773 20 109.778 19.0051 109.778 17.7778V1.11111C109.778 0.497461 110.275 0 110.889 0C111.503 0 112 0.497462 112 1.11111V17.7778H116.444V15.5556C116.444 14.3283 117.439 13.3333 118.667 13.3333H120.889V1.11111C120.889 0.497461 121.386 0 122 0C122.614 0 123.111 0.497461 123.111 1.11111V18.8889C123.111 19.5025 122.614 20 122 20C121.386 20 120.889 19.5025 120.889 18.8889V15.5556Z" fill="#FF83C1"/>
+              <path d="M23.1106 17.7778V8.88889H16.4439C15.2166 8.88889 14.2217 7.89397 14.2217 6.66667V1.11111C14.2217 0.497461 14.7191 0 15.3328 0C15.9464 0 16.4439 0.49746 16.4439 1.11111V6.66667H23.1106V1.11111C23.1106 0.497461 23.608 0 24.2217 0C24.8353 0 25.3328 0.497462 25.3328 1.11111V17.7778C25.3328 19.0051 24.3379 20 23.1106 20H15.3328C14.7191 20 14.2217 19.5025 14.2217 18.8889C14.2217 18.2752 14.7191 17.7778 15.3328 17.7778H23.1106Z" fill="#FF83C1"/>
+              <path d="M93.129 2.22222H88.6668C88.0531 2.22222 87.5557 1.72476 87.5557 1.11111C87.5557 0.497462 88.0531 0 88.6668 0H93.129C94.9601 0 96.4446 1.48441 96.4446 3.31551V3.96436C96.4446 5.43712 95.2506 6.63103 93.7779 6.63103H93.1112C92.4976 6.63103 92.0001 7.12849 92.0001 7.74214C92.0001 8.35579 92.4976 8.85325 93.1112 8.85325H94.2223C95.4496 8.85325 96.4446 9.84817 96.4446 11.0755V11.1976V17.7778C96.4446 19.0051 95.4496 20 94.2223 20H88.6668C88.0531 20 87.5557 19.5025 87.5557 18.8889C87.5557 18.2752 88.0531 17.7778 88.6668 17.7778H94.2223V11.1976H93.1723C91.2976 11.1976 89.7779 9.67787 89.7779 7.8032V7.07547C89.7779 5.60271 90.9718 4.4088 92.4446 4.4088H93.129C93.7328 4.4088 94.2223 3.91932 94.2223 3.31551C94.2223 2.71171 93.7328 2.22222 93.129 2.22222Z" fill="#FF83C1"/>
+              </svg>
+            </a>
 
             <svg class="burger" width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="0.195312" y="0.0566406" width="29.8044" height="3.98858" rx="1.99429" fill="#FF83C1"/>
@@ -629,18 +632,18 @@
 
           <div class="right_menu">
             <img class="right_menu_img" src="images/right_menu.svg" alt="">
-            <div class="menu_round" id="menu_round1"><a href="#"></a></div>
-            <div class="menu_round" id="menu_round2"><a href="#"></a></div>
-            <div class="menu_round" id="menu_round3"><a href="#"></a></div>
-            <div class="menu_round" id="menu_round4"><a href="#"></a></div>
-            <div class="menu_round" id="menu_round5"><a href="#"></a></div>
-            <div class="menu_round" id="menu_round6"><a href="#"></a></div>
-            <a href="#" id="menu_text1">купить&nbsp;мозги</a>
-            <a href="#" id="menu_text2">развлечения<br>и&nbsp;лекции</a>
-            <a href="#" id="menu_text3">отследить&nbsp;заказ</a>
-            <a href="#" id="menu_text4">о&nbsp;центре</a>
-            <a href="#" id="menu_text5">для&nbsp;детей</a>
-            <a href="#" id="menu_text6">контакты</a>
+            <div class="menu_round" id="menu_round1"><a href="catalog.html"></a></div>
+            <div class="menu_round" id="menu_round2"><a href="gallery.html"></a></div>
+            <div class="menu_round" id="menu_round3"><a href="order.html"></a></div>
+            <div class="menu_round" id="menu_round4"><a href="space.html"></a></div>
+            <div class="menu_round" id="menu_round5"><a href="kids.html"></a></div>
+            <div class="menu_round" id="menu_round6"><a href="contacts.html"></a></div>
+            <a href="catalog.html" id="menu_text1">купить&nbsp;мозги</a>
+            <a href="gallery.html" id="menu_text2">развлечения<br>и&nbsp;лекции</a>
+            <a href="order.html" id="menu_text3">отследить&nbsp;заказ</a>
+            <a href="space.html" id="menu_text4">о&nbsp;центре</a>
+            <a href="kids.html" id="menu_text5">для&nbsp;детей</a>
+            <a href="contacts.html" id="menu_text6">контакты</a>
             <div class="menu_krest">
               <svg class="menu_krest_img" width="30" height="21" viewBox="0 0 30 21" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M26.5323 0.644504C27.4709 0.0622081 28.7039 0.351066 29.2862 1.28968C29.8685 2.2283 29.5796 3.46125 28.641 4.04354L18.6205 10.26L28.6415 16.4767C29.5801 17.059 29.869 18.292 29.2867 19.2306C28.7044 20.1692 27.4714 20.4581 26.5328 19.8758L14.8267 12.6136L3.12053 19.8758C2.18192 20.4581 0.948971 20.1692 0.366676 19.2306C-0.21562 18.292 0.0732384 17.059 1.01186 16.4767L11.0328 10.26L1.01236 4.04354C0.0737359 3.46125 -0.215122 2.2283 0.367174 1.28968C0.949469 0.351066 2.18241 0.0622081 3.12103 0.644504L14.8267 7.90639L26.5323 0.644504Z" fill="black"/>
@@ -648,102 +651,102 @@
             </div>
           </div>
           <div class="black_square"></div>
-          <div class="menubar_extra">
+          <div class="cat_menubar_extra">
 
           </div>
           <div class="catp_content">
             <div class="catalog_block" id="catalog">
               <h1>Бестселлеры</h1>
-              <div class="line">
-                <div class="line_item">
-                  <div class="item item1">
-                    <div class="item_hover">
+              <div class="cat_line">
+                <div class="cat_line_item">
+                  <div class="cat_item cat_item1">
+                    <div class="cat_item_hover">
                       <p>Способности:</p>
                       <ul>
                         <li>Философский&nbspталант</li>
                         <li>Знание&nbspмировой&nbspистории</li>
                         <li>Владение&nbsp24&nbspязыками</li>
                       </ul>
-                      <p class="weight3">Вес:    2.1 кг</p>
+                      <p class="cat_weight3">Вес:    2.1 кг</p>
                     </div>
                   </div>
-                  <div class="item_info">
+                  <div class="cat_item_info">
                     <p class="p_tall">Мозги&nbspЭнгельса</p>
                     <p class="p_tall">299&nbsp000&nbspр</p>
                   </div>
                 </div>
-                <div class="line_item">
-                  <div class="item item2">
-                    <div class="item_hover">
+                <div class="cat_line_item">
+                  <div class="cat_item cat_item2">
+                    <div class="cat_item_hover">
                       <p>Способности:</p>
                       <ul>
                         <li>Знание&nbspфизики</li>
                         <li>Умение&nbspиграть&nbspна&nbspскрипке</li>
                       </ul>
-                      <p class="weight2">Вес:    1.9 кг</p>
+                      <p class="cat_weight2">Вес:    1.9 кг</p>
                     </div>
                   </div>
-                  <div class="item_info">
+                  <div class="cat_item_info">
                     <p class="p_tall">Мозги&nbspЭйштейна</p>
                     <p class="p_tall">119&nbsp000&nbspр</p>
                   </div>
                 </div>
-                <div class="line_item">
-                  <div class="item item3">
-                    <div class="item_hover">
+                <div class="cat_line_item">
+                  <div class="cat_item cat_item3">
+                    <div class="cat_item_hover">
                       <p>Способности:</p>
                       <ul>
                         <li>Позитивное&nbspмышление</li>
                         <li>Хорошее&nbspнастроение</li>
                       </ul>
-                      <p class="weight2">Вес:    1.6 кг</p>
+                      <p class="cat_weight2">Вес:    1.6 кг</p>
                     </div>
                   </div>
-                  <div class="item_info">
+                  <div class="cat_item_info">
                     <p class="p_tall">«Розовые»&nbspмозги</p>
                     <p class="p_tall">99&nbsp000&nbspр</p>
                   </div>
                 </div>
               </div>
               <h1>Инопланетная коллекция</h1>
-              <div class="line line2">
-                <div class="line2_block">
-                  <div class="line_item line_item4">
-                    <div class="item item4">
-                      <div class="item_hover">
+              <div class="cat_line cat_line2">
+                <div class="cat_line2_block">
+                  <div class="cat_line_item cat_line_item4">
+                    <div class="cat_item cat_item4">
+                      <div class="cat_item_hover">
                         <p>Способности:</p>
                         <ul>
                           <li>Замедленное&nbspощущение времени</li>
                           <li>Устойчивость&nbspк&nbspхолоду</li>
                         </ul>
-                        <p class="weight4">Вес:    2.1 кг</p>
+                        <p class="cat_weight4">Вес:    2.1 кг</p>
                       </div>
                     </div>
-                    <div class="item_info">
+                    <div class="cat_item_info">
                       <p class="p_tall">Мозги&nbspУранина</p>
                       <p class="p_tall">149&nbsp000&nbspр</p>
                     </div>
                   </div>
 
-                  <div class="line_plus">
+                  <div class="cat_line_plus">
                     <img src="images/plus.svg" alt="">
                     <p>больше мозгов можно увидеть в&nbspоффлайн магазине</p>
                   </div>
                 </div>
-                <div class="line2_block line2_block2">
-                  <div class="line_item line_item5">
-                    <div class="item item5">
-                      <div class="item_hover item_hover5">
+                <div class="cat_line2_block cat_line2_block2">
+                  <div class="cat_line_item cat_line_item5">
+                    <div class="cat_item cat_item5">
+                      <div class="cat_item_hover cat_item_hover5">
                         <p>Способности:</p>
                         <ul class="ul_big">
                           <li>Хороший&nbspвестибулярный&nbspаппарат</li>
                           <li>Владение&nbspязыком&nbspжителей&nbspсатурна</li>
                           <li>Устойчивость&nbspк&nbspхолоду</li>
                         </ul>
-                        <p class="weight5">Вес:    5.2 кг</p>
+                        <p class="cat_weight5">Вес:    5.2 кг</p>
                       </div>
                     </div>
-                    <div class="item_info item_info5">
+                    <div class="cat_item_info cat_item_info5">
                       <p class="p_tall">Мозги&nbspСатурнянина</p>
                       <p class="p_tall">159&nbsp000&nbspр</p>
                     </div>
@@ -751,91 +754,91 @@
                 </div>
               </div>
             </div>
-            <div class="timeline">
+            <div class="cat_timeline">
               <img src="images/timeline.svg" alt="">
               <p class="p_tall dontknow">Не&nbspзнаешь с&nbspчего начать? Сделай три простых шага на&nbspпути к&nbspновой жизни!</p>
-              <h1 class="step1">Шаг 1</h1>
-              <h1 class="step2">Шаг 2</h1>
-              <h1 class="step3">Шаг 3</h1>
-              <p class="p_tall step1_text">заполнение&nbspанкеты</p>
-              <p class="p_tall step2_text">выбор&nbspмозга</p>
-              <p class="p_tall step3_text">пересадка</p>
-              <a href="#" class="step1_a">заполнить&nbspонлайн</a>
-              <a href="#catalog" class="step2_a">каталог</a>
-              <a href="#" class="step3_a">подробнее</a>
+              <h1 class="cat_step1">Шаг 1</h1>
+              <h1 class="cat_step2">Шаг 2</h1>
+              <h1 class="cat_step3">Шаг 3</h1>
+              <p class="p_tall cat_step1_text">заполнение&nbspанкеты</p>
+              <p class="p_tall cat_step2_text">выбор&nbspмозга</p>
+              <p class="p_tall cat_step3_text">пересадка</p>
+              <a href="#" class="cat_step1_a">заполнить&nbspонлайн</a>
+              <a href="#catalog" class="cat_step2_a">каталог</a>
+              <a href="#" class="cat_step3_a">подробнее</a>
 
-              <div class="timeline_round timeline_round1"></div>
-              <div class="timeline_round timeline_round2"></div>
-              <div class="timeline_round timeline_round3"></div>
+              <div class="cat_timeline_round cat_timeline_round1"></div>
+              <div class="cat_timeline_round cat_timeline_round2"></div>
+              <div class="cat_timeline_round cat_timeline_round3"></div>
             </div>
 
-            <div class="game">
-                <div  class="game_container">
-                  <div class="g_round1"></div>
-                  <svg class="krest1" width="307" height="307" viewBox="0 0 307 307" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="cat_game" id="cat_game">
+                <div  class="cat_game_container">
+                  <div class="cat_g_round1"></div>
+                  <svg class="cat_krest1" width="307" height="307" viewBox="0 0 307 307" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M184.36 144.945L217.977 86.7189C224.165 75.9997 220.493 62.2932 209.774 56.1045C199.054 49.9158 185.348 53.5884 179.159 64.3076L145.542 122.534L87.3159 88.9169C76.5968 82.7282 62.8902 86.4009 56.7015 97.12C50.5128 107.839 54.1854 121.546 64.9046 127.734L123.131 161.351L89.5139 219.578C83.3252 230.297 86.9979 244.003 97.7171 250.192C108.436 256.381 122.143 252.708 128.331 241.989L161.948 183.763L220.175 217.38C230.894 223.568 244.6 219.896 250.789 209.177C256.978 198.457 253.305 184.751 242.586 178.562L184.36 144.945Z" fill="#A4DDD4"/>
                   </svg>
-                  <div class="g_round2"></div>
-                  <div class="g_card1">
-                    <div class="g_card1_content">
+                  <div class="cat_g_round2"></div>
+                  <div class="cat_g_card1">
+                    <div class="cat_g_card1_content">
                       <h2>скидка 0%</h2>
                       <h4>в&nbspследующий раз повезет больше!</h4>
                     </div>
                   </div>
-                  <div class="g_round3"></div>
-                  <div class="g_round4"></div>
-                  <div class="g_card2">
-                    <div class="g_card1_content">
+                  <div class="cat_g_round3"></div>
+                  <div class="cat_g_round4"></div>
+                  <div class="cat_g_card2">
+                    <div class="cat_g_card1_content">
                       <h2>скидка 20%</h2>
                       <h4>поздравляем с&nbspвыигрышем!</h4>
                     </div>
                   </div>
-                  <svg class="krest2" width="307" height="307" viewBox="0 0 307 307" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="cat_krest2" width="307" height="307" viewBox="0 0 307 307" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M184.36 144.945L217.977 86.7189C224.165 75.9997 220.493 62.2932 209.774 56.1045C199.054 49.9158 185.348 53.5884 179.159 64.3076L145.542 122.534L87.3159 88.9169C76.5968 82.7282 62.8902 86.4009 56.7015 97.12C50.5128 107.839 54.1854 121.546 64.9046 127.734L123.131 161.351L89.5139 219.578C83.3252 230.297 86.9979 244.003 97.7171 250.192C108.436 256.381 122.143 252.708 128.331 241.989L161.948 183.763L220.175 217.38C230.894 223.568 244.6 219.896 250.789 209.177C256.978 198.457 253.305 184.751 242.586 178.562L184.36 144.945Z" fill="#A4DDD4"/>
                   </svg>
-                  <div class="g_round5"></div>
-                  <div class="g_round6"></div>
-                  <div class="g_round7"></div>
-                  <div class="g_card3">
-                    <div class="g_card1_content">
+                  <div class="cat_g_round5"></div>
+                  <div class="cat_g_round6"></div>
+                  <div class="cat_g_round7"></div>
+                  <div class="cat_g_card3">
+                    <div class="cat_g_card1_content">
                       <h2>скидка 10%</h2>
                       <h4>ждем за&nbspпокупками!</h4>
                     </div>
                   </div>
-                  <svg class="krest3" width="307" height="307" viewBox="0 0 307 307" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="cat_krest3" width="307" height="307" viewBox="0 0 307 307" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M184.36 144.945L217.977 86.7189C224.165 75.9997 220.493 62.2932 209.774 56.1045C199.054 49.9158 185.348 53.5884 179.159 64.3076L145.542 122.534L87.3159 88.9169C76.5968 82.7282 62.8902 86.4009 56.7015 97.12C50.5128 107.839 54.1854 121.546 64.9046 127.734L123.131 161.351L89.5139 219.578C83.3252 230.297 86.9979 244.003 97.7171 250.192C108.436 256.381 122.143 252.708 128.331 241.989L161.948 183.763L220.175 217.38C230.894 223.568 244.6 219.896 250.789 209.177C256.978 198.457 253.305 184.751 242.586 178.562L184.36 144.945Z" fill="#A4DDD4"/>
                   </svg>
-                  <div class="g_round9"></div>
-                  <div class="g_card4">
-                    <div class="g_card1_content">
+                  <div class="cat_g_round9"></div>
+                  <div class="cat_g_card4">
+                    <div class="cat_g_card1_content">
                       <h2>скидка 2%</h2>
                       <h4>поздравляем с&nbspвыигрышем!</h4>
                     </div>
                   </div>
-                  <div class="g_round8"></div>
-                  <div class="g_round10"></div>
-                  <div class="g_round11"></div>
+                  <div class="cat_g_round8"></div>
+                  <div class="cat_g_round10"></div>
+                  <div class="cat_g_round11"></div>
 
-                  <div class="g_card5">
-                    <div class="g_card1_content">
+                  <div class="cat_g_card5">
+                    <div class="cat_g_card1_content">
                       <h2>скидка 13%</h2>
                       <h4>ждем за&nbspпокупками!</h4>
                     </div>
                   </div>
-                  <svg class="krest4" width="307" height="307" viewBox="0 0 307 307" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="cat_krest4" width="307" height="307" viewBox="0 0 307 307" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M184.36 144.945L217.977 86.7189C224.165 75.9997 220.493 62.2932 209.774 56.1045C199.054 49.9158 185.348 53.5884 179.159 64.3076L145.542 122.534L87.3159 88.9169C76.5968 82.7282 62.8902 86.4009 56.7015 97.12C50.5128 107.839 54.1854 121.546 64.9046 127.734L123.131 161.351L89.5139 219.578C83.3252 230.297 86.9979 244.003 97.7171 250.192C108.436 256.381 122.143 252.708 128.331 241.989L161.948 183.763L220.175 217.38C230.894 223.568 244.6 219.896 250.789 209.177C256.978 198.457 253.305 184.751 242.586 178.562L184.36 144.945Z" fill="#A4DDD4"/>
                   </svg>
-                  <div class="g_round12"></div>
+                  <div class="cat_g_round12"></div>
                 </div>
             </div>
 
           </div>
-          <div class="futter">
+          <div class="futter cat_futter">
             <div class="futter_left">
               <a class="futter_left1" href="https://www.instagram.com/mulkamanova/">мулкаманова&nbspкарина</a>
               <a href="https://portfolio.hse.ru/Student/16421">портфолио</a>
             </div>
-            <a href="#">HSE ADC</a>
+            <a href="https://www.instagram.com/hseadc/">HSE ADC</a>
           </div>
         </div>
       </div>
