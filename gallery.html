@@ -8,22 +8,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="js/all.js" charset="utf-8"></script>
+    
     <style media="screen">
-      .wrapper {
+      .gal_wrapper {
         position: relative;
         width: 100%;
       }
-      .sootnosheniye {
+      .gal_sootnosheniye {
         position: relative;
         padding-bottom:  292.222%;
       }
-      .content {
+      .gal_content {
         position: absolute;
         top: 0; bottom: 0; left: 0; right: 0;
         padding: 0;
         /* overflow: hidden; */
       }
-      .futter {
+      .gal_futter {
         position: relative;
         width: 100%;
         height: 1.41%;
@@ -34,12 +36,12 @@
         padding: 1.35% 3.45% 1.35% 3.45%;
 
       }
-      .menubar_extra {
+      .gal_menubar_extra {
         position: relative;
         width: 100%;
         height: 1.426%;
       }
-      .birki {
+      .gal_birki {
         position: relative;
         width: 100%;
         height: 69.7%;
@@ -71,7 +73,7 @@
         0% {-webkit-mask-position: -378.5% top;}
         100% {-webkit-mask-position: 0% top;}
       }
-      .merch {
+      .gal_merch {
         position: relative;
         width: 100%;
         height: 21.004%;
@@ -80,27 +82,27 @@
         background-image: url('images/merch.jpg');
         background-size: 500% 100%;
       }
-      .birka {
+      .gal_birka {
         position: absolute;
         border-radius: 20px;
         transition: transform 1.5s;
         transform: rotateY(0deg);
         transform-style: preserve-3d;
       }
-      .birka1 {
+      .gal_birka1 {
         width: 40.15%;
         height: 34.13%;
         left: 5.6%;
         top: 7.1%;
         background: #FF83C1;
       }
-      .birka2 {
+      .gal_birka2 {
         width: 25%;
         height: 21.06%;
         left: 37.15%;
         top: 4.1%;
       }
-      .birka3 {
+      .gal_birka3 {
         width: 32.1%;
         height: 27.26%;
         right: 3.35%;
@@ -108,13 +110,13 @@
         background: #FF83C1;
 
       }
-      .birka4 {
+      .gal_birka4 {
         width: 25%;
         height: 21.06%;
         left: 48.9%;
         top: 33.6%;
       }
-      .birka5 {
+      .gal_birka5 {
         width: 29.3%;
         height: 24.7%;
         left: 3.5%;
@@ -122,7 +124,7 @@
         background: #A4DDD4;
 
       }
-      .birka6 {
+      .gal_birka6 {
         width: 37%;
         height: 31.2%;
         right: 3.3%;
@@ -130,7 +132,7 @@
         background: #A4DDD4;
 
       }
-      .birka7 {
+      .gal_birka7 {
         width: 29.3%;
         height: 24.7%;
         right: 30.4%;
@@ -138,13 +140,13 @@
         background: #FF83C1;
 
       }
-      .birka8 {
+      .gal_birka8 {
         width: 25%;
         height: 21.06%;
         left: 21.5%;
         bottom: 4.2%;
       }
-      .birka_front {
+      .gal_birka_front {
         position: absolute;
         width: 100%;
         height: 88.5%;
@@ -156,25 +158,25 @@
         transform: rotateY(0deg);
 
       }
-      .birka_front1 {
+      .gal_birka_front1 {
         background-image: url("images/posters1.jpg");
         background-size: 600% 100%;
       }
-      .birka_front2 {
+      .gal_birka_front2 {
         background: #A4DDD4;
         height: 90%;
       }
-      .birka_front3 {
+      .gal_birka_front3 {
         background-image: url("images/posters3.jpg");
         background-size: 600% 100%;
         height: 86.1%;
         border: 8px solid #FF83C1;
       }
-      .birka_front4 {
+      .gal_birka_front4 {
         background: #FF83C1;
         height: 90%;
       }
-      .birka_front5 {
+      .gal_birka_front5 {
         background-image: url("images/posters4.jpg");
         background-size: 600% 100%;
         height: 87%;
@@ -183,7 +185,7 @@
         border-top-right-radius: 0;
         border: 8px solid #A4DDD4;
       }
-      .birka_front6 {
+      .gal_birka_front6 {
         background-image: url("images/posters5.jpg");
         background-size: 800% 100%;
         height: 86.5%;
@@ -192,7 +194,7 @@
         border-top-right-radius: 0;
         border: 8px solid #A4DDD4;
       }
-      .birka_front7 {
+      .gal_birka_front7 {
         background-image: url("images/posters6.jpg");
         background-size: 600% 100%;
         height: 87%;
@@ -201,11 +203,11 @@
         border-top-right-radius: 0;
         border: 8px solid #FF83C1;
       }
-      .birka_front8 {
+      .gal_birka_front8 {
         background: #A4DDD4;
         height: 90%;
       }
-      .birka_back {
+      .gal_birka_back {
         position: absolute;
         width: 100%;
         height: 90%;
@@ -220,121 +222,121 @@
         transform: rotateY(180deg);
 
       }
-      .birka_back3 {
+      .gal_birka_back3 {
         height: 86.1%;
       }
-      .birka_back5 {
+      .gal_birka_back5 {
         background: #A4DDD4;
       }
-      .birka_back6 {
+      .gal_birka_back6 {
         height: 86.5%;
         background: #A4DDD4;
       }
-      .birka_back8 {
+      .gal_birka_back8 {
         background: #A4DDD4;
       }
-      .back {
+      .gal_back {
         transform: rotateY(-180deg);
       }
 
-      .birka_back > * {
+      .gal_birka_back > * {
         color: black;
       }
-      .rope {
+      .gal_rope {
         position: absolute;
         width: 8px;
       }
 
-      .rope1 {
+      .gal_rope1 {
         height: 20%;
         top: -5%;
         left: calc(25.675% - 4px);
         background: #FF83C1;
       }
-      .rope2 {
+      .gal_rope2 {
         height: 20%;
         top: -5%;
         left: calc(49.65% - 4px);
         background: #A4DDD4;
       }
-      .rope3 {
+      .gal_rope3 {
         height: 20%;
         top: -5%;
         right: calc(19.4% - 4px);
         background: #FF83C1;
       }
-      .rope4 {
+      .gal_rope4 {
         height: 40%;
         top: 0%;
         left: calc(61.4% - 4px);
         background: #FF83C1;
       }
-      .rope5 {
+      .gal_rope5 {
         height: 60%;
         top: 0%;
         left: calc(18.15% - 4px);
         background: #A4DDD4;
       }
-      .rope6 {
+      .gal_rope6 {
         height: 50%;
         top: 0%;
         right: calc(21.8% - 4px);
         background: #A4DDD4;
       }
-      .rope7 {
+      .gal_rope7 {
         height: 60%;
         top: 0%;
         right: calc(45.05% - 4px);
         background: #FF83C1;
       }
-      .rope8 {
+      .gal_rope8 {
         height: 80%;
         top: 0%;
         left: calc(34% - 4px);
         background: #A4DDD4;
       }
-      .hole {
+      .gal_hole {
         position: absolute;
         border-radius: 50%;
         background: black;
       }
-      .hole1 {
+      .gal_hole1 {
         height: 38.253%;
         width: 7.71%;
         top: 29%;
         left: 46.1%;
       }
-      .hole2 {
+      .gal_hole2 {
         height: 41.5%;
         width: 8.2%;
         top: 32%;
         left: 45.9%;
       }
-      .hole3 {
+      .gal_hole3 {
         height: 38.253%;
         width: 9.19%;
         top: 29%;
         left: 45.405%;
       }
-      .hole5 {
+      .gal_hole5 {
         height: 38.253%;
         width: 9.19%;
         top: 34%;
         left: 45.405%;
       }
-      .hole6 {
+      .gal_hole6 {
         height: 33.2%;
         width: 7.71%;
         top: 35%;
         left: 46.1%;
       }
-      .hole7 {
+      .gal_hole7 {
         height: 38.253%;
         width: 9.19%;
         top: 34%;
         left: 45.405%;
       }
-      .birka_top {
+      .gal_birka_top {
         position: absolute;
         width: 100%;
         height: 11.5%;
@@ -343,70 +345,70 @@
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
       }
-      .birka_top_green, .birka_back_green {
+      .gal_birka_top_green, .gal_birka_back_green {
         background: #A4DDD4;
       }
-      .birka_top3 {
+      .gal_birka_top3 {
         height: 13.9%;
       }
-      .birka_top5 {
+      .gal_birka_top5 {
         height: 13.6%;
         background: #A4DDD4;
       }
-      .birka_top6 {
+      .gal_birka_top6 {
         height: 13.5%;
         background: #A4DDD4;
       }
-      .birka_top7 {
+      .gal_birka_top7 {
         height: 13.6%;
       }
-      .birka_back1 h1 {
+      .gal_birka_back1 h1 {
         position: absolute;
         top: 4.8%;
         left: 5%;
       }
-      .birka_back1 .p_tall {
+      .gal_birka_back1 .p_tall {
         position: absolute;
         top: 16.2%;
         left: 4.4%;
       }
-      .birka_back1 .p_date1 {
+      .gal_birka_back1 .p_date1 {
         top: 37%;
         position: absolute;
         left: 3.5%;
       }
-      .birka_back1 .p_date2 {
+      .gal_birka_back1 .p_date2 {
         top: 45.3%;
         position: absolute;
         left: 3.5%;
       }
-      .birka_back1 .p_bron {
+      .gal_birka_back1 .p_bron {
         position: absolute;
         left: 4.4%;
         bottom: 5.2%;
       }
 
-      .birka_back3 h1 {
+      .gal_birka_back3 h1 {
         position: absolute;
         top: 3.5%;
         left: 5.8%;
       }
-      .birka_back3 .p_tall {
+      .gal_birka_back3 .p_tall {
         position: absolute;
         top: 18.5%;
         left: 5.9%;
       }
-      .birka_back3 .p_date {
+      .gal_birka_back3 .p_date {
         position: absolute;
         top: 37.7%;
         left: 5.9%;
       }
-      .birka_back3 .p_bron {
+      .gal_birka_back3 .p_bron {
         position: absolute;
         left: 5.9%;
         bottom: 6.3%;
       }
-      .birka_back4 a, .birka_back8 a {
+      .gal_birka_back4 a, .gal_birka_back8 a {
         position: absolute;
         font-family: 'Montserrat', sans-serif;
         font-size: 48px;
@@ -417,69 +419,69 @@
         top: 29.7%;
         left: 18.9%;
       }
-      .birka_back8 a {
+      .gal_birka_back8 a {
         position: absolute;
         top: 39.5%;
       }
-      .birka_back5 h2 {
+      .gal_birka_back5 h2 {
         position: absolute;
         top: 7.6%;
         left: 4.6%;
       }
-      .birka_back5 .p_tall {
+      .gal_birka_back5 .p_tall {
         position: absolute;
         width: 80%;
         top: 21.7%;
         left: 4.6%;
       }
-      .birka_back5 .p_date {
+      .gal_birka_back5 .p_date {
         position: absolute;
         font-size: 48px;
         font-weight: 500;
         line-height: 52px;
       }
-      .birka_back5 .p_date1 {
+      .gal_birka_back5 .p_date1 {
         left: 4.6%;
         top: 43%;
       }
-      .birka_back5 .p_date2 {
+      .gal_birka_back5 .p_date2 {
         left: 4.6%;
         top: 51%;
       }
-      .birka_back6 h1 {
+      .gal_birka_back6 h1 {
         position: absolute;
         top: 2.8%;
         left: 5.8%;
       }
-      .birka_back6 .p_tall {
+      .gal_birka_back6 .p_tall {
         position: absolute;
         left: 5.5%;
         top: 15.6%;
       }
-      .birka_back6 .p_date {
+      .gal_birka_back6 .p_date {
         position: absolute;
         line-height: 75px;
       }
-      .birka_back6 .p_date1 {
+      .gal_birka_back6 .p_date1 {
         right: 11.2%;
         bottom: 14.8%;
       }
-      .birka_back6 .p_date2 {
+      .gal_birka_back6 .p_date2 {
         right: 12.5%;
         bottom: 5.4%;
       }
-      .birka_back7 h2 {
+      .gal_birka_back7 h2 {
         position: absolute;
         top: 7.6%;
         left: 4.6%;
       }
-      .birka_back7 .p_tall {
+      .gal_birka_back7 .p_tall {
         position: absolute;
         width: 80%;
         top: 21.7%;
         left: 4.6%;
       }
-      .birka_back7 .p_date {
+      .gal_birka_back7 .p_date {
         position: absolute;
         font-size: 48px;
         font-weight: 500;
@@ -488,75 +490,75 @@
         top: 43%;
       }
 
-      .img1 {
+      .gal_img1 {
         position: absolute;
         width: 100%;
         bottom: 16%;
         margin-left: 0%;
       }
-      .img2 {
+      .gal_img2 {
         position: absolute;
         width: 86%;
         left: 7%;
         bottom: 5.5%;
         margin-left: 0%;
       }
-      .img2_back {
+      .gal_img2_back {
         position: absolute;
         width: 62.2%;
         left: 17%;
         bottom: 0%;
         margin-left: 0%;
       }
-      .img3 {
+      .gal_img3 {
         position: absolute;
         width: 100%;
         bottom: 19.5%;
         margin-left: 0%;
       }
-      .img4_1 {
+      .gal_img4_1 {
         position: absolute;
         width: 65%;
         top: 7.2%;
         margin-left: 3%;
       }
-      .img4_2 {
+      .gal_img4_2 {
         position: absolute;
         width: 84.17%;
         top: -11%;
         margin-left: 0;
       }
-      .img5 {
+      .gal_img5 {
         position: absolute;
         width: 100%;
         bottom: 16.9%;
         margin-left: 0%;
       }
-      .img6 {
+      .gal_img6 {
         position: absolute;
         width: 100%;
         bottom: 17%;
         margin-left: 0%;
       }
-      .img7 {
+      .gal_img7 {
         position: absolute;
         width: 100%;
         bottom: 8.45%;
         margin-left: 0%;
       }
-      .img8_1 {
+      .gal_img8_1 {
         position: absolute;
         width: 94.44%;
         bottom: 5.2%;
         margin-left: 3%;
       }
-      .img8_2 {
+      .gal_img8_2 {
         position: absolute;
         width: 100%;
         top: 7%;
         margin-left: 0;
       }
-      .merch_tablo {
+      .gal_merch_tablo {
         position: absolute;
         left: 3.5%;
         bottom: 3.9%;
@@ -569,25 +571,25 @@
         padding: 2.2%;
 
       }
-      .merch_tablo > * {
+      .gal_merch_tablo > * {
         color: black;
       }
-      .merch_tablo1 {
+      .gal_merch_tablo1 {
         text-align: right;
       }
-      .strelka1, .strelka2 {
+      .gal_strelka1, .gal_strelka2 {
         position: absolute;
         width: 1.67%;
         top: 49.958%;
       }
-      .strelka1 {
+      .gal_strelka1 {
         left: 2.7%;
       }
-      .strelka2 {
+      .gal_strelka2 {
         right: 2.7%;
         transform: rotate(180deg);
       }
-      .slider_left, .slider_right {
+      .gal_slider_left, .gal_slider_right {
         position: absolute;
         width: 50%;
         height: 100%;
@@ -597,10 +599,10 @@
 
     <script type="text/javascript">
       $(document).ready(function(){
-        $(".birka").click(function(){
-          $(this).addClass("back");
+        $(".gal_birka").click(function(){
+          $(this).addClass("gal_back");
           setTimeout(function(){
-            $(this).removeClass("back");
+            $(this).removeClass("gal_back");
           }, 20000);
 
         });
@@ -609,21 +611,23 @@
     </script>
   </head>
   <body>
-    <div class="wrapper">
-      <div class="sootnosheniye">
-        <div class="content">
+    <div class="gal_wrapper">
+      <div class="gal_sootnosheniye">
+        <div class="gal_content">
           <div class="menubar">
-            <svg class="logo" width="124" height="20" viewBox="0 0 124 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M60.8887 3.33333V18.8889C60.8887 19.5025 61.3861 20 61.9998 20C62.6134 20 63.1109 19.5025 63.1109 18.8889V3.33333C63.1109 2.71968 63.6084 2.22222 64.222 2.22222C64.8357 2.22222 65.3331 2.71968 65.3331 3.33333V16.6667C65.3331 18.5076 66.8255 20 68.6664 20C70.5074 20 71.9998 18.5076 71.9998 16.6667V3.33333C71.9998 2.71968 72.4972 2.22222 73.1109 2.22222C73.7245 2.22222 74.222 2.71968 74.222 3.33333V18.8889C74.222 19.5025 74.7195 20 75.3331 20C75.9468 20 76.4442 19.5025 76.4442 18.8889V3.33333C76.4442 1.49238 74.9518 0 73.1109 0C71.2699 0 69.7776 1.49239 69.7776 3.33334V16.6667C69.7776 17.2803 69.2801 17.7778 68.6664 17.7778C68.0528 17.7778 67.5553 17.2803 67.5553 16.6667V3.33333C67.5553 1.49238 66.063 0 64.222 0C62.3811 0 60.8887 1.49238 60.8887 3.33333Z" fill="#FF83C1"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M78.6665 3.33333V16.6667C78.6665 18.5076 80.1589 20 81.9998 20C83.8408 20 85.3332 18.5076 85.3332 16.6667V3.33333C85.3332 1.49238 83.8408 0 81.9998 0C80.1589 0 78.6665 1.49238 78.6665 3.33333ZM81.9998 17.7778C82.6135 17.7778 83.1109 17.2803 83.1109 16.6667V3.33333C83.1109 2.71968 82.6135 2.22222 81.9998 2.22222V2.22222C81.3862 2.22222 80.8887 2.71968 80.8887 3.33333V16.6667C80.8887 17.2803 81.3862 17.7778 81.9998 17.7778V17.7778Z" fill="#FF83C1"/>
-            <path d="M34.2218 18.8889V2.22222H29.7774V18.8889C29.7774 19.5025 29.2799 20 28.6663 20C28.0526 20 27.5552 19.5025 27.5552 18.8889V2.22222C27.5552 0.994923 28.5501 0 29.7774 0H34.2218C35.4491 0 36.4441 0.994923 36.4441 2.22222V2.38173V18.8889C36.4441 19.5025 35.9466 20 35.333 20C34.7193 20 34.2218 19.5025 34.2218 18.8889Z" fill="#FF83C1"/>
-            <path d="M0.888672 18.8889V1.11111C0.888672 0.497461 1.38613 0 1.99978 0C2.61343 0 3.11089 0.497462 3.11089 1.11111V4.44444H7.55534V1.11111C7.55534 0.497461 8.0528 0 8.66645 0C9.2801 0 9.77756 0.497462 9.77756 1.11111V4.44444C9.77756 5.67174 8.78264 6.66667 7.55534 6.66667H3.11089V8.88889H9.77756C11.0049 8.88889 11.9998 9.88381 11.9998 11.1111V18.8889C11.9998 19.5025 11.5023 20 10.8887 20C10.275 20 9.77756 19.5025 9.77756 18.8889V11.1111H3.11089V18.8889C3.11089 19.5025 2.61343 20 1.99978 20C1.38613 20 0.888672 19.5025 0.888672 18.8889Z" fill="#FF83C1"/>
-            <path d="M100.889 2.22222V18.8889C100.889 19.5025 100.391 20 99.7776 20C99.164 20 98.6665 19.5025 98.6665 18.8889V2.22222C98.6665 0.994923 99.6614 0 100.889 0H106.444C107.058 0 107.555 0.497462 107.555 1.11111C107.555 1.72476 107.058 2.22222 106.444 2.22222H100.889Z" fill="#FF83C1"/>
-            <path d="M49.7776 15.5556H47.5554V17.7778C47.5554 19.0051 46.5605 20 45.3332 20H40.8887C39.6614 20 38.6665 19.0051 38.6665 17.7778V1.11111C38.6665 0.497461 39.164 0 39.7776 0C40.3913 0 40.8887 0.497462 40.8887 1.11111V17.7778H45.3332V15.5556C45.3332 14.3283 46.3281 13.3333 47.5554 13.3333H49.7776V1.11111C49.7776 0.497461 50.2751 0 50.8887 0C51.5024 0 51.9998 0.497461 51.9998 1.11111V18.8889C51.9998 19.5025 51.5024 20 50.8887 20C50.2751 20 49.7776 19.5025 49.7776 18.8889V15.5556Z" fill="#FF83C1"/>
-            <path d="M120.889 15.5556H118.667V17.7778C118.667 19.0051 117.672 20 116.444 20H112C110.773 20 109.778 19.0051 109.778 17.7778V1.11111C109.778 0.497461 110.275 0 110.889 0C111.503 0 112 0.497462 112 1.11111V17.7778H116.444V15.5556C116.444 14.3283 117.439 13.3333 118.667 13.3333H120.889V1.11111C120.889 0.497461 121.386 0 122 0C122.614 0 123.111 0.497461 123.111 1.11111V18.8889C123.111 19.5025 122.614 20 122 20C121.386 20 120.889 19.5025 120.889 18.8889V15.5556Z" fill="#FF83C1"/>
-            <path d="M23.1106 17.7778V8.88889H16.4439C15.2166 8.88889 14.2217 7.89397 14.2217 6.66667V1.11111C14.2217 0.497461 14.7191 0 15.3328 0C15.9464 0 16.4439 0.49746 16.4439 1.11111V6.66667H23.1106V1.11111C23.1106 0.497461 23.608 0 24.2217 0C24.8353 0 25.3328 0.497462 25.3328 1.11111V17.7778C25.3328 19.0051 24.3379 20 23.1106 20H15.3328C14.7191 20 14.2217 19.5025 14.2217 18.8889C14.2217 18.2752 14.7191 17.7778 15.3328 17.7778H23.1106Z" fill="#FF83C1"/>
-            <path d="M93.129 2.22222H88.6668C88.0531 2.22222 87.5557 1.72476 87.5557 1.11111C87.5557 0.497462 88.0531 0 88.6668 0H93.129C94.9601 0 96.4446 1.48441 96.4446 3.31551V3.96436C96.4446 5.43712 95.2506 6.63103 93.7779 6.63103H93.1112C92.4976 6.63103 92.0001 7.12849 92.0001 7.74214C92.0001 8.35579 92.4976 8.85325 93.1112 8.85325H94.2223C95.4496 8.85325 96.4446 9.84817 96.4446 11.0755V11.1976V17.7778C96.4446 19.0051 95.4496 20 94.2223 20H88.6668C88.0531 20 87.5557 19.5025 87.5557 18.8889C87.5557 18.2752 88.0531 17.7778 88.6668 17.7778H94.2223V11.1976H93.1723C91.2976 11.1976 89.7779 9.67787 89.7779 7.8032V7.07547C89.7779 5.60271 90.9718 4.4088 92.4446 4.4088H93.129C93.7328 4.4088 94.2223 3.91932 94.2223 3.31551C94.2223 2.71171 93.7328 2.22222 93.129 2.22222Z" fill="#FF83C1"/>
-            </svg>
+            <a href="index.html" class="logo">
+              <svg class="logo_img" width="124" height="20" viewBox="0 0 124 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M60.8887 3.33333V18.8889C60.8887 19.5025 61.3861 20 61.9998 20C62.6134 20 63.1109 19.5025 63.1109 18.8889V3.33333C63.1109 2.71968 63.6084 2.22222 64.222 2.22222C64.8357 2.22222 65.3331 2.71968 65.3331 3.33333V16.6667C65.3331 18.5076 66.8255 20 68.6664 20C70.5074 20 71.9998 18.5076 71.9998 16.6667V3.33333C71.9998 2.71968 72.4972 2.22222 73.1109 2.22222C73.7245 2.22222 74.222 2.71968 74.222 3.33333V18.8889C74.222 19.5025 74.7195 20 75.3331 20C75.9468 20 76.4442 19.5025 76.4442 18.8889V3.33333C76.4442 1.49238 74.9518 0 73.1109 0C71.2699 0 69.7776 1.49239 69.7776 3.33334V16.6667C69.7776 17.2803 69.2801 17.7778 68.6664 17.7778C68.0528 17.7778 67.5553 17.2803 67.5553 16.6667V3.33333C67.5553 1.49238 66.063 0 64.222 0C62.3811 0 60.8887 1.49238 60.8887 3.33333Z" fill="#FF83C1"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M78.6665 3.33333V16.6667C78.6665 18.5076 80.1589 20 81.9998 20C83.8408 20 85.3332 18.5076 85.3332 16.6667V3.33333C85.3332 1.49238 83.8408 0 81.9998 0C80.1589 0 78.6665 1.49238 78.6665 3.33333ZM81.9998 17.7778C82.6135 17.7778 83.1109 17.2803 83.1109 16.6667V3.33333C83.1109 2.71968 82.6135 2.22222 81.9998 2.22222V2.22222C81.3862 2.22222 80.8887 2.71968 80.8887 3.33333V16.6667C80.8887 17.2803 81.3862 17.7778 81.9998 17.7778V17.7778Z" fill="#FF83C1"/>
+              <path d="M34.2218 18.8889V2.22222H29.7774V18.8889C29.7774 19.5025 29.2799 20 28.6663 20C28.0526 20 27.5552 19.5025 27.5552 18.8889V2.22222C27.5552 0.994923 28.5501 0 29.7774 0H34.2218C35.4491 0 36.4441 0.994923 36.4441 2.22222V2.38173V18.8889C36.4441 19.5025 35.9466 20 35.333 20C34.7193 20 34.2218 19.5025 34.2218 18.8889Z" fill="#FF83C1"/>
+              <path d="M0.888672 18.8889V1.11111C0.888672 0.497461 1.38613 0 1.99978 0C2.61343 0 3.11089 0.497462 3.11089 1.11111V4.44444H7.55534V1.11111C7.55534 0.497461 8.0528 0 8.66645 0C9.2801 0 9.77756 0.497462 9.77756 1.11111V4.44444C9.77756 5.67174 8.78264 6.66667 7.55534 6.66667H3.11089V8.88889H9.77756C11.0049 8.88889 11.9998 9.88381 11.9998 11.1111V18.8889C11.9998 19.5025 11.5023 20 10.8887 20C10.275 20 9.77756 19.5025 9.77756 18.8889V11.1111H3.11089V18.8889C3.11089 19.5025 2.61343 20 1.99978 20C1.38613 20 0.888672 19.5025 0.888672 18.8889Z" fill="#FF83C1"/>
+              <path d="M100.889 2.22222V18.8889C100.889 19.5025 100.391 20 99.7776 20C99.164 20 98.6665 19.5025 98.6665 18.8889V2.22222C98.6665 0.994923 99.6614 0 100.889 0H106.444C107.058 0 107.555 0.497462 107.555 1.11111C107.555 1.72476 107.058 2.22222 106.444 2.22222H100.889Z" fill="#FF83C1"/>
+              <path d="M49.7776 15.5556H47.5554V17.7778C47.5554 19.0051 46.5605 20 45.3332 20H40.8887C39.6614 20 38.6665 19.0051 38.6665 17.7778V1.11111C38.6665 0.497461 39.164 0 39.7776 0C40.3913 0 40.8887 0.497462 40.8887 1.11111V17.7778H45.3332V15.5556C45.3332 14.3283 46.3281 13.3333 47.5554 13.3333H49.7776V1.11111C49.7776 0.497461 50.2751 0 50.8887 0C51.5024 0 51.9998 0.497461 51.9998 1.11111V18.8889C51.9998 19.5025 51.5024 20 50.8887 20C50.2751 20 49.7776 19.5025 49.7776 18.8889V15.5556Z" fill="#FF83C1"/>
+              <path d="M120.889 15.5556H118.667V17.7778C118.667 19.0051 117.672 20 116.444 20H112C110.773 20 109.778 19.0051 109.778 17.7778V1.11111C109.778 0.497461 110.275 0 110.889 0C111.503 0 112 0.497462 112 1.11111V17.7778H116.444V15.5556C116.444 14.3283 117.439 13.3333 118.667 13.3333H120.889V1.11111C120.889 0.497461 121.386 0 122 0C122.614 0 123.111 0.497461 123.111 1.11111V18.8889C123.111 19.5025 122.614 20 122 20C121.386 20 120.889 19.5025 120.889 18.8889V15.5556Z" fill="#FF83C1"/>
+              <path d="M23.1106 17.7778V8.88889H16.4439C15.2166 8.88889 14.2217 7.89397 14.2217 6.66667V1.11111C14.2217 0.497461 14.7191 0 15.3328 0C15.9464 0 16.4439 0.49746 16.4439 1.11111V6.66667H23.1106V1.11111C23.1106 0.497461 23.608 0 24.2217 0C24.8353 0 25.3328 0.497462 25.3328 1.11111V17.7778C25.3328 19.0051 24.3379 20 23.1106 20H15.3328C14.7191 20 14.2217 19.5025 14.2217 18.8889C14.2217 18.2752 14.7191 17.7778 15.3328 17.7778H23.1106Z" fill="#FF83C1"/>
+              <path d="M93.129 2.22222H88.6668C88.0531 2.22222 87.5557 1.72476 87.5557 1.11111C87.5557 0.497462 88.0531 0 88.6668 0H93.129C94.9601 0 96.4446 1.48441 96.4446 3.31551V3.96436C96.4446 5.43712 95.2506 6.63103 93.7779 6.63103H93.1112C92.4976 6.63103 92.0001 7.12849 92.0001 7.74214C92.0001 8.35579 92.4976 8.85325 93.1112 8.85325H94.2223C95.4496 8.85325 96.4446 9.84817 96.4446 11.0755V11.1976V17.7778C96.4446 19.0051 95.4496 20 94.2223 20H88.6668C88.0531 20 87.5557 19.5025 87.5557 18.8889C87.5557 18.2752 88.0531 17.7778 88.6668 17.7778H94.2223V11.1976H93.1723C91.2976 11.1976 89.7779 9.67787 89.7779 7.8032V7.07547C89.7779 5.60271 90.9718 4.4088 92.4446 4.4088H93.129C93.7328 4.4088 94.2223 3.91932 94.2223 3.31551C94.2223 2.71171 93.7328 2.22222 93.129 2.22222Z" fill="#FF83C1"/>
+              </svg>
+            </a>
 
             <svg class="burger" width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="0.195312" y="0.0566406" width="29.8044" height="3.98858" rx="1.99429" fill="#FF83C1"/>
@@ -634,18 +638,18 @@
           </div>
           <div class="right_menu">
             <img class="right_menu_img" src="images/right_menu.svg" alt="">
-            <div class="menu_round" id="menu_round1"><a href="#"></a></div>
-            <div class="menu_round" id="menu_round2"><a href="#"></a></div>
-            <div class="menu_round" id="menu_round3"><a href="#"></a></div>
-            <div class="menu_round" id="menu_round4"><a href="#"></a></div>
-            <div class="menu_round" id="menu_round5"><a href="#"></a></div>
-            <div class="menu_round" id="menu_round6"><a href="#"></a></div>
-            <a href="#" id="menu_text1">купить&nbsp;мозги</a>
-            <a href="#" id="menu_text2">развлечения<br>и&nbsp;лекции</a>
-            <a href="#" id="menu_text3">отследить&nbsp;заказ</a>
-            <a href="#" id="menu_text4">о&nbsp;центре</a>
-            <a href="#" id="menu_text5">для&nbsp;детей</a>
-            <a href="#" id="menu_text6">контакты</a>
+            <div class="menu_round" id="menu_round1"><a href="catalog.html"></a></div>
+            <div class="menu_round" id="menu_round2"><a href="gallery.html"></a></div>
+            <div class="menu_round" id="menu_round3"><a href="order.html"></a></div>
+            <div class="menu_round" id="menu_round4"><a href="space.html"></a></div>
+            <div class="menu_round" id="menu_round5"><a href="kids.html"></a></div>
+            <div class="menu_round" id="menu_round6"><a href="contacts.html"></a></div>
+            <a href="catalog.html" id="menu_text1">купить&nbsp;мозги</a>
+            <a href="gallery.html" id="menu_text2">развлечения<br>и&nbsp;лекции</a>
+            <a href="order.html" id="menu_text3">отследить&nbsp;заказ</a>
+            <a href="space.html" id="menu_text4">о&nbsp;центре</a>
+            <a href="kids.html" id="menu_text5">для&nbsp;детей</a>
+            <a href="contacts.html" id="menu_text6">контакты</a>
             <div class="menu_krest">
               <svg class="menu_krest_img" width="30" height="21" viewBox="0 0 30 21" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M26.5323 0.644504C27.4709 0.0622081 28.7039 0.351066 29.2862 1.28968C29.8685 2.2283 29.5796 3.46125 28.641 4.04354L18.6205 10.26L28.6415 16.4767C29.5801 17.059 29.869 18.292 29.2867 19.2306C28.7044 20.1692 27.4714 20.4581 26.5328 19.8758L14.8267 12.6136L3.12053 19.8758C2.18192 20.4581 0.948971 20.1692 0.366676 19.2306C-0.21562 18.292 0.0732384 17.059 1.01186 16.4767L11.0328 10.26L1.01236 4.04354C0.0737359 3.46125 -0.215122 2.2283 0.367174 1.28968C0.949469 0.351066 2.18241 0.0622081 3.12103 0.644504L14.8267 7.90639L26.5323 0.644504Z" fill="black"/>
@@ -653,129 +657,129 @@
             </div>
           </div>
           <div class="black_square"></div>
-          
-          <div class="menubar_extra">
+
+          <div class="gal_menubar_extra">
 
           </div>
-          <div class="birki">
-            <div class="rope rope1"></div>
-            <div class="rope rope2"></div>
-            <div class="rope rope3"></div>
-            <div class="rope rope4"></div>
-            <div class="rope rope5"></div>
-            <div class="rope rope6"></div>
-            <div class="rope rope7"></div>
-            <div class="rope rope8"></div>
+          <div class="gal_birki">
+            <div class="gal_rope gal_rope1"></div>
+            <div class="gal_rope gal_rope2"></div>
+            <div class="gal_rope gal_rope3"></div>
+            <div class="gal_rope gal_rope4"></div>
+            <div class="gal_rope gal_rope5"></div>
+            <div class="gal_rope gal_rope6"></div>
+            <div class="gal_rope gal_rope7"></div>
+            <div class="gal_rope gal_rope8"></div>
 
-            <div class="birka birka2">
-              <div class="birka_front birka_front2">
+            <div class="gal_birka gal_birka2">
+              <div class="gal_birka_front gal_birka_front2">
                 <img class="img2" src="images/birka2.svg" alt="">
               </div>
-              <div class="birka_back birka_back_green">
-                <img class="img2_back" src="images/birka2_back.svg" alt="">
+              <div class="gal_birka_back gal_birka_back_green">
+                <img class="gal_img2_back" src="images/birka2_back.svg" alt="">
               </div>
-              <div class="birka_top birka_top_green">
-                <div class="hole hole2"></div>
+              <div class="gal_birka_top gal_birka_top_green">
+                <div class="gal_hole gal_hole2"></div>
               </div>
             </div>
 
-            <div class="birka birka4">
-              <div class="birka_front birka_front4">
-                <img src="images/birka4_1.svg" alt="" class="img4_1">
-                <img src="images/birka4_2.svg" alt="" class="img4_2">
+            <div class="gal_birka gal_birka4">
+              <div class="gal_birka_front gal_birka_front4">
+                <img src="images/birka4_1.svg" alt="" class="gal_img4_1">
+                <img src="images/birka4_2.svg" alt="" class="gal_img4_2">
               </div>
-              <div class="birka_back birka_back4">
+              <div class="gal_birka_back gal_birka_back4">
                 <a href="#">Перейти</a>
               </div>
-              <div class="birka_top birka_top2">
-                <div class="hole hole2"></div>
+              <div class="gal_birka_top gal_birka_top2">
+                <div class="gal_hole gal_hole2"></div>
               </div>
             </div>
 
-            <div class="birka birka1">
-              <div class="birka_front birka_front1"></div>
-              <div class="birka_back birka_back1">
-                <img class="img1" src="images/birka1.svg" alt="">
+            <div class="gal_birka gal_birka1">
+              <div class="gal_birka_front gal_birka_front1"></div>
+              <div class="gal_birka_back gal_birka_back1">
+                <img class="gal_img1" src="images/birka1.svg" alt="">
                 <h1>Киноночь</h1>
                 <p class="p_tall">закрытые показы просветительских фильмов в&nbspкинозале центра</p>
                 <p class="p_date p_date1">по&nbspсредам</p>
                 <p class="p_date  p_date2">19:00</p>
                 <p class="p_bron">Бронирование билетов<br>по&nbspтелефону +7-925-242-46-46</p>
               </div>
-              <div class="birka_top">
-                <div class="hole hole1"></div>
+              <div class="gal_birka_top">
+                <div class="gal_hole gal_hole1"></div>
               </div>
             </div>
 
 
 
-            <div class="birka birka3">
-              <div class="birka_front birka_front3"></div>
-              <div class="birka_back birka_back3">
-                <img class="img3" src="images/birka3.svg" alt="">
+            <div class="gal_birka gal_birka3">
+              <div class="gal_birka_front gal_birka_front3"></div>
+              <div class="gal_birka_back gal_birka_back3">
+                <img class="gal_img3" src="images/birka3.svg" alt="">
                 <h1>Тест–драйв</h1>
                 <p class="p_tall">Взгляни на&nbspсебя по–новому с&nbspпомощью инновационных очков</p>
                 <p class="p_date">ежедневно</p>
                 <p class="p_bron">Бронирование билетов<br>по&nbspтелефону +7-925-242-46-46</p>
               </div>
-              <div class="birka_top birka_top3">
-                <div class="hole hole3"></div>
+              <div class="gal_birka_top gal_birka_top3">
+                <div class="gal_hole gal_hole3"></div>
               </div>
             </div>
 
 
 
-            <div class="birka birka5">
-              <div class="birka_front birka_front5"></div>
-              <div class="birka_back birka_back5">
-                <img class="img5" src="images/birka5.svg" alt="">
+            <div class="gal_birka gal_birka5">
+              <div class="gal_birka_front gal_birka_front5"></div>
+              <div class="gal_birka_back gal_birka_back5">
+                <img class="gal_img5" src="images/birka5.svg" alt="">
                 <h2>Распродажа</h2>
                 <p class="p_tall">Месяц скидок на&nbspвесь ассортимент в&nbspчесть прихода весны</p>
                 <p class="p_date p_date1">01.03–</p>
                 <p class="p_date p_date2">30.03</p>
               </div>
-              <div class="birka_top birka_top5">
-                <div class="hole hole5"></div>
+              <div class="gal_birka_top gal_birka_top5">
+                <div class="gal_hole gal_hole5"></div>
               </div>
             </div>
 
-            <div class="birka birka6">
-              <div class="birka_front birka_front6"></div>
-              <div class="birka_back birka_back6">
-                <img class="img6" src="images/birka6.svg" alt="">
+            <div class="gal_birka gal_birka6">
+              <div class="gal_birka_front gal_birka_front6"></div>
+              <div class="gal_birka_back gal_birka_back6">
+                <img class="gal_img6" src="images/birka6.svg" alt="">
                 <h1>Космонись</h1>
                 <p class="p_tall">Презентация коллекции инопланетных мозгов</p>
                 <p class="p_date p_date1">20.03</p>
                 <p class="p_date p_date2">18:00</p>
               </div>
-              <div class="birka_top birka_top6">
-                <div class="hole hole6"></div>
+              <div class="gal_birka_top gal_birka_top6">
+                <div class="gal_hole gal_hole6"></div>
               </div>
             </div>
 
-            <div class="birka birka8">
-              <div class="birka_front birka_front8">
-                <img src="images/birka8_1.svg" alt="" class="img8_1">
-                <img src="images/birka8_2.svg" alt="" class="img8_2">
+            <div class="gal_birka gal_birka8">
+              <div class="gal_birka_front gal_birka_front8">
+                <img src="images/birka8_1.svg" alt="" class="gal_img8_1">
+                <img src="images/birka8_2.svg" alt="" class="gal_img8_2">
               </div>
-              <div class="birka_back birka_back8">
+              <div class="gal_birka_back gal_birka_back8">
                 <a href="#">Перейти</a>
               </div>
-              <div class="birka_top birka_top_green">
-                <div class="hole hole2"></div>
+              <div class="gal_birka_top gal_birka_top_green">
+                <div class="gal_hole gal_hole2"></div>
               </div>
             </div>
 
-            <div class="birka birka7">
-              <div class="birka_front birka_front7"></div>
-              <div class="birka_back birka_back7">
-                <img class="img7" src="images/birka7.svg" alt="">
+            <div class="gal_birka gal_birka7">
+              <div class="gal_birka_front gal_birka_front7"></div>
+              <div class="gal_birka_back gal_birka_back7">
+                <img class="gal_img7" src="images/birka7.svg" alt="">
                 <h2>Пробуй&nbspшкуру</h2>
                 <p class="p_tall">Презентация коллекции мозгов животных </p>
                 <p class="p_date">скоро</p>
               </div>
-              <div class="birka_top birka_top7">
-                <div class="hole hole7"></div>
+              <div class="gal_birka_top gal_birka_top7">
+                <div class="gal_hole gal_hole7"></div>
               </div>
             </div>
 
@@ -783,27 +787,27 @@
           <div class="gallery_row_container">
             <div class="gallery_row"></div>
           </div>
-          <div class="merch">
-            <div class="slider_left"></div>
-            <div class="slider_right"></div>
-            <div class="merch_tablo">
+          <div class="gal_merch">
+            <div class="gal_slider_left"></div>
+            <div class="gal_slider_right"></div>
+            <div class="gal_merch_tablo">
               <p class="p_tall">конверт<br>блокнот<br>карандаш</p>
-              <p class="p_tall merch_tablo1">90р<br>490р<br>90р</p>
+              <p class="p_tall gal_merch_tablo1">90р<br>490р<br>90р</p>
             </div>
-            <svg class="strelka1" width="24" height="37" viewBox="0 0 24 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="gal_strelka1" width="24" height="37" viewBox="0 0 24 37" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M22.1134 1.76333C23.8707 3.52069 23.8707 6.36993 22.1134 8.12729L11.6728 18.5679L22.1134 29.0084C23.8707 30.7658 23.8707 33.615 22.1134 35.3724C20.356 37.1298 17.5068 37.1298 15.7494 35.3724L2.12686 21.7499C0.369498 19.9925 0.369498 17.1433 2.12686 15.3859L15.7494 1.76333C17.5068 0.00597274 20.356 0.00597274 22.1134 1.76333Z" fill="#FF83C1"/>
             </svg>
-            <svg class="strelka2" width="24" height="37" viewBox="0 0 24 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="gal_strelka2" width="24" height="37" viewBox="0 0 24 37" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M22.1134 1.76333C23.8707 3.52069 23.8707 6.36993 22.1134 8.12729L11.6728 18.5679L22.1134 29.0084C23.8707 30.7658 23.8707 33.615 22.1134 35.3724C20.356 37.1298 17.5068 37.1298 15.7494 35.3724L2.12686 21.7499C0.369498 19.9925 0.369498 17.1433 2.12686 15.3859L15.7494 1.76333C17.5068 0.00597274 20.356 0.00597274 22.1134 1.76333Z" fill="#FF83C1"/>
             </svg>
 
           </div>
-          <div class="futter">
+          <div class="futter gal_futter">
             <div class="futter_left">
               <a class="futter_left1" href="https://www.instagram.com/mulkamanova/">мулкаманова&nbspкарина</a>
               <a href="https://portfolio.hse.ru/Student/16421">портфолио</a>
             </div>
-            <a href="#">HSE ADC</a>
+            <a href="https://www.instagram.com/hseadc/">HSE ADC</a>
           </div>
         </div>
       </div>
