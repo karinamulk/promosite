@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/style.css">
     <script src="js/all.js" charset="utf-8"></script>
-    
+
     <style media="screen">
       .kids_wrapper {
         position: relative;
@@ -22,7 +22,7 @@
         position: absolute;
         top: 0; bottom: 0; left: 0; right: 0;
         padding: 0;
-        opacity: .5;
+        /* opacity: .5; */
         /* overflow: hidden; */
       }
 
@@ -52,7 +52,7 @@
         position: relative;
         width: 100%;
         height: 23.6%;
-        background: red;
+        /* background: red; */
         vertical-align: top;
         display: inline-block;
         padding: 0 4.2%;
@@ -64,20 +64,18 @@
         display: inline-block;
         width: 100%;
         height: 76.4%;
-        background: blue;
+        /* background: blue; */
         vertical-align: top;
         padding:  0  0 0 3.55% ;
       }
       .kids_text_block h1 {
         position: relative;
         display: inline-block;
-
         line-height: 59px;
         display: block;
         vertical-align: top;
         margin-top: 3%;
-        color: black;
-
+        color: #FF83C1;
       }
       .kids_text_block p  {
         position: relative;
@@ -87,15 +85,13 @@
         width: 32%;
         vertical-align: top;
         margin-top: 7.1%;
-        color: black;
-
-
+        color: #FF83C1;
       }
       .kids_foto {
         position: relative;
         display: inline-block;
         background-size: 100% auto;
-        background: green;
+        /* background: green; */
       }
       .kids_foto1 {
         height: 51.8%;
@@ -103,13 +99,16 @@
         margin-right: 1.8%;
         margin-bottom: 2%;
         background-image: url('images/kidsfoto1.jpg');
+        background-size: 102% 105%;
+        background-position: 10% 10%;
       }
       .kids_foto2 {
         height: 51.8%;
         width: 24.5%;
         margin-bottom: 2%;
         background-image: url('images/kidsfoto2.jpg');
-
+        background-size: 102% 105%;
+        background-position: 10% 10%;
       }
 
       .kids_foto3 {
@@ -117,11 +116,15 @@
         width: 39.6%;
         margin-right: 1.8%;
         background-image: url('images/kidsfoto3.jpg');
+        background-size: 102% 105%;
+        background-position: 10% 10%;
       }
       .kids_foto4 {
         height: 44%;
         width: 54.7%;
         background-image: url('images/kidsfoto4.jpg');
+        background-size: 102% 105%;
+        background-position: 10% 10%;
       }
 
       .kids_button {
@@ -131,13 +134,23 @@
         z-index: 50;
         cursor: pointer;
       }
+      .kids_button:hover .kids_button_top {
+        background: #232323;
+        transition: all .2s;
 
+      }
+      .kids_button:hover .kids_button_back, .kids_button:hover .kids_button_extra {
+        background: black;
+        transition: all .2s;
+
+      }
       .kids_button_top {
         position: absolute;
         width: 100%;
         height: 100%;
         border-radius: 50%;
         background: #A4DDD4;
+        transition: all .5s;
       }
       .kids_button_back {
         position: absolute;
@@ -146,6 +159,8 @@
         border-radius: 50%;
         background: #76B1A8;
         bottom: -15%;
+        transition: all .5s;
+
       }
       .kids_button_extra {
         position: absolute;
@@ -153,6 +168,8 @@
         height: 15%;
         background: #76B1A8;
         top: 42.5%;
+        transition: all .5s;
+
       }
       .kids_button1 {
         top: 36.8%;
@@ -190,7 +207,11 @@
         top: 17.7%;
         right: 32.6%;
         z-index: 200;
-        /* display: none; */
+        display: none;
+        z-index: 100;
+        transition: all .3s;
+        opacity: 0;
+
       }
       .kids_cloud2 {
         position: fixed;
@@ -198,7 +219,9 @@
         bottom: 32%;
         right: 31.9%;
         display: none;
-
+        z-index: 100;
+        transition: all .3s;
+        opacity: 0;
       }
       .kids_cloud3 {
         position: fixed;
@@ -206,7 +229,9 @@
         right: 32.6%;
         top: 14.8%;
         display: none;
-
+        z-index: 100;
+        transition: all .3s;
+        opacity: 0;
       }
       .kids_cloud4 {
         position: fixed;
@@ -214,17 +239,28 @@
         top: 24.3%;
         right: 32.4%;
         display: none;
-
+        z-index: 100;
+        transition: all .3s;
+        opacity: 0;
 
       }
-      .kids_cloud5 {
+      .kids_cloud5, .kids_cloud6 {
         position: fixed;
         width: 24.18%;
         bottom: 34.7%;
         right: 31.8%;
+        display: inline-block;
+        z-index: 100;
+        transition: all .3s;
+
+      }
+      .kids_cloud5 {
         display: none;
-
-
+        opacity: 0;
+      }
+      .kids_cloud6 {
+        bottom: 32.7%;
+        opacity: 100;
       }
       .kids_cloud1 p {
         position: absolute;
@@ -256,7 +292,7 @@
         color: black;
 
       }
-      .kids_cloud5 p {
+      .kids_cloud5 p, .kids_cloud6 p  {
         position: absolute;
 
         left: calc(50% - 138px);
@@ -265,6 +301,130 @@
 
       }
     </style>
+    <script type="text/javascript">
+    $(document).ready(function(){
+
+      $(".kids_button").click(function(){
+        $(".kids_cloud6").css("opacity", "0");
+        setTimeout(function(){
+          $(".kids_cloud6").css("display", "none");
+        }, 10);
+      });
+      $(".kids_button1").click(function(){
+        $(".kids_cloud1").css("display", "inline-block");
+        setTimeout(function(){
+          $(".kids_cloud1").css("opacity", "100%");
+        }, 10);
+        $(".kids_cloud2").css("opacity", "0");
+        setTimeout(function(){
+          $(".kids_cloud2").css("display", "none");
+        }, 10);
+        $(".kids_cloud3").css("opacity", "0");
+        setTimeout(function(){
+          $(".kids_cloud3").css("display", "none");
+        }, 10);
+        $(".kids_cloud4").css("opacity", "0");
+        setTimeout(function(){
+          $(".kids_cloud4").css("display", "none");
+        }, 10);
+        $(".kids_cloud5").css("opacity", "0");
+        setTimeout(function(){
+          $(".kids_cloud5").css("display", "none");
+        }, 10);
+
+
+      });
+      $(".kids_button2").click(function(){
+        $(".kids_cloud2").css("display", "inline-block");
+        setTimeout(function(){
+          $(".kids_cloud2").css("opacity", "100%");
+        }, 10);
+        $(".kids_cloud1").css("opacity", "0");
+        setTimeout(function(){
+          $(".kids_cloud1").css("display", "none");
+        }, 10);
+        $(".kids_cloud3").css("opacity", "0");
+        setTimeout(function(){
+          $(".kids_cloud3").css("display", "none");
+        }, 10);
+        $(".kids_cloud4").css("opacity", "0");
+        setTimeout(function(){
+          $(".kids_cloud4").css("display", "none");
+        }, 10);
+        $(".kids_cloud5").css("opacity", "0");
+        setTimeout(function(){
+          $(".kids_cloud5").css("display", "none");
+        }, 10);
+      });
+      $(".kids_button3").click(function(){
+        $(".kids_cloud3").css("display", "inline-block");
+        setTimeout(function(){
+          $(".kids_cloud3").css("opacity", "100%");
+        }, 10);
+        $(".kids_cloud1").css("opacity", "0");
+        setTimeout(function(){
+          $(".kids_cloud1").css("display", "none");
+        }, 10);
+        $(".kids_cloud2").css("opacity", "0");
+        setTimeout(function(){
+          $(".kids_cloud2").css("display", "none");
+        }, 10);
+        $(".kids_cloud4").css("opacity", "0");
+        setTimeout(function(){
+          $(".kids_cloud4").css("display", "none");
+        }, 10);
+        $(".kids_cloud5").css("opacity", "0");
+        setTimeout(function(){
+          $(".kids_cloud5").css("display", "none");
+        }, 10);
+      });
+      $(".kids_button4").click(function(){
+        $(".kids_cloud4").css("display", "inline-block");
+        setTimeout(function(){
+          $(".kids_cloud4").css("opacity", "100%");
+        }, 10);
+        $(".kids_cloud1").css("opacity", "0");
+        setTimeout(function(){
+          $(".kids_cloud1").css("display", "none");
+        }, 10);
+        $(".kids_cloud2").css("opacity", "0");
+        setTimeout(function(){
+          $(".kids_cloud2").css("display", "none");
+        }, 10);
+        $(".kids_cloud3").css("opacity", "0");
+        setTimeout(function(){
+          $(".kids_cloud3").css("display", "none");
+        }, 10);
+        $(".kids_cloud5").css("opacity", "0");
+        setTimeout(function(){
+          $(".kids_cloud5").css("display", "none");
+        }, 10);
+      });
+      $(".kids_button5").click(function(){
+        $(".kids_cloud5").css("display", "inline-block");
+        setTimeout(function(){
+          $(".kids_cloud5").css("opacity", "100%");
+        }, 10);
+        $(".kids_cloud1").css("opacity", "0");
+        setTimeout(function(){
+          $(".kids_cloud1").css("display", "none");
+        }, 10);
+        $(".kids_cloud2").css("opacity", "0");
+        setTimeout(function(){
+          $(".kids_cloud2").css("display", "none");
+        }, 10);
+        $(".kids_cloud3").css("opacity", "0");
+        setTimeout(function(){
+          $(".kids_cloud3").css("display", "none");
+        }, 10);
+        $(".kids_cloud4").css("opacity", "0");
+        setTimeout(function(){
+          $(".kids_cloud4").css("display", "none");
+        }, 10);
+      });
+
+    });
+    </script>
   </head>
   <body>
     <div class="kids_wrapper">
@@ -384,6 +544,10 @@
             <div class="kids_cloud5">
               <img src="images/cloud5.svg" alt="">
               <p class="p_tall">Это мягкие пуфики.<br>Поваляемся вместе?</p>
+            </div>
+            <div class="kids_cloud6">
+              <img src="images/cloud5.svg" alt="">
+              <p class="p_tall">Привет! Скорее<br>нажимай на&nbspкнопки!</p>
             </div>
 
 
