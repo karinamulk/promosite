@@ -62,9 +62,13 @@
         height: 100%;
         /* background: yellow; */
         margin: 0;
-        background-image: url('images/space_foto.jpg');
-
+        background-image: url('images/space_image1.jpg');
+        background-size: 300% 100%;
+        background-position: 0 0;
+        animation: image1 9s ease infinite;
+        /* transition: all .5s; */
       }
+
       .space_points {
         position: relative;
         display: inline-block;
@@ -79,6 +83,7 @@
         font-weight: 700;
         margin-left: 13%;
         margin-top: 25%;
+        cursor: default;
       }
       .space_point1 {
         margin-top: 34% !important;
@@ -93,6 +98,14 @@
         display: flex;
         justify-content: flex-start;
       }
+      .space_before_steps {
+        position: absolute;
+        height: 93.25%;
+        width: 100%;
+        top: 0;
+        /* background: blue; */
+      }
+
       .space_step {
         position: relative;
         width: 25%;
@@ -104,14 +117,20 @@
         font-weight: 700;
         line-height: 22px;
         color: black;
+        cursor: pointer;
+        transition: all .5s;
       }
       .space_step1 {
         padding: 1.6% 4.8%;
+        background: #A4DDD4;
       }
       .space_step2, .space_step3, .space_step4 {
         padding:  1.6% 8.1%;
       }
-
+      .space_step1:hover, .space_step2:hover, .space_step3:hover, .space_step4:hover{
+        background: #A4DDD4;
+        transition: all .2s;
+      }
       .space_rounds {
         position: absolute;
         height: 1.5%;
@@ -126,13 +145,141 @@
       .space_round {
         position: relative;
         height: 100%;
-        background: #FF83C1;
+        background: black;
         width: 20%;
         border-radius: 50%;
 
       }
+      @keyframes image1 {
+        0% {background-position: 0 0;}
+        29% {background-position: 0 0;}
+        33% {background-position: 50% 0;}
+        62% {background-position: 50% 0;}
+        66% {background-position: 100% 0;}
+        96% {background-position: 100% 0;}
+        100% {background-position: 150% 0;}
+      }
+      @keyframes image2 {
+        0% {background-position: 0 0;}
+        10.9% {background-position: 0 0;}
+        12.5% {background-position: 14.29% 0;}
+        23.4% {background-position: 14.29% 0;}
+        25% {background-position: 28.57% 0;}
+        35.9% {background-position: 28.57% 0;}
+        37.5% {background-position: 42.855% 0;}
+        48.4% {background-position: 42.855% 0;}
+        50% {background-position: 57.14% 0;}
+        60.9% {background-position: 57.14% 0;}
+        62.5% {background-position: 71.425% 0;}
+        73.4% {background-position: 71.425% 0;}
+        75% {background-position: 85.71% 0;}
+        85.9% {background-position: 85.71% 0;}
+        87.5% {background-position: 100% 0;}
+        98.4% {background-position: 100% 0;}
+        100% {background-position: 114.285% 0;}
+      }
+      @keyframes image3 {
+        0% {background-position: 0 0;}
+        17.45% {background-position: 0 0;}
+        20% {background-position: 25% 0;}
+        37.45% {background-position: 25% 0;}
+        40% {background-position: 50% 0;}
+        57.45% {background-position: 50% 0;}
+        60% {background-position: 75% 0;}
+        77.45% {background-position: 75% 0;}
+        80% {background-position: 100% 0;}
+        97.45% {background-position: 100% 0;}
+        100% {background-position: 125% 0;}
+      }
+      @keyframes image4 {
+        0% {background-position: 0 0;}
+        21.9% {background-position: 0 0;}
+        25% {background-position: 33.3% 0;}
+        46.9% {background-position: 33.3% 0;}
+        50% {background-position: 66.6% 0;}
+        71.9% {background-position: 66.6% 0;}
+        75% {background-position: 100% 0;}
+        96.9% {background-position: 100% 0;}
+        100% {background-position: 133.3% 0;}
+      }
 
     </style>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      let a = 0;
+      console.log(a);
+
+      $(".space_step1").click(function(){
+        $('.space_image').css("background-image", "url('images/space_image1.jpg')");
+        $('.space_image').css("background-size", "300% 100%");
+        $('.space_image').css("animation", "image1 9s ease infinite");
+        $('.space_step1').css("background", "#A4DDD4");
+        $('.space_step2').css("background", "#FF83C1");
+        $('.space_step3').css("background", "#FF83C1");
+        $('.space_step4').css("background", "#FF83C1");
+        $(".space_point1").html("вход");
+        $(".space_point2").html("");
+        $(".space_point3").html("");
+        $(".space_point4").html("");
+      });
+      $(".space_step2").click(function(){
+        $('.space_image').css("background-image", "url('images/space_image2.jpg')");
+        $('.space_image').css("background-size", "800% 100%");
+        $('.space_image').css("animation", "image2 24s ease infinite");
+        $('.space_step2').css("background", "#A4DDD4");
+        $('.space_step1').css("background", "#FF83C1");
+        $('.space_step3').css("background", "#FF83C1");
+        $('.space_step4').css("background", "#FF83C1");
+        $(".space_point1").html("холл");
+        $(".space_point2").html("кафе");
+        $(".space_point3").html("игровая зона");
+        $(".space_point4").html("гардероб");
+
+      });
+      $(".space_step3").click(function(){
+        $('.space_image').css("background-image", "url('images/space_image3.jpg')");
+        $('.space_image').css("background-size", "500% 100%");
+        $('.space_image').css("animation", "image3 15s ease infinite");
+        $('.space_step3').css("background", "#A4DDD4");
+        $('.space_step1').css("background", "#FF83C1");
+        $('.space_step2').css("background", "#FF83C1");
+        $('.space_step4').css("background", "#FF83C1");
+        $(".space_point1").html("кинозал");
+        $(".space_point2").html("выставка");
+        $(".space_point3").html("");
+        $(".space_point4").html("");
+      });
+      $(".space_step4").click(function(){
+        $('.space_image').css("background-image", "url('images/space_image4.jpg')");
+        $('.space_image').css("background-size", "400% 100%");
+        $('.space_image').css("animation", "image4 12s ease infinite");
+        $('.space_step4').css("background", "#A4DDD4");
+        $('.space_step1').css("background", "#FF83C1");
+        $('.space_step2').css("background", "#FF83C1");
+        $('.space_step3').css("background", "#FF83C1");
+        $(".space_point1").html("операционная");
+        $(".space_point2").html("");
+        $(".space_point3").html("");
+        $(".space_point4").html("");
+      });
+
+      $(".space_before_steps").mouseover(function() {
+        $(".space_image").css("animation-play-state", "paused");
+      });
+      $(".space_before_steps").mouseout(function() {
+          $(".space_image").css("animation-play-state", "running");
+      });
+
+
+      $(".space_step").mouseover(function() {
+        $(this).css("background", "#A4DDD4");
+      });
+      $(".space_step").mouseout(function() {
+        $(this).css("background", "#FF83C1");
+
+      });
+    });
+    </script>
   </head>
   <body>
     <div class="menubar">
@@ -190,6 +337,7 @@
         <p id="text3">Также в&nbsp;центре проводятся лекции и&nbsp;мероприятия, на&nbsp;которых можно узнать об&nbsp;устройстве человеческого разума, об&nbsp;ученых, которые его исследовали и&nbsp;отправиться в&nbsp;настоящее &laquo;путешествие&raquo; по&nbsp;головному мозгу.</p>
       </div>
       <div class="space_image">
+        <div class="space_before_steps"></div>
         <div class="space_rounds">
           <div class="space_round space_round1"></div>
           <div class="space_round space_round2"></div>
@@ -203,10 +351,10 @@
         </div>
       </div>
       <div class="space_points">
-        <p class="space_point1">Холл</p>
-        <p class="space_point2">Кафе</p>
-        <p class="space_point3">Игровая&nbsp;зона</p>
-        <p class="space_point4">Гардероб</p>
+        <p class="space_point1">вход</p>
+        <p class="space_point2"></p>
+        <p class="space_point3"></p>
+        <p class="space_point4"></p>
       </div>
     </div>
 
