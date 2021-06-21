@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/style.css">
     <script src="js/all.js" charset="utf-8"></script>
-    
+
     <style media="screen">
       body {
         height: 100%;
@@ -21,7 +21,7 @@
         height: 85.46%;
         width: 100%;
         /* background: blue; */
-        opacity: .5;
+        /* opacity: .5; */
         padding: 2% 3.5% 0 3.5%;
       }
       .mach_text_block {
@@ -72,12 +72,23 @@
         width: 5.05%;
         height: 4.91%;
       }
+      .mach_button:hover .mach_button_top {
+        background: #A4DDD4;
+        transition: all .2s;
+      }
+      .mach_button:hover .mach_button_back,  .mach_button:hover .mach_button_extra{
+        background: #76B1A8;
+        transition: all .2s;
+
+      }
       .mach_button_top {
         position: absolute;
         width: 100%;
         height: 100%;
         border-radius: 50%;
         background: #343434;
+        transition: all .5s;
+
       }
       .mach_button_back {
         position: absolute;
@@ -86,6 +97,8 @@
         border-radius: 50%;
         background: black;
         bottom: -15%;
+        transition: all .5s;
+
       }
       .mach_button_extra {
         position: absolute;
@@ -93,6 +106,8 @@
         height: 15%;
         background: black;
         top: 42.5%;
+        transition: all .5s;
+
       }
       .mach_button1 {
         top: 19.3%;
@@ -124,7 +139,211 @@
         margin-top: 34% !important;
 
       }
+      .mach_point1:hover, .mach_point2:hover, .mach_point3:hover, .mach_point4:hover, .mach_point5:hover {
+        color: #A4DDD4;
+        transition: all .2s;
+      }
+
+      .mach_points p {
+        transition: all .5s;
+        cursor: default;
+      }
     </style>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".mach_button1").mouseover(function() {
+        $(".mach_point4").css("color", "#A4DDD4");
+        $(".mach_point4").css("transition", "all .2s");
+
+        $(".mach_button1 .mach_button_top").css("background", "#A4DDD4");
+        $(".mach_button1 .mach_button_back").css("background", "#76B1A8");
+        $(".mach_button1 .mach_button_extra").css("background", "#76B1A8");
+        $(".mach_button1").css("transition", "all .2s");
+      });
+      $(".mach_button1").mouseout(function() {
+        $(".mach_point4").css("color", "#FF83C1");
+        $(".mach_point4").css("transition", "all .5s");
+
+        $(".mach_button1 .mach_button_top").css("background", "#232323");
+        $(".mach_button1 .mach_button_back").css("background", "black");
+        $(".mach_button1 .mach_button_extra").css("background", "black");
+        $(".mach_point4").css("transition", "all .5s");
+
+      });
+      $(".mach_point4").mouseover(function() {
+        $(".mach_button1 .mach_button_top").css("background", "#A4DDD4");
+        $(".mach_button1 .mach_button_back").css("background", "#76B1A8");
+        $(".mach_button1 .mach_button_extra").css("background", "#76B1A8");
+        $(".mach_button1").css("transition", "all .2s");
+
+        $(".mach_point4").css("color", "#A4DDD4");
+        $(".mach_point4").css("transition", "all .2s");
+      });
+      $(".mach_point4").mouseout(function() {
+        $(".mach_button1 .mach_button_top").css("background", "#232323");
+        $(".mach_button1 .mach_button_back").css("background", "black");
+        $(".mach_button1 .mach_button_extra").css("background", "black");
+        $(".mach_point4").css("transition", "all .5s");
+
+        $(".mach_point4").css("color", "#FF83C1");
+        $(".mach_point4").css("transition", "all .5s");
+      });
+
+
+
+      $(".mach_button2").mouseover(function() {
+        $(".mach_point2").css("color", "#A4DDD4");
+        $(".mach_point2").css("transition", "all .2s");
+
+        $(".mach_button2 .mach_button_top").css("background", "#A4DDD4");
+        $(".mach_button2 .mach_button_back").css("background", "#76B1A8");
+        $(".mach_button2 .mach_button_extra").css("background", "#76B1A8");
+        $(".mach_button2").css("transition", "all .2s");
+      });
+      $(".mach_button2").mouseout(function() {
+        $(".mach_point2").css("color", "#FF83C1");
+        $(".mach_point2").css("transition", "all .5s");
+
+        $(".mach_button2 .mach_button_top").css("background", "#232323");
+        $(".mach_button2 .mach_button_back").css("background", "black");
+        $(".mach_button2 .mach_button_extra").css("background", "black");
+        $(".mach_point2").css("transition", "all .5s");
+
+      });
+      $(".mach_point2").mouseover(function() {
+        $(".mach_button2 .mach_button_top").css("background", "#A4DDD4");
+        $(".mach_button2 .mach_button_back").css("background", "#76B1A8");
+        $(".mach_button2 .mach_button_extra").css("background", "#76B1A8");
+        $(".mach_button2").css("transition", "all .2s");
+
+        $(".mach_point2").css("color", "#A4DDD4");
+        $(".mach_point2").css("transition", "all .2s");
+      });
+      $(".mach_point2").mouseout(function() {
+        $(".mach_button2 .mach_button_top").css("background", "#232323");
+        $(".mach_button2 .mach_button_back").css("background", "black");
+        $(".mach_button2 .mach_button_extra").css("background", "black");
+        $(".mach_point2").css("transition", "all .5s");
+        $(".mach_point2").css("color", "#FF83C1");
+        $(".mach_point2").css("transition", "all .5s");
+      });
+
+
+      $(".mach_button3").mouseover(function() {
+        $(".mach_point5").css("color", "#A4DDD4");
+        $(".mach_point5").css("transition", "all .2s");
+
+        $(".mach_button3 .mach_button_top").css("background", "#A4DDD4");
+        $(".mach_button3 .mach_button_back").css("background", "#76B1A8");
+        $(".mach_button3 .mach_button_extra").css("background", "#76B1A8");
+        $(".mach_button3").css("transition", "all .2s");
+      });
+      $(".mach_button3").mouseout(function() {
+        $(".mach_point5").css("color", "#FF83C1");
+        $(".mach_point5").css("transition", "all .5s");
+
+        $(".mach_button3 .mach_button_top").css("background", "#232323");
+        $(".mach_button3 .mach_button_back").css("background", "black");
+        $(".mach_button3 .mach_button_extra").css("background", "black");
+        $(".mach_point5").css("transition", "all .5s");
+
+      });
+      $(".mach_point5").mouseover(function() {
+        $(".mach_button3 .mach_button_top").css("background", "#A4DDD4");
+        $(".mach_button3 .mach_button_back").css("background", "#76B1A8");
+        $(".mach_button3 .mach_button_extra").css("background", "#76B1A8");
+        $(".mach_button3").css("transition", "all .2s");
+
+        $(".mach_point5").css("color", "#A4DDD4");
+        $(".mach_point5").css("transition", "all .2s");
+      });
+      $(".mach_point5").mouseout(function() {
+        $(".mach_button3 .mach_button_top").css("background", "#232323");
+        $(".mach_button3 .mach_button_back").css("background", "black");
+        $(".mach_button3 .mach_button_extra").css("background", "black");
+        $(".mach_point5").css("transition", "all .5s");
+        $(".mach_point5").css("color", "#FF83C1");
+        $(".mach_point5").css("transition", "all .5s");
+      });
+
+
+
+      $(".mach_button4").mouseover(function() {
+        $(".mach_point3").css("color", "#A4DDD4");
+        $(".mach_point3").css("transition", "all .2s");
+
+        $(".mach_button4 .mach_button_top").css("background", "#A4DDD4");
+        $(".mach_button4 .mach_button_back").css("background", "#76B1A8");
+        $(".mach_button4 .mach_button_extra").css("background", "#76B1A8");
+        $(".mach_button4").css("transition", "all .2s");
+      });
+      $(".mach_button4").mouseout(function() {
+        $(".mach_point3").css("color", "#FF83C1");
+        $(".mach_point3").css("transition", "all .5s");
+
+        $(".mach_button4 .mach_button_top").css("background", "#232323");
+        $(".mach_button4 .mach_button_back").css("background", "black");
+        $(".mach_button4 .mach_button_extra").css("background", "black");
+        $(".mach_point3").css("transition", "all .5s");
+
+      });
+      $(".mach_point3").mouseover(function() {
+        $(".mach_button4 .mach_button_top").css("background", "#A4DDD4");
+        $(".mach_button4 .mach_button_back").css("background", "#76B1A8");
+        $(".mach_button4 .mach_button_extra").css("background", "#76B1A8");
+        $(".mach_button4").css("transition", "all .2s");
+
+        $(".mach_point3").css("color", "#A4DDD4");
+        $(".mach_point3").css("transition", "all .2s");
+      });
+      $(".mach_point3").mouseout(function() {
+        $(".mach_button4 .mach_button_top").css("background", "#232323");
+        $(".mach_button4 .mach_button_back").css("background", "black");
+        $(".mach_button4 .mach_button_extra").css("background", "black");
+        $(".mach_point3").css("transition", "all .5s");
+        $(".mach_point3").css("color", "#FF83C1");
+        $(".mach_point3").css("transition", "all .5s");
+      });
+
+
+      $(".mach_button5").mouseover(function() {
+        $(".mach_point1").css("color", "#A4DDD4");
+        $(".mach_point1").css("transition", "all .2s");
+
+        $(".mach_button5 .mach_button_top").css("background", "#A4DDD4");
+        $(".mach_button5 .mach_button_back").css("background", "#76B1A8");
+        $(".mach_button5 .mach_button_extra").css("background", "#76B1A8");
+        $(".mach_button5").css("transition", "all .2s");
+      });
+      $(".mach_button5").mouseout(function() {
+        $(".mach_point1").css("color", "#FF83C1");
+        $(".mach_point1").css("transition", "all .5s");
+
+        $(".mach_button5 .mach_button_top").css("background", "#232323");
+        $(".mach_button5 .mach_button_back").css("background", "black");
+        $(".mach_button5 .mach_button_extra").css("background", "black");
+        $(".mach_point1").css("transition", "all .5s");
+
+      });
+      $(".mach_point1").mouseover(function() {
+        $(".mach_button5 .mach_button_top").css("background", "#A4DDD4");
+        $(".mach_button5 .mach_button_back").css("background", "#76B1A8");
+        $(".mach_button5 .mach_button_extra").css("background", "#76B1A8");
+        $(".mach_button5").css("transition", "all .2s");
+
+        $(".mach_point1").css("color", "#A4DDD4");
+        $(".mach_point1").css("transition", "all .2s");
+      });
+      $(".mach_point1").mouseout(function() {
+        $(".mach_button5 .mach_button_top").css("background", "#232323");
+        $(".mach_button5 .mach_button_back").css("background", "black");
+        $(".mach_button5 .mach_button_extra").css("background", "black");
+        $(".mach_point1").css("transition", "all .5s");
+        $(".mach_point1").css("color", "#FF83C1");
+        $(".mach_point1").css("transition", "all .5s");
+      });
+    });
+    </script>
   </head>
 
   <body>
