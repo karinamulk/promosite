@@ -362,6 +362,7 @@
       .gal_birka_top6 {
         height: 13.5%;
         background: #A4DDD4;
+
       }
       .gal_birka_top7 {
         height: 13.6%;
@@ -567,12 +568,12 @@
         left: 3.5%;
         bottom: 3.9%;
         border-radius: 20px;
-        height: 17.4%;
+        /* height: 17.4%; */
         width: 29.6%;
         background: #FF83C1;
         display: flex;
         justify-content: space-between;
-        padding: 2.2%;
+        padding: 2.2% 2.2% 2.2% 2.2%;
 
       }
       .gal_merch_tablo > * {
@@ -644,10 +645,47 @@
         console.log(slider_merch_result);
         $(".gal_birka").click(function(){
             $(this).addClass("gal_back");
-          setTimeout(function(){
-              $(this).removeClass("gal_back");
-              console.log(a);
-          }, 3000);
+            if ($(this).hasClass("gal_birka1")) {
+              setTimeout(function(){
+                $(".gal_birka1").removeClass("gal_back");
+              }, 4000);
+            }
+            if ($(this).hasClass("gal_birka2")) {
+              setTimeout(function(){
+                $(".gal_birka2").removeClass("gal_back");
+              }, 4000);
+            }
+            if ($(this).hasClass("gal_birka3")) {
+              setTimeout(function(){
+                $(".gal_birka3").removeClass("gal_back");
+              }, 4000);
+            }
+            if ($(this).hasClass("gal_birka4")) {
+              setTimeout(function(){
+                $(".gal_birka4").removeClass("gal_back");
+              }, 4000);
+            }
+            if ($(this).hasClass("gal_birka5")) {
+              setTimeout(function(){
+                $(".gal_birka5").removeClass("gal_back");
+              }, 4000);
+            }
+            if ($(this).hasClass("gal_birka6")) {
+              setTimeout(function(){
+                $(".gal_birka6").removeClass("gal_back");
+              }, 4000);
+            }
+            if ($(this).hasClass("gal_birka7")) {
+              setTimeout(function(){
+                $(".gal_birka7").removeClass("gal_back");
+              }, 4000);
+            }
+            if ($(this).hasClass("gal_birka8")) {
+              setTimeout(function(){
+                $(".gal_birka8").removeClass("gal_back");
+              }, 4000);
+            }
+
         });
 
         $(".gal_strelka2, .gal_slider_right").click(function(){
