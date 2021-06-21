@@ -18,7 +18,7 @@ body::before{
   left: 0;
   top: 0;
   right: 0;
-  background: url('../images/index-iphone.jpg');
+  /* background: url('../images/index-iphone.jpg'); */
   width: 100%;
   height: 100%;
   background-size: 100% auto ;
@@ -33,14 +33,27 @@ html{
 * {
   box-sizing: border-box;
 }
-
+.standart_wrapper {
+  position: relative;
+  width: 100%;
+}
+.standart_sootnosheniye {
+  position: relative;
+  padding-bottom:  56.944%;
+}
+.standart_content {
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  padding: 0;
+  /* overflow: hidden; */
+}
 .menubar {
   position: relative;
   width: 100%;
   height: 7.32%;
   position: fixed;
-  background: green;
-  opacity: .5;
+  background: black;
+  /* opacity: .5; */
   display: flex;
   z-index: 100;
   justify-content: space-between;
