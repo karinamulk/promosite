@@ -167,15 +167,15 @@
   position: relative;
   width: 100%;
   height: 95.6%;
-  background: green;
-  opacity: .5;
+  /* background: green; */
+  /* opacity: .5; */
 }
 .cat_futter {
   position: relative;
   width: 100%;
   height: 2.2%;
-  background: yellow;
-  opacity: .5;
+  /* background: yellow; */
+  /* opacity: .5; */
   display: flex;
   justify-content: space-between;
   padding: 1.35% 3.45% 1.35% 3.45%;
@@ -189,7 +189,7 @@
   padding-top: 2.8%;
   padding-left: 3.5%;
   padding-right: 3.5%;
-  background: green;
+  /* background: green; */
 }
 .catalog_block h1 {
   margin-top: -0.8%;
@@ -198,16 +198,16 @@
   position: relative;
   width: 100%;
   height: 23%;
-  background: red;
-  opacity: .5;
+  /* background: red; */
+  /* opacity: .5; */
 
 }
 .cat_game {
   position: relative;
   width: 100%;
   height: 23%;
-  background: purple;
-  opacity: .5;
+  /* background: purple; */
+  /* opacity: .5; */
   overflow: hidden;
 }
 
@@ -216,7 +216,7 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  background: yellow;
+  /* background: yellow; */
   height: 26%;
   width: 100%;
   margin-bottom: 3.85%;
@@ -225,7 +225,7 @@
   position: relative;
   height: 100%;
   width: 31.85%;
-  background: red;
+  /* background: red; */
 }
 .cat_item {
   position: relative;
@@ -239,7 +239,7 @@
   position: relative;
   width: 100%;
   height: 14%;
-  background: purple;
+  /* background: purple; */
   display: flex;
   justify-content: space-between;
 }
@@ -247,27 +247,27 @@
   margin-top: 2.5%;
 }
 .cat_item1 {
-  /* background-image: url('../images/item1.jpg'); */
-  background: black;
+  background-image: url('../images/item1.jpg');
+  /* background: black; */
 }
 .cat_item2 {
-  /* background-image: url('../images/item2.jpg'); */
-  background: black;
+  background-image: url('../images/item2.jpg');
+  /* background: black; */
 
 }
 .cat_item3 {
-  /* background-image: url('../images/item3.jpg'); */
-  background: black;
+  background-image: url('../images/item3.jpg');
+  /* background: black; */
 
 }
 .cat_item4 {
-  /* background-image: url('../images/item4.jpg'); */
-  background: black;
+  background-image: url('../images/item4.jpg');
+  /* background: black; */
 
 }
 .cat_item5 {
-  /* background-image: url('../images/item5.jpg'); */
-  background: black;
+  background-image: url('../images/item5.jpg');
+  /* background: black; */
 
 }
 .cat_item_hover .p_tall, .cat_item_hover ul {
@@ -302,8 +302,8 @@
 }
 .cat_line2 {
   height: 50.5%;
-  opacity: .5;
-  background: red;
+  /* opacity: .5; */
+  /* background: red; */
 }
 .cat_line2_block {
   width: 31.85%;
@@ -320,7 +320,7 @@
   height: 47.5%;
   display: block;
   width: 100%;
-  background: blue;
+  /* background: blue; */
 
 }
 .cat_line_item5 {
@@ -453,7 +453,7 @@
   position: relative;
   height: 100%;
   width: 300%;
-  background: green;
+  /* background: green; */
 }
 .cat_g_round1 {
   position: absolute;
@@ -779,7 +779,7 @@
   white-space: nowrap
 }
 .cat_game_container {
-  /* animation: marc 20s linear infinite; */
+  animation: marc 20s linear infinite;
   animation-play-state: running;
   display: inline-block;
   vertical-align: top;
@@ -795,3 +795,4 @@
 .cat_line_plus_ipad img {position: absolute; width: 5.75%; left: 47.125%; }
 .cat_line_plus_ipad p {text-align: center; width: 38%; position: absolute; bottom: 7.8%; left: 31%; line-height: 25px;}
 .cat_timeline_img_ipad {width: 100%; position: absolute; top: 7.2%; display: none;}
+.cat_timeline_img_iphone {width: 100%; position: absolute; top: 13.8%; display: none;}
