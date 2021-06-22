@@ -23,6 +23,23 @@
     100% {-webkit-mask-position: 0% top;}
   }
 
+  .cat_sootnosheniye {padding-bottom: 260.29%;}
+  .cat_menubar_extra {height: 3.165%;}
+  .cat_futter {height: 3.165%;}
+  h1 {font-size: 48px; line-height: 58px; margin-bottom: 2.8%;}
+  .catp_content {height: 93.67%;}
+  .catalog_block {height: 51.5%; padding-top: 1.8%; padding-left: 3.85%;}
+  .cat_timeline {height: 18.84%;}
+  .cat_game {height: 29.66%;}
+  .cat_line {height: 29.4%; margin-bottom: 3.4%;}
+  .cat_line_item3 {display: none;}
+  .cat_line_item {width: 48.8%;}
+  .cat_weight2 {margin-top: 24.8%;}
+  .cat_weight3 {margin-top: 17%;}
+  .cat_item_hover ul {margin-left: 9%;}
+  li {margin-top: 2px; margin-bottom: 2px;}
+  /* .cat_line_item {width: 100%;} */
+
 }
 @media only screen and (max-width: 500px) {
   .standart_sootnosheniye {padding-bottom: 177.5%;}
