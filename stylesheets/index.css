@@ -1604,3 +1604,201 @@
   transition: all .5s;
   cursor: default;
 }
+
+
+
+
+
+
+
+
+/* space */
+.space_main_block {
+  position: relative;
+  display: block;
+  height: 85.46%;
+  width: 100%;
+  background: blue;
+  opacity: .5;
+  padding: 2% 3.5% 0 3.5%;
+}
+.space_text_block {
+  position: relative;
+  display: inline-block;
+  width: 33.8%;
+  height: 100%;
+  vertical-align: top;
+  background: red;
+  margin: 0;
+}
+h1 {
+  position: relative;
+  line-height: 59px;
+  display: block;
+  margin-top: 2.4%;
+  margin-left: 1%;
+  vertical-align: top;
+
+}
+.space_text_block p  {
+  vertical-align: top;
+  margin-left: 1.8%;
+  position: relative;
+  display: block;
+  width: 95%;
+  margin-top: 20.7%;
+
+
+
+}
+.space_text_block p + p {
+  margin-top: 5.5%;
+
+}
+.space_image {
+  position: relative;
+  display: inline-block;
+  width: 48.8%;
+  height: 100%;
+  background: yellow;
+  margin: 0;
+  background-image: url('../images/space_image1.jpg');
+  background-size: 300% 100%;
+  background-position: 0 0;
+  /* animation: image1 9s ease infinite; */
+  /* transition: all .5s; */
+}
+
+.space_points {
+  position: relative;
+  display: inline-block;
+  width: 16%;
+  height: 100%;
+  vertical-align: top;
+  background: red;
+  margin: 0;
+}
+.space_points p {
+  position: relative;
+  font-weight: 700;
+  margin-left: 13%;
+  margin-top: 25%;
+  cursor: default;
+}
+.space_point1 {
+  margin-top: 34% !important;
+
+}
+.space_steps {
+  position: absolute;
+  height: 6.75%;
+  background: green;
+  bottom: 0%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.space_before_steps {
+  position: absolute;
+  height: 93.25%;
+  width: 100%;
+  top: 0;
+  /* background: blue; */
+}
+
+.space_step {
+  position: relative;
+  width: 25%;
+  height: 100%;
+  margin: 0;
+  background: #FF83C1;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  color: black;
+  cursor: pointer;
+  transition: all .5s;
+}
+.space_step1 {
+  padding: 1.6% 4.8%;
+  background: #A4DDD4;
+}
+.space_step2, .space_step3, .space_step4 {
+  padding:  1.6% 8.1%;
+}
+.space_step1:hover, .space_step2:hover, .space_step3:hover, .space_step4:hover{
+  background: #A4DDD4;
+  transition: all .2s;
+}
+.space_rounds {
+  position: absolute;
+  height: 1.5%;
+  width: 7.7%;
+  background: red;
+  bottom: 10.5%;
+  left: 46.15%;
+  display: flex;
+  justify-content: space-between;
+
+}
+.space_round {
+  position: relative;
+  height: 100%;
+  background: black;
+  width: 20%;
+  border-radius: 50%;
+
+}
+@keyframes image1 {
+  0% {background-position: 0 0;}
+  29% {background-position: 0 0;}
+  33% {background-position: 50% 0;}
+  62% {background-position: 50% 0;}
+  66% {background-position: 100% 0;}
+  96% {background-position: 100% 0;}
+  100% {background-position: 150% 0;}
+}
+@keyframes image2 {
+  0% {background-position: 0 0;}
+  10.9% {background-position: 0 0;}
+  12.5% {background-position: 14.29% 0;}
+  23.4% {background-position: 14.29% 0;}
+  25% {background-position: 28.57% 0;}
+  35.9% {background-position: 28.57% 0;}
+  37.5% {background-position: 42.855% 0;}
+  48.4% {background-position: 42.855% 0;}
+  50% {background-position: 57.14% 0;}
+  60.9% {background-position: 57.14% 0;}
+  62.5% {background-position: 71.425% 0;}
+  73.4% {background-position: 71.425% 0;}
+  75% {background-position: 85.71% 0;}
+  85.9% {background-position: 85.71% 0;}
+  87.5% {background-position: 100% 0;}
+  98.4% {background-position: 100% 0;}
+  100% {background-position: 114.285% 0;}
+}
+@keyframes image3 {
+  0% {background-position: 0 0;}
+  17.45% {background-position: 0 0;}
+  20% {background-position: 25% 0;}
+  37.45% {background-position: 25% 0;}
+  40% {background-position: 50% 0;}
+  57.45% {background-position: 50% 0;}
+  60% {background-position: 75% 0;}
+  77.45% {background-position: 75% 0;}
+  80% {background-position: 100% 0;}
+  97.45% {background-position: 100% 0;}
+  100% {background-position: 125% 0;}
+}
+@keyframes image4 {
+  0% {background-position: 0 0;}
+  21.9% {background-position: 0 0;}
+  25% {background-position: 33.3% 0;}
+  46.9% {background-position: 33.3% 0;}
+  50% {background-position: 66.6% 0;}
+  71.9% {background-position: 66.6% 0;}
+  75% {background-position: 100% 0;}
+  96.9% {background-position: 100% 0;}
+  100% {background-position: 133.3% 0;}
+}
