@@ -819,8 +819,8 @@
   position: relative;
   width: 100%;
   height: 1.41%;
-  background: yellow;
-  opacity: .5;
+  /* background: yellow; */
+  /* opacity: .5; */
   display: flex;
   justify-content: space-between;
   padding: 1.35% 3.45% 1.35% 3.45%;
@@ -835,15 +835,15 @@
   position: relative;
   width: 100%;
   height: 69.7%;
-  background: blue;
-  opacity: .5;
+  /* background: blue; */
+  /* opacity: .5; */
 }
 .gallery_row_container {
   position: relative;
   width: 100%;
   height: 6.46%;
-  background: red;
-  opacity: .5;
+  /* background: red; */
+  /* opacity: .5; */
   padding: 1.5% 0;
 }
 .gallery_row {
@@ -851,7 +851,7 @@
   width: 100%;
   height: 100%;
   background-color: #FF83C1;
-  opacity: .5;
+  /* opacity: .5; */
   mask-type: alpha;
   -webkit-mask: url("https://raw.githubusercontent.com/karinamulk/promosite/b01da1c34dc60379f029f94f2f8767a467ae02ff/images/gallery_row.svg");
   mask: url("https://raw.githubusercontent.com/karinamulk/promosite/b01da1c34dc60379f029f94f2f8767a467ae02ff/images/gallery_row.svg");
@@ -867,8 +867,8 @@
   position: relative;
   width: 100%;
   height: 21.004%;
-  background: green;
-  opacity: .5;
+  /* background: green; */
+  /* opacity: .5; */
   background-image: url('../images/merch.jpg');
   background-size: 500% 100%;
   background-position: 0% 0;
@@ -1460,3 +1460,145 @@
   100% {opacity: 100%;}
 }
 .iphone_block_extra {height: 5.262%; width: 100%; display: none;}
+
+
+
+
+
+
+/* machine */
+.mach_main_block {
+  position: relative;
+  display: block;
+  height: 85.46%;
+  width: 100%;
+  background: blue;
+  opacity: .5;
+  padding: 2% 3.5% 0 3.5%;
+}
+.mach_text_block {
+  position: relative;
+  display: inline-block;
+  width: 33.8%;
+  height: 100%;
+  background: red;
+  margin: 0;
+  vertical-align: top;
+}
+.mach_text_block h1 {
+  position: relative;
+  line-height: 59px;
+  display: block;
+  vertical-align: top;
+  margin-top: 2.4%;
+
+}
+.mach_text_block p  {
+  position: relative;
+  display: block;
+  width: 95%;
+  vertical-align: top;
+  margin-top: 7.7%;
+}
+.mach_image {
+  position: relative;
+  display: inline-block;
+  width: 48.8%;
+  height: 100%;
+  background: yellow;
+  margin: 0;
+  background-image: url('../images/machine_foto.jpg');
+  background-size: auto 102%;
+  background-position: left 10%;
+
+}
+.mach_points {
+  position: relative;
+  display: inline-block;
+  width: 16%;
+  height: 100%;
+  vertical-align: top;
+  background: red;
+  margin: 0;
+}
+.mach_button {
+  position: absolute;
+  width: 5.05%;
+  height: 4.91%;
+}
+.mach_button:hover .mach_button_top {
+  background: #A4DDD4;
+  transition: all .2s;
+}
+.mach_button:hover .mach_button_back,  .mach_button:hover .mach_button_extra{
+  background: #76B1A8;
+  transition: all .2s;
+
+}
+.mach_button_top {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #343434;
+  transition: all .5s;
+
+}
+.mach_button_back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: black;
+  bottom: -15%;
+  transition: all .5s;
+
+}
+.mach_button_extra {
+  position: absolute;
+  width: 100%;
+  height: 15%;
+  background: black;
+  top: 42.5%;
+  transition: all .5s;
+
+}
+.mach_button1 {
+  top: 19.3%;
+  left: 17.7%;
+}
+.mach_button2 {
+  top: 24.5%;
+  right: 30.2%;
+}
+.mach_button3 {
+  bottom: 18.5%;
+  left: 29%;
+}
+.mach_button4 {
+  bottom: 23%;
+  left: 49.4%;
+}
+.mach_button5 {
+  bottom: 4.5%;
+  right: 25.5%;
+}
+.mach_points p {
+  font-weight: 700;
+  margin-left: 13%;
+  margin-top: 25%;
+
+}
+.mach_point1 {
+  margin-top: 34% !important;
+
+}
+.mach_point1:hover, .mach_point2:hover, .mach_point3:hover, .mach_point4:hover, .mach_point5:hover {
+  color: #A4DDD4;
+  transition: all .2s;
+}
+
+.mach_points p {
+  transition: all .5s;
+  cursor: default;
+}
