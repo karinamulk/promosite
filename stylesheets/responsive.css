@@ -140,6 +140,10 @@
   .mach_button5 {right: 10%; bottom: 3%;}
   .mach_points p {margin-left: 7.5%; margin-top: 26%;}
 
+
+
+
+
 }
 
 
@@ -303,9 +307,8 @@
   .mach_button3 {bottom: 17%; left: 37%;}
   .mach_button4 {bottom: 26%; left: 58%;}
   .mach_button5 {right: 9%; bottom: 3%;}
-  .mach_points p {margin-left: 7.5%; margin-top: 26%;}
+  .mach_points p {margin-left: 0%; margin-top: 26%;}
   .mach_point2, .mach_point3, .mach_point4, .mach_point5 {display: none;}
   .mach_point1 {margin-top: 6% !important; width: 100%; text-align: center;}
-
 
   }
