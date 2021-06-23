@@ -16,52 +16,42 @@
 
     <!-- И вот такой скрипт -->
     <script type="text/javascript">
-      $(document).ready(function(){
-        let a = 0;
-        let b = 1000;
-        console.log(a);
-        $(".cat_game_container").clone().appendTo(".cat_game");
+    $(document).ready(function(){
+      let a = 0;
+      let b = 1000;
+      console.log(a);
+      $(".cat_game_container").clone().appendTo(".cat_game");
 
-        $(".cat_g_card1, .cat_g_card2, .cat_g_card3, .cat_g_card4, .cat_g_card5").mouseover(function() {
-          if (a == 0) {
-            $(".cat_game_container").css("animation-play-state", "paused");
-
-            console.log(a);
-          }
-          if ($(this).hasClass("cat_g_card1")) {
-            $(this).css("background", "#A4DDD4");
-
-            console.log(b);
-          }
-          if ($(this).hasClass("cat_g_card2")) {
-            $(this).css("background", "#FF83C1");
-
-            console.log(b);
-          }
-
-        });
-        $(".cat_g_card1, .cat_g_card2, .cat_g_card3, .cat_g_card4, .cat_g_card5").mouseout(function() {
-          if (a == 0) {
-            $(".cat_game_container").css("animation-play-state", "running");
-            console.log(a);
-          }
-          if ($(this).hasClass("cat_g_card2")) {
-            $(this).css("background", "#A4DDD4");
-            console.log(b);
-
-          }
-
-        });
-
-        $(".cat_g_card1, .cat_g_card2, .cat_g_card3, .cat_g_card4, .cat_g_card5").click(function(){
-          a += 1;
-          $(this).css("animation-play-state", "running");
+      $(".cat_g_card1, .cat_g_card2, .cat_g_card3, .cat_g_card4, .cat_g_card5").mouseover(function() {
+        if (a == 0) {
           $(".cat_game_container").css("animation-play-state", "paused");
-          $(this).children().css("display", "block");
 
-        });
+          console.log(a);
+        }
+
 
       });
+      $(".cat_g_card1, .cat_g_card2, .cat_g_card3, .cat_g_card4, .cat_g_card5").mouseout(function() {
+        if (a == 0) {
+          $(".cat_game_container").css("animation-play-state", "running");
+          console.log(a);
+        }
+
+      });
+
+
+      $(".cat_g_card1, .cat_g_card2, .cat_g_card3, .cat_g_card4, .cat_g_card5").click(function(){
+        a += 1;
+        $(this).css({
+          "animation": "blinking3 1.5s linear",
+          "background-color": "#A4DDD4",
+          "animation-play-state": "running"
+        });
+        $(".cat_game_container").css("animation-play-state", "paused");
+        $(this).children().css("display", "block");
+      });
+
+    });
 
 
     </script>
