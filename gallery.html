@@ -160,49 +160,75 @@
 
       }
       .gal_birka_front1 {
-        background-image: url("images/posters1.jpg");
-        background-size: 600% 100%;
+        background-image: url("images/posters1.png");
+        background-size: 200% 100%;
+        opacity: 100%;
+        animation-play-state: paused;
+      }
+
+      .gal_birka_front1:hover {
+        background-position: 100% top;
+        /* transition: all .2s; */
+      }
+      @keyframes opacity_birka {
+        0% {opacity: 50%;}
+        100% {opacity: 100%;}
       }
       .gal_birka_front2 {
         background: #A4DDD4;
         height: 90%;
       }
       .gal_birka_front3 {
-        background-image: url("images/posters3.jpg");
-        background-size: 600% 100%;
+        background-image: url("images/posters3.png");
+        background-size: 200% 100%;
         height: 86.1%;
         border: 8px solid #FF83C1;
+      }
+      .gal_birka_front3:hover {
+        background-position: 100% top;
       }
       .gal_birka_front4 {
         background: #FF83C1;
         height: 90%;
       }
       .gal_birka_front5 {
-        background-image: url("images/posters4.jpg");
-        background-size: 600% 100%;
+        background-image: url("images/posters5.png");
+        background-size: 200% 100%;
         height: 87%;
         border-radius: 30px;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
         border: 8px solid #A4DDD4;
       }
+      .gal_birka_front5:hover {
+        background-position: 100% top;
+        /* transition: all .2s; */
+      }
       .gal_birka_front6 {
-        background-image: url("images/posters5.jpg");
-        background-size: 800% 100%;
+        background-image: url("images/posters6.png");
+        background-size: 200% 100%;
         height: 86.5%;
         border-radius: 30px;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
         border: 8px solid #A4DDD4;
       }
+      .gal_birka_front6:hover {
+        background-position: 100% top;
+        /* transition: all .2s; */
+      }
       .gal_birka_front7 {
-        background-image: url("images/posters6.jpg");
-        background-size: 600% 100%;
+        background-image: url("images/posters7.png");
+        background-size: 200% 100%;
         height: 87%;
         border-radius: 30px;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
         border: 8px solid #FF83C1;
+      }
+      .gal_birka_front7:hover {
+        background-position: 100% top;
+        /* transition: all .2s; */
       }
       .gal_birka_front8 {
         background: #A4DDD4;
@@ -632,6 +658,16 @@
         transition: all .2s;
 
       }
+      .animation {
+        animation: opacity_birka .3s linear;
+      }
+      .animation1 {
+        animation: opacity_birka1 .5s linear;
+      }
+      @keyframes opacity_birka1 {
+        0% {opacity: 30%;}
+        100% {opacity: 100%;}
+      }
     </style>
 
 
@@ -736,6 +772,67 @@
               $(".gal_merch_tablo1").html("990 р.");
             }
 
+        });
+
+        $(".gal_birka_front1").mouseover(function(){
+            $(".gal_birka_front1").addClass('animation');
+            setTimeout(function(){
+              $(".gal_birka_front1").removeClass('animation');
+            }, 500);
+        });
+        $(".gal_birka_front1").mouseout(function(){
+          $(".gal_birka_front1").addClass('animation1');
+          setTimeout(function(){
+            $(".gal_birka_front1").removeClass('animation1');
+          }, 500);
+        });
+        $(".gal_birka_front3").mouseover(function(){
+            $(".gal_birka_front3").addClass('animation');
+            setTimeout(function(){
+              $(".gal_birka_front3").removeClass('animation');
+            }, 500);
+        });
+        $(".gal_birka_front3").mouseout(function(){
+          $(".gal_birka_front3").addClass('animation1');
+          setTimeout(function(){
+            $(".gal_birka_front3").removeClass('animation1');
+          }, 500);
+        });
+        $(".gal_birka_front5").mouseover(function(){
+            $(".gal_birka_front5").addClass('animation');
+            setTimeout(function(){
+              $(".gal_birka_front5").removeClass('animation');
+            }, 500);
+        });
+        $(".gal_birka_front5").mouseout(function(){
+          $(".gal_birka_front5").addClass('animation1');
+          setTimeout(function(){
+            $(".gal_birka_front5").removeClass('animation1');
+          }, 500);
+        });
+        $(".gal_birka_front6").mouseover(function(){
+            $(".gal_birka_front6").addClass('animation');
+            setTimeout(function(){
+              $(".gal_birka_front6").removeClass('animation');
+            }, 500);
+        });
+        $(".gal_birka_front6").mouseout(function(){
+          $(".gal_birka_front6").addClass('animation1');
+          setTimeout(function(){
+            $(".gal_birka_front6").removeClass('animation1');
+          }, 500);
+        });
+        $(".gal_birka_front7").mouseover(function(){
+            $(".gal_birka_front7").addClass('animation');
+            setTimeout(function(){
+              $(".gal_birka_front7").removeClass('animation');
+            }, 500);
+        });
+        $(".gal_birka_front7").mouseout(function(){
+          $(".gal_birka_front7").addClass('animation1');
+          setTimeout(function(){
+            $(".gal_birka_front7").removeClass('animation1');
+          }, 500);
         });
       });
     </script>
