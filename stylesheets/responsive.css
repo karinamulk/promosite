@@ -121,7 +121,37 @@
   .gal_strelka2 {right: 3.75%;}
   .gal_merch_tablo {left: 3.95%; padding: 2% 3.7% 2% 3.7%; width: 48.1%; bottom: 4.5%;}
   .gal_merch_tablo p {font-size: 18px; line-height: 23px;}
+
+
+
+
+
+  .mach_main_block {padding: 0% 3.5% 0 3.9%;}
+  .mach_text_block {width: 100%; display: block; height: 34.7%;}
+  .mach_image {height: 65.3%; width: 65.5%;}
+  .mach_points {height: 65.3%; width: 29%; margin-top: -9.6%;}
+  .mach_text_block h1 {line-height: 44px;}
+  .mach_text_block p {margin-top: 5%; width: 84%;}
+  .mach_button {width: 7.167%; height: 5.842%;}
+  .mach_button1 {left: 22%; top: 18%;}
+  .mach_button2 {right: 22%; top: 25%;}
+  .mach_button3 {bottom: 15%; left: 37%;}
+  .mach_button4 {bottom: 20%; left: 58%;}
+  .mach_button5 {right: 10%; bottom: 3%;}
+  .mach_points p {margin-left: 7.5%; margin-top: 26%;}
+
 }
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 500px) {
   .standart_sootnosheniye {padding-bottom: 177.5%;}
   .menubar {height: 6.2%; padding: 2.34% 4.9% 0% 4.5%;}
@@ -205,8 +235,8 @@
 
   .gal_sootnosheniye {padding-bottom: 712.5%;}
   .gal_futter, .gal_menubar_extra {height: 1.544%;}
-  .gal_birki {height: 75.8%;}
-  .gallery_row_container {height: 6.85%;}
+  .gal_birki {height: 75.8%; overflow: hidden;}
+  .gallery_row_container {height: 6.85%; padding-bottom: 6%;}
   .gal_merch {height: 9%;}
   .iphone_block_extra {display: block;}
   .gal_birka {border-radius: 10px;}
@@ -221,39 +251,61 @@
   .gal_birka8 {left: 4.8%; right: auto; bottom: .7%; width: 43.75%; height: 13.95%;}
   .gal_birka7 {right: -2%; bottom: 8.9%; width: 67.28%; height: 21.4%;}
   .gal_rope {width: 4px;}
-  .gal_rope1 {left: calc(26.25% - 2px);}
-  .gal_rope2 {left: calc(51.26% - 2px);}
-  .gal_rope3 {right: calc(18.3% - 2px);}
-  .gal_rope4 {left: calc(65.31% - 2px);}
-  .gal_rope5 {right: auto; left: calc(24.92% - 2px);}
-  .gal_rope6 {left: auto; right: calc(26.895% - 2px);}
-  .gal_rope7 {right: calc(40.2% - 2px); height: 68%; z-index: 90;}
-  .gal_rope8 {left: calc(16.665% - 2px);}
-  .p_date {font-size: 48px; line-height: 58px;}
-  .gal_birka_back1 .p_date1 {top: 31%;}
-  .gal_birka_back1 .p_date2 {top: 40%;}
-  .gal_birka_back3 h1, .gal_birka_back3 .p_date {font-size: 24px; line-height: 29px;}
-  .gal_birka_back3 .p_tall {top: 14%; font-size: 18px; line-height: 22px;}
+  .gal_rope1 {left: calc(38.394% - 2px);}
+  .gal_rope2 {right: calc(26.675% - 2px); left: auto;}
+  .gal_rope3 {right: calc(24.82% - 2px); height: 60%;}
+  .gal_rope4 {left: calc(26.775% - 2px);}
+  .gal_rope5 {right: auto; left: calc(34.164% - 2px);}
+  .gal_rope6 {left: auto; right: calc(33.407% - 2px);}
+  .gal_rope7 {right: calc(31.64% - 2px); height: 80%;}
+  .gal_rope8 {left: calc(26.675% - 2px); height: 95%;}
+  .p_date {font-size: 24px; line-height: 29px;}
+  .p_bron {display: none;}
+  .gal_birka_back1 .p_date1 {top: 21%;}
+  .gal_birka_back1 .p_date2 {top: 30%;}
+  .gal_birka_back3 h1, .gal_birka_back3 .p_date, .gal_birka_back6 h1, .gal_birka_back7 .p_date, .gal_birka_back5 .p_date {font-size: 24px; line-height: 29px;}
   .gal_birka_back3 .p_bron  {display: none;}
   .gal_img3 {bottom: 10%;}
-  .gal_birka_back3 .p_date {top: 46%;}
-  h2 {font-size: 36px; line-height: 44px;}
-  .gal_birka_back5 .p_tall {top: 19%;}
+  .gal_birka_back5 .p_date2 {top: 50%;}
+  .gal_birka_back3 .p_date {top: 32%;}
+  h2 {font-size: 24px; line-height: 29px;}
   .gal_img5 {bottom: 5%;}
   .gal_birka_back5 .p_date1 {top: 41%;}
   .gal_img6 {bottom: 5%;}
-  .gal_birka_back6 .p_date1 {left: 5.5%; right: auto; top: 26%;}
-  .gal_birka_back6 .p_date2 {left: 5.5%; right: auto; top: 36%;}
+  .gal_birka_back .p_tall {display: none;}
+  .gal_birka_back6 .p_date1 {left: 5.5%; right: auto; top: 16%;}
+  .gal_birka_back6 .p_date2 {left: 5.5%; right: auto; top: 26%;}
   .gal_birka_back4 a, .gal_birka_back8 a {font-size: 24px; line-height: 29px; left: calc(50% - 57px);}
-  .gallery_row {animation: gallery_row_anim 17s linear infinite;}
+  .gallery_row {animation: gallery_row_anim 14s linear infinite;}
   @keyframes gallery_row_anim {
-    0% {-webkit-mask-position: -168% top;}
+    0% {-webkit-mask-position: -139.3% top;}
     100% {-webkit-mask-position: 0% top;}
   }
   .gal_strelka1, .gal_strelka2 {width: 3%; top: 47.3%}
   .gal_strelka1 {left: 3.75%;}
   .gal_strelka2 {right: 3.75%;}
-  .gal_merch_tablo {left: 3.95%; padding: 2% 3.7% 2% 3.7%; width: 48.1%; bottom: 4.5%;}
-  .gal_merch_tablo p {font-size: 18px; line-height: 23px;}
+  .gal_merch_tablo {left: 4.6%; padding: 4% 5.5% 4% 5.5%; width: 90.8%; bottom: auto; z-index: 100; top: 108.7%;}
+  .gal_merch_tablo p {font-size: 18px; line-height: 20px;}
+
+
+
+  .machine_sootnosheniye {padding-bottom: 275%;}
+  .mach_menubar_extra, .mach_futter {height: 4.515%;}
+  .mach_main_block {padding: 0% 4.5% 0 4.5%; height: 90.97%;}
+  .mach_text_block {width: 100%; display: block; height: 43.5%;}
+  .mach_image {height: 43.4%; width: 100%; display: block;}
+  .mach_points {height: 11.8%; width: 29%; width: 100%;}
+  .mach_text_block h1 {line-height: 29px; margin-top: 6%;}
+  .mach_text_block p {margin-top: 7%; width: 101%;}
+  .mach_button {width: 9.052%; height: 7.588%;}
+  .mach_button1 {left: 23.3%; top: 16%;}
+  .mach_button2 {right: 20.7%; top: 23.5%;}
+  .mach_button3 {bottom: 17%; left: 37%;}
+  .mach_button4 {bottom: 26%; left: 58%;}
+  .mach_button5 {right: 9%; bottom: 3%;}
+  .mach_points p {margin-left: 7.5%; margin-top: 26%;}
+  .mach_point2, .mach_point3, .mach_point4, .mach_point5 {display: none;}
+  .mach_point1 {margin-top: 6% !important; width: 100%; text-align: center;}
+
+
   }
-}
