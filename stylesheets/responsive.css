@@ -210,16 +210,16 @@
   .gal_merch {height: 9%;}
   .iphone_block_extra {display: block;}
   .gal_birka {border-radius: 10px;}
-  .gal_birka2 {left: 38.5%; top: 7%; width: 25.52%; height: 19%;}
-  .gal_birka4 {left: 54%; top: 32%; width: 22.629%; height: 17%;}
-  .gal_birka1 {left: 4%; top: 4.3%; width: 44.5%; height: 33.6%; }
+  .gal_birka2 {left: auto; right: 4.8%; top: 5.7%; width: 43.75%; height: 13.9%;}
+  .gal_birka4 {left: 4.9%; top: 28.05%; width: 43.75%; height: 13.9%;}
+  .gal_birka1 {left: 4.8%; top: 1.9%; width: 67.188%; height: 21.6%; }
   .gal_birka_front1, .gal_birka_front3, .gal_birka_front7 {border: 5px solid #FF83C1;}
   .gal_birka_front5, .gal_birka_front6 {border: 5px solid #A4DDD4;}
-  .gal_birka3 {width: 29%; height: 21.9%; right: 3.8%; top: 12%;}
-  .gal_birka5 {left: 5.3%; right: auto; bottom: 23%; width: 39.24%; height: 29.4%;}
-  .gal_birka6 {right: 4.5%; top: 42.4%; width: 44.79%; height: 33.4%; left: auto;}
-  .gal_birka8 {left: 5.4%; right: auto; bottom:4%; width: 22.53%; height: 16.8%;}
-  .gal_birka7 {right: 19.2%; bottom: 1.6%; width: 42%; height: 31%;}
+  .gal_birka3 {width: 57.24%; height: 18.4%; right: -3.8%; top: 25.3%;}
+  .gal_birka5 {left: 5.3%; right: auto; bottom: 26.5%; width: 57.728%; height: 18.35%; top: auto;}
+  .gal_birka6 {right: 4.5%; top: 45.5%; width: 57.813%; height: 18.5%; left: auto;}
+  .gal_birka8 {left: 4.8%; right: auto; bottom: .7%; width: 43.75%; height: 13.95%;}
+  .gal_birka7 {right: -2%; bottom: 8.9%; width: 67.28%; height: 21.4%;}
   .gal_rope {width: 4px;}
   .gal_rope1 {left: calc(26.25% - 2px);}
   .gal_rope2 {left: calc(51.26% - 2px);}
