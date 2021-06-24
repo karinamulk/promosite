@@ -554,3 +554,101 @@ textarea::placeholder {
   top: 2.5%;
   position: absolute;
 }
+
+
+
+
+
+
+
+
+/* order */
+.o_main_block {
+  position: relative;
+  display: block;
+  height: 85.46%;
+  width: 100%;
+  /* background: blue; */
+  /* opacity: .5; */
+  /* padding: 2% 3.5% 0 3.5%; */
+}
+.o_main_block h1 {
+  position: relative;
+  padding-top: 2.7%;
+  margin-left: 3.5%;
+
+}
+.o_main_block input {
+  position: relative;
+  width: 17.3%;
+  border: none;
+  background: #FF83C1;
+  border-radius: 40px;
+  height: 5.5%;
+  margin-top: 5%;
+  margin-left: 3.5%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: black;
+  opacity: 100%;
+  font-weight: 500;
+  line-height: 22px;
+  padding: 1% 1.3%;
+  z-index: 100;
+  text-align: center;
+
+}
+.o_main_block input[type="text"]::-moz-placeholder {
+   color: black; white-space: pre-wrap;
+}
+.o_main_block input[type="text"]::-webkit-input-placeholder { color: black; white-space: pre-wrap;}
+.o_main_block input[type="text"]:-ms-input-placeholder { color: black; white-space: pre-wrap;}
+.o_main_block input[type="text"]::-ms-input-placeholder { color: black; white-space: pre-wrap;}
+.o_main_block input[type="text"]::placeholder { color: black; white-space: pre-wrap;}
+
+.o_main_block img {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 10%;
+  z-index: 90;
+}
+
+.o_text {
+  position: absolute;
+  width: auto;
+  /* background: red; */
+}
+.o_data {
+  margin-left: 15%;
+}
+.o_text1 {
+  left: 2.9%;
+  bottom: 27.7%;
+}
+.o_text2 {
+  left: 16.3%;
+  bottom: 5.7%;
+}
+.o_text2 .o_data {
+  margin-left: 26%;
+}
+.o_text3 {
+  left: 35.35%;
+  top: 49.5%;
+}
+.o_text3 .o_data, .o_text4 .o_data {
+  margin-left: 19.5%;
+}
+.o_text4 {
+  right: 25.8%;
+  bottom: 1.4%;
+}
+.o_text5 {
+  right: 23.35%;
+  top: 34.8%;
+}
+.order_menubar_extra {height: 3.1%;}
+.order_input_button {position: absolute; color: #A4DDD4; top: 28.7%; left: 23%; z-index: 200; transition: all .5s;}
+.order_input_button:hover {color: #FF83C1; cursor: pointer; transition: all .2s;}
+.order_img {display: none; opacity: 0; transition: all .8s;}
