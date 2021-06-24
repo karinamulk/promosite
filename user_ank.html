@@ -15,515 +15,34 @@
 
 
     <style media="screen">
-      .wrapper {
-        position: relative;
-        width: 100%;
-      }
-      .sootnosheniye {
-        position: relative;
-        padding-bottom:  71.11%;
-      }
-      .content {
-        position: absolute;
-        top: 0; bottom: 0; left: 0; right: 0;
-        padding: 0;
-        /* overflow: hidden; */
-      }
-      .menubar_extra {
-        position: relative;
-        width: 100%;
-        height: 5.86%;
-      }
-      .futter {
-        height: 5.794%;
-
-      }
-      .text_block {
-        position: relative;
-        width: 100%;
-        /* background: green; */
-        opacity: .5;
-        height: 29.274%;
-        padding: 1.7% 3.8%;
-        display: block;
-      }
-      .question_block {
-        position: relative;
-        width: 100%;
-        /* background: blue; */
-        opacity: .5;
-        height: 59.072%;
-        padding: 0% 3.5%;
-        display: flex;
-        justify-content: space-between;
-
-      }
-      .text_block h1 {
-        line-height: 59px;
-        margin-bottom: 5.2%;
-        width: 100%;
-      }
-      .text_block p {
-        width: 70%;
 
 
-      }
-      .text_left {
-        width: 50%;
-        height: 100%;
-        display: inline-block;
-      }
-      .icons_right {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        right: 0;
-
-      }
-      .icon1 {
-        position: absolute;
-        width: 9%;
-        height: 47%;
-        right: 19%;
-        top: 12.3%;
-      }
-      .icon2 {
-        position: absolute;
-        width: 9%;
-        height: 47%;
-        right: 9.5%;
-        top: 12.3%;
-      }
-      .icon1 p, .icon2 p {
-        position: absolute;
-        width: auto;
-        bottom: 5%;
-      }
-      .icon1 p {
-        left: calc(50% - 44px);
-      }
-      .icon2 p {
-        left: calc(50% - 53px);
-      }
-      .icon1 img {
-        position: absolute;
-        width: 54%;
-        left: 23%;
-      }
-      .icon2 img {
-        position: absolute;
-        width: 78.71%;
-        left: 10.65%;
-      }
-      .question1 {
-        position: absolute;
-        height: 100%;
-        width: 29.6%;
-        background: #A4DDD4;
-        padding: 1% 0 1% 1.2%;
-        left: 3.5%;
-        top: 0;
-
-
-      }
-
-
-      .question_text {
-        font-weight: 700;
-      }
-      form p {
-        color: black;
-        width: auto;
-      }
-      .portrets_line {
-        position: relative;
-        display: inline-block;
-        justify-content: space-between;
-        width: 100%;
-        /* background-color: blue; */
-        height: 44%;
-        margin-top: 6.2%;
-
-        padding: 0% 0 0 3.6%;
-      }
-      .line2 {
-        margin-top: 3.9%;
-      }
-      .portret_block {
-        position: relative;
-        height: 100%;
-        width: 45%;
-        display: inline-block;
-
-        /* background: yellow; */
-      }
-      .portret_block_left {
-        margin-right: 2.2%;
-      }
-      .portret {
-        position: relative;
-        width: 100%;
-        height: 86.3%;
-        /* background: green; */
-        margin-bottom: 3%;
-        background-size: auto 100%;
-      }
-      #esenin {
-        background-image: url('images/esenin.jpg');
-      }
-      #kutuzov {
-        background-image: url('images/kutuzov.jpg');
-      }
-      #pushkin {
-        background-image: url('images/pushkin.jpg');
-      }
-      #puh {
-        background-image: url('images/puh.jpg');
-      }
-
-      .container {
-        display: block;
-        position: relative;
-        cursor: pointer;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 22px;
-      }
-      .portret .container {
-        position: absolute;
-        bottom: 13.5%;
-        right: 17%;
-      }
-      /* Hide the browser's default radio button */
-      .container input {
-        position: absolute;
-        opacity: 0;
-        cursor: pointer;
-        height: 0;
-        width: 0;
-      }
-
-      /* Create a custom radio button */
-      .checkmark {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 20px;
-        width: 20px;
-        background-color: black;
-        border-radius: 50%;
-      }
-
-      /* On mouse-over, add a grey background color */
-      .container:hover input ~ .checkmark {
-        background-color: #343434;
-      }
-
-      /* When the radio button is checked, add a blue background */
-      .container input:checked ~ .checkmark {
-        background-color: #A4DDD4;
-      }
-
-
-      .question2 {
-        position: absolute;
-        width: 45.5%;
-        height: 35%;
-        background: #FF83C1;
-        left: 35.2%;
-        top: 0;
-        padding: .9% 0%;
-      }
-      .qualities_block {
-        position: relative;
-        display: block;
-        width: 100%;
-        height: 85%;
-        /* background: blue; */
-        display: block;
-        justify-content: space-between;
-        padding: 2% 0;
-      }
-      .qualities {
-        position: relative;
-        display: inline-block;
-        /* margin-top: 2.6%; */
-        /* background: red; */
-        width: 45%;
-        height: 100%;
-      }
-      .qualities1 {
-        margin-left: 7.9%;
-      }
-      .qualities2 {
-        margin-left: 5.5%;
-        width: 35%;
-        /* margin-top: 2%; */
-
-      }
-      .qualities .container {
-        margin-top: 3%;
-        padding-left: 11%;
-      }
-      .qualities1 .container {
-        margin-bottom: 3.5%;
-      }
-      .qualities2 .container {
-        margin-bottom: 4.4%;
-        padding-left: 13%;
-      }
-      .question2 .question_text {
-        margin-left: 2.5%;
-      }
-
-      .question3 {
-        position: absolute;
-        width: 13.7%;
-        height: 35%;
-        background: #A4DDD4;
-        padding: .9% 1.4%;
-        right: 3.5%;
-        top: 0;
-      }
-
-      .colors_line {
-        position: relative;
-        display: block;
-        justify-content: space-between;
-        height: 23.6%;
-        width: 100%;
-        /* background: yellow; */
-      }
-      .colors_line1 {
-        margin-bottom: 8.8%;
-        margin-top: 20.5%;
-      }
-      .color {
-        width: 27.94%;
-        height: 100%;
-        border-radius: 50%;
-        display: inline-block;
-        position: absolute;
-        /* background: green; */
-      }
-      .color1 {background: #F8E436; left: 0;}
-      .color2 {background: #FF83C1; left: 36%;}
-      .color3 {background: #FFA883; right: 0;}
-      .color4 {background: #FFFFFF; left: 0;}
-      .color5 {background: #000000; left: 36%;}
-      .color6 {background: #8683FF; right: 0;}
-      .color .container {
-        left: calc(50% - 9px);
-        top: calc(50% - 9px);
-      }
-      .color .checkmark {
-        width: 18px;
-        height: 18px;
-        background-color: inherit;
-      }
-      .color .container:hover input ~ .checkmark {
-        background-color: #343434;
-      }
-      .color .container input:checked ~ .checkmark {
-        background-color: black;
-      }
-
-      .color5 .container:hover input ~ .checkmark {
-        background-color: #76B1A8;
-      }
-      .color5 .container input:checked ~ .checkmark {
-        background-color: #A4DDD4;
-      }
-
-
-      .question4 {
-        position: absolute;
-        width: 29.6%;
-        height: 60.6%;
-        background:#A4DDD4;
-        padding: 1% 1.4%;
-        bottom: 0;
-        left: 35.2%;
-      }
-      .drag_block {
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        width: 86%;
-        height: 52.6%;
-        margin-top: 15%;
-        margin-left: 7%;
-        /* background: red; */
-      }
-      .drag_block_left {
-        width: 5%;
-        position: relative;
-        height: 100%;
-        margin-left: 2%;
-        /* background: yellow; */
-      }
-      .drag_block_left p {
-        line-height: 37px;
-        margin-bottom: 60%;
-        color: black;
-      }
-      .drag_block_right {
-        width: 84%;
-        position: relative;
-        height: 100%;
-        margin-right: 2%;
-        /* background: yellow; */
-      }
-      .drag_varient {
-        position: relative;
-        width: 100%;
-        margin-top: 1%;
-        margin-bottom: 5.3%;
-        height: 18%;
-        border-radius: 40px;
-        background: #FF83C1;
-        padding: 1.6% 7%;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 22px;
-      }
-
-      .question5 {
-        position: absolute;
-        right: 3.5%;
-        width: 29.6%;
-        height: 39.9%;
-        background: #FF83C1;
-        padding: 1% 1.3%;
-        bottom: 20.7%;
-      }
-      .message {
-        position: relative;
-        margin-top: 6%;
-        background-color: #A4DDD4;
-        height: 71.5%;
-        width: 100%;
-        border: none;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 22px;
-        padding: 2%;
-      }
-      textarea::placeholder {
-        color: black;
-      }
-
-      .button {
-        position: absolute;
-        height: 9.3%;
-        width: 14.8%;
-        /* background: black; */
-        right: 11.1%;
-        bottom: 5.7%;
-        cursor: pointer;
-      }
-      .button_back {
-        position: absolute;
-        width: 100%;
-        height: 83%;
-        background: #B95E8B;
-        border-radius: 50px;
-        bottom: 0;
-        left: 0;
-        transition: all .5s;
-
-      }
-      .button_front {
-        position: absolute;
-        width: 100%;
-        height: 83%;
-        background: #FF83C1;
-        border-radius: 50px;
-        top: 0;
-        left: 0;
-        transition: all .5s;
-
-      }
-      .button_back_extra {
-        position: absolute;
-        width: 100%;
-        height: 15%;
-        background: #B95E8B;
-        bottom: 45%;
-        left: 0;
-        transition: all .5s;
-
-      }
-      .button_front p {
-        font-weight: 700;
-        color: black;
-        width: auto;
-        position: absolute;
-        left: calc(50% - 52px);
-        top:  calc(50% - 11px);
-      }
-      .button:hover .button_front {
-        background: #A4DDD4;
-        transition: all .2s;
-      }
-      .button:hover .button_back, .button:hover .button_back_extra {
-        background: #76B1A8;
-        transition: all .2s;
-
-      }
-      .notification {
-        position: fixed;
-        background: #FF83C1;
-        padding: 2.2% 1.5% 2.2% 1.5%;
-        margin-top: 24%;
-        margin-left: 38%;
-        opacity: 0;
-        display: none;
-        transition: all .5s;
-        z-index: 400;
-      }
-      .notification p {
-        color: black;
-      }
-      .menu_krest_notification {
-        right: 1.5%;
-        width: 5%;
-        top: 2.5%;
-      }
     </style>
     <script type="text/javascript">
       $(document).ready(function(){
         $(function() {
-             $('.drag_block_right').sortable();
+             $('.user_drag_block_right').sortable();
         });
 
-        $(".button").click(function(){
+        $(".user_button").click(function(){
           $(".black_square").css("width", "100%");
-          $(".notification").css("display", "inline-block");
+          $(".user_notification").css("display", "inline-block");
           $(".black_square").css("display", "inline-block");
 
           setTimeout(function(){
-            $(".notification").css("opacity", "100%");
+            $(".user_notification").css("opacity", "100%");
             $(".black_square").css("opacity", .5);
           }, 10);
 
 
         });
 
-        $(".menu_krest_notification, .black_square").click(function(){
-          $(".notification").css("opacity", "0");
+        $(".user_menu_krest_notification, .black_square").click(function(){
+          $(".user_notification").css("opacity", "0");
           $(".black_square").css("opacity", "0");
 
           setTimeout(function(){
-            $(".notification").css("display", "none");
+            $(".user_notification").css("display", "none");
             $(".black_square").css("width", "51.1%");
             $(".black_square").css("display", 'none');
           }, 500);
@@ -534,9 +53,9 @@
     </script>
   </head>
   <body>
-    <div class="wrapper">
-      <div class="sootnosheniye">
-        <div class="content">
+    <div class="user_wrapper">
+      <div class="user_sootnosheniye">
+        <div class="user_content">
           <div class="menubar">
 
             <svg class="logo" width="124" height="20" viewBox="0 0 124 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -582,71 +101,71 @@
 
 
           <div class="black_square"></div>
-          <div class="notification">
-            <div class="menu_krest menu_krest_notification">
+          <div class="user_notification">
+            <div class="user_menu_krest user_menu_krest_notification">
               <svg class="menu_krest_img" width="30" height="21" viewBox="0 0 30 21" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M26.5323 0.644504C27.4709 0.0622081 28.7039 0.351066 29.2862 1.28968C29.8685 2.2283 29.5796 3.46125 28.641 4.04354L18.6205 10.26L28.6415 16.4767C29.5801 17.059 29.869 18.292 29.2867 19.2306C28.7044 20.1692 27.4714 20.4581 26.5328 19.8758L14.8267 12.6136L3.12053 19.8758C2.18192 20.4581 0.948971 20.1692 0.366676 19.2306C-0.21562 18.292 0.0732384 17.059 1.01186 16.4767L11.0328 10.26L1.01236 4.04354C0.0737359 3.46125 -0.215122 2.2283 0.367174 1.28968C0.949469 0.351066 2.18241 0.0622081 3.12103 0.644504L14.8267 7.90639L26.5323 0.644504Z" fill="black"/>
               </svg>
             </div>
-            <p class="question_text">Спасибо! Ваша анкета отпралена.</p>
+            <p class="user_question_text">Спасибо! Ваша анкета отпралена.</p>
           </div>
-          <div class="menubar_extra"></div>
+          <div class="user_menubar_extra"></div>
 
-          <div class="text_block">
-            <div class="text_left">
+          <div class="user_text_block">
+            <div class="user_text_left">
               <h1>Какой мозг<br>подходит Вам?</h1>
               <p>Анкета поможет выявить предпочтения и&nbsp;учесть все пожелания при подборе мозга</p>
             </div>
-            <div class="icons_right">
-              <div class="icon1">
+            <div class="user_icons_right">
+              <div class="user_icon1">
                 <img src="images/watch.svg" alt="">
                 <p>3&nbsp;минуты</p>
               </div>
-              <div class="icon2">
+              <div class="user_icon2">
                 <img src="images/punkt.svg" alt="">
                 <p>5&nbsp;вопросов</p>
               </div>
             </div>
           </div>
 
-          <form class="question_block" action="index.html" method="post">
-            <div class="question1">
-              <p class="question_text">Кто импонирует Вам как&nbsp;личность?</p>
-              <div class="portrets_line line1">
-                <div class="portret_block portret_block_left">
-                  <div class="portret" id="esenin">
-                    <label class="container">
+          <form class="user_question_block" action="index.html" method="post">
+            <div class="user_question1">
+              <p class="user_question_text">Кто импонирует Вам как&nbsp;личность?</p>
+              <div class="user_portrets_line line1">
+                <div class="user_portret_block user_portret_block_left">
+                  <div class="user_portret" id="esenin">
+                    <label class="user_container">
                       <input type="radio" name="portret">
-                      <span class="checkmark"></span>
+                      <span class="user_checkmark"></span>
                     </label>
                   </div>
                   <p>С.&nbsp;Есенин</p>
                 </div>
-                <div class="portret_block">
-                  <div class="portret" id="kutuzov">
-                    <label class="container">
+                <div class="user_portret_block">
+                  <div class="user_portret" id="kutuzov">
+                    <label class="user_container">
                       <input type="radio" name="portret">
-                      <span class="checkmark"></span>
+                      <span class="user_checkmark"></span>
                     </label>
                   </div>
                   <p>М.&nbsp;Кутузов</p>
                 </div>
               </div>
-              <div class="portrets_line line2">
-                <div class="portret_block portret_block_left">
-                  <div class="portret" id="pushkin">
-                    <label class="container">
+              <div class="user_portrets_line user_line2">
+                <div class="user_portret_block user_portret_block_left">
+                  <div class="user_portret" id="pushkin">
+                    <label class="user_container">
                       <input type="radio" name="portret">
-                      <span class="checkmark"></span>
+                      <span class="user_checkmark"></span>
                     </label>
                   </div>
                   <p>А.&nbsp;Пушкин</p>
                 </div>
-                <div class="portret_block">
-                  <div class="portret" id="puh">
-                    <label class="container">
+                <div class="user_portret_block">
+                  <div class="user_portret" id="puh">
+                    <label class="user_container">
                       <input type="radio" name="portret">
-                      <span class="checkmark"></span>
+                      <span class="user_checkmark"></span>
                     </label>
                   </div>
                   <p>Винни–Пух</p>
@@ -655,127 +174,127 @@
             </div>
 
 
-            <div class="question2">
-              <p class="question_text">Какими качествами вы хотите обладать?</p>
-              <div class="qualities_block">
-                <div class="qualities qualities1">
-                  <label class="container">креативность
+            <div class="user_question2">
+              <p class="user_question_text">Какими качествами вы хотите обладать?</p>
+              <div class="user_qualities_block">
+                <div class="user_qualities user_qualities1">
+                  <label class="user_container">креативность
                     <input type="radio">
-                    <span class="checkmark"></span>
+                    <span class="user_checkmark"></span>
                   </label>
-                  <label class="container">эрудированность
+                  <label class="user_container">эрудированность
                     <input type="radio">
-                    <span class="checkmark"></span>
+                    <span class="user_checkmark"></span>
                   </label>
-                  <label class="container">проницательность
+                  <label class="user_container">проницательность
                     <input type="radio">
-                    <span class="checkmark"></span>
+                    <span class="user_checkmark"></span>
                   </label>
-                  <label class="container">целеустремленность
+                  <label class="user_container">целеустремленность
                     <input type="radio">
-                    <span class="checkmark"></span>
+                    <span class="user_checkmark"></span>
                   </label>
                 </div>
-                <div class="qualities qualities2">
-                  <label class="container">спокойствие
+                <div class="user_qualities user_qualities2">
+                  <label class="user_container">спокойствие
                     <input type="radio">
-                    <span class="checkmark"></span>
+                    <span class="user_checkmark"></span>
                   </label>
-                  <label class="container">умение&nbsp;убеждать
+                  <label class="user_container">умение&nbsp;убеждать
                     <input type="radio">
-                    <span class="checkmark"></span>
+                    <span class="user_checkmark"></span>
                   </label>
-                  <label class="container">доброта
+                  <label class="user_container">доброта
                     <input type="radio">
-                    <span class="checkmark"></span>
+                    <span class="user_checkmark"></span>
                   </label>
-                  <label class="container">чувство&nbsp;юмора
+                  <label class="user_container">чувство&nbsp;юмора
                     <input type="radio">
-                    <span class="checkmark"></span>
-                  </label>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="question3">
-              <p class="question_text">Выберите цвет.</p>
-              <div class="colors_line colors_line1">
-                <div class="color color1">
-                  <label class="container">
-                    <input type="radio" name="color">
-                    <span class="checkmark"></span>
-                  </label>
-                </div>
-                <div class="color color2">
-                  <label class="container">
-                    <input type="radio" name="color">
-                    <span class="checkmark"></span>
-                  </label>
-                </div>
-                <div class="color color3">
-                  <label class="container">
-                    <input type="radio" name="color">
-                    <span class="checkmark"></span>
-                  </label>
-                </div>
-              </div>
-              <div class="colors_line colors_line2">
-                <div class="color color4">
-                  <label class="container">
-                    <input type="radio" name="color">
-                    <span class="checkmark"></span>
-                  </label>
-                </div>
-                <div class="color color5">
-                  <label class="container">
-                    <input type="radio" name="color">
-                    <span class="checkmark"></span>
-                  </label>
-                </div>
-                <div class="color color6">
-                  <label class="container">
-                    <input type="radio" name="color">
-                    <span class="checkmark"></span>
+                    <span class="user_checkmark"></span>
                   </label>
                 </div>
               </div>
             </div>
 
-            <div class="question4">
-              <p class="question_text">Раставьте сферы жизни<br>по&nbsp;приоритетности.</p>
-              <div class="drag_block">
-                <div class="drag_block_left">
+
+            <div class="user_question3">
+              <p class="user_question_text">Выберите цвет.</p>
+              <div class="user_colors_line user_colors_line1">
+                <div class="user_color user_color1">
+                  <label class="user_container">
+                    <input type="radio" name="color">
+                    <span class="user_checkmark"></span>
+                  </label>
+                </div>
+                <div class="user_color user_color2">
+                  <label class="user_container">
+                    <input type="radio" name="color">
+                    <span class="user_checkmark"></span>
+                  </label>
+                </div>
+                <div class="user_color user_color3">
+                  <label class="user_container">
+                    <input type="radio" name="color">
+                    <span class="user_checkmark"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="user_colors_line user_colors_line2">
+                <div class="user_color user_color4">
+                  <label class="user_container">
+                    <input type="radio" name="color">
+                    <span class="user_checkmark"></span>
+                  </label>
+                </div>
+                <div class="user_color user_color5">
+                  <label class="user_container">
+                    <input type="radio" name="color">
+                    <span class="user_checkmark"></span>
+                  </label>
+                </div>
+                <div class="user_color cuser_olor6">
+                  <label class="user_container">
+                    <input type="radio" name="color">
+                    <span class="user_checkmark"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="user_question4">
+              <p class="user_question_text">Раставьте сферы жизни<br>по&nbsp;приоритетности.</p>
+              <div class="user_drag_block">
+                <div class="user_drag_block_left">
                   <p class="p_tall">1</p>
                   <p class="p_tall">2</p>
                   <p class="p_tall">3</p>
                   <p class="p_tall">4</p>
                 </div>
-                <div class="drag_block_right">
-                  <div class="drag_varient">творчество</div>
-                  <div class="drag_varient">общение</div>
-                  <div class="drag_varient">работа/учеба</div>
-                  <div class="drag_varient">саморазвитие</div>
+                <div class="user_drag_block_right">
+                  <div class="user_drag_varient">творчество</div>
+                  <div class="user_drag_varient">общение</div>
+                  <div class="user_drag_varient">работа/учеба</div>
+                  <div class="user_drag_varient">саморазвитие</div>
                 </div>
               </div>
             </div>
 
-            <div class="question5">
-              <p class="question_text">Что вас не&nbsp;устраивает в&nbsp;вашем мозге?</p>
-              <textarea class="message" name="" rows="8" cols="20" placeholder="Напиши кратко, специалист проведет подробный разбор."></textarea>
+            <div class="user_question5">
+              <p class="user_question_text">Что не&nbsp;устраивает в&nbsp;вашем мозге?</p>
+              <textarea class="user_message" name="" rows="8" cols="20" placeholder="Напиши кратко, специалист проведет подробный разбор."></textarea>
             </div>
 
-            <div class="button">
-              <div class="button_back"></div>
-              <div class="button_back_extra"></div>
-              <div class="button_front">
+            <div class="user_button">
+              <div class="user_button_back"></div>
+              <div class="user_button_back_extra"></div>
+              <div class="user_button_front">
                 <p>Отправить</p>
               </div>
             </div>
 
           </form>
 
-          <div class="futter">
+          <div class="futter user_futter">
             <div class="futter_left">
               <a class="futter_left1" href="https://www.instagram.com/mulkamanova/">мулкаманова&nbspкарина</a>
               <a href="https://portfolio.hse.ru/Student/16421">портфолио</a>
