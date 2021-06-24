@@ -1,3 +1,4 @@
+/* contacts  */
 .con_menubar {
   background: #A4DDD4;
 
@@ -63,3 +64,493 @@
   color: #FF83C1;
 }
 .con_text_block_ipad  {display: none;}
+
+
+
+
+
+
+/* anketa */
+.user_wrapper {
+  position: relative;
+  width: 100%;
+}
+.user_sootnosheniye {
+  position: relative;
+  padding-bottom:  71.11%;
+}
+.user_content {
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  padding: 0;
+  /* overflow: hidden; */
+}
+.user_menubar_extra {
+  position: relative;
+  width: 100%;
+  height: 5.86%;
+}
+.user_futter {
+  height: 5.794%;
+
+}
+.user_text_block {
+  position: relative;
+  width: 100%;
+  background: green;
+  opacity: .5;
+  height: 29.274%;
+  padding: 1.7% 3.8%;
+  display: block;
+}
+.user_question_block {
+  position: relative;
+  width: 100%;
+  background: blue;
+  opacity: .5;
+  height: 59.072%;
+  padding: 0% 3.5%;
+  display: flex;
+  justify-content: space-between;
+
+}
+.user_text_block h1 {
+  line-height: 59px;
+  margin-bottom: 5.2%;
+  width: 100%;
+}
+.user_text_block p {
+  width: 70%;
+
+
+}
+.user_text_left {
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+}
+.user_icons_right {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+}
+.user_icon1 {
+  position: absolute;
+  width: 9%;
+  height: 47%;
+  right: 19%;
+  top: 12.3%;
+}
+.user_icon2 {
+  position: absolute;
+  width: 9%;
+  height: 47%;
+  right: 9.5%;
+  top: 12.3%;
+}
+.user_icon1 p, .user_icon2 p {
+  position: absolute;
+  width: auto;
+  bottom: 5%;
+}
+.user_icon1 p {
+  left: calc(50% - 44px);
+}
+.user_icon2 p {
+  left: calc(50% - 53px);
+}
+.user_icon1 img {
+  position: absolute;
+  width: 54%;
+  left: 23%;
+}
+.user_icon2 img {
+  position: absolute;
+  width: 78.71%;
+  left: 10.65%;
+}
+.user_question1 {
+  position: absolute;
+  height: 100%;
+  width: 29.6%;
+  background: #A4DDD4;
+  padding: 1% 0 1% 1.2%;
+  left: 3.5%;
+  top: 0;
+}
+
+.user_question_text {
+  font-weight: 700;
+}
+form p {
+  color: black;
+  width: auto;
+}
+.user_portrets_line {
+  position: relative;
+  display: inline-block;
+  justify-content: space-between;
+  width: 100%;
+  background-color: blue;
+  height: 44%;
+  margin-top: 6.2%;
+
+  padding: 0% 0 0 3.6%;
+}
+.user_line2 {
+  margin-top: 3.9%;
+}
+.user_portret_block {
+  position: relative;
+  height: 100%;
+  width: 45%;
+  display: inline-block;
+
+  background: yellow;
+}
+.user_portret_block_left {
+  margin-right: 2.2%;
+}
+.user_portret {
+  position: relative;
+  width: 100%;
+  height: 86.3%;
+  background: green;
+  margin-bottom: 3%;
+  background-size: 102% 102%;
+  background-position: 20% 20%;
+}
+#esenin {
+  background-image: url('../images/esenin.jpg');
+}
+#kutuzov {
+  background-image: url('../images/kutuzov.jpg');
+}
+#pushkin {
+  background-image: url('../images/pushkin.jpg');
+}
+#puh {
+  background-image: url('../images/puh.jpg');
+}
+
+.user_container {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+}
+.user_portret .user_container {
+  position: absolute;
+  bottom: 13.5%;
+  right: 17%;
+}
+/* Hide the browser's default radio button */
+.user_container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.user_checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.user_container:hover input ~ .user_checkmark {
+  background-color: #343434;
+}
+
+/* When the radio button is checked, add a blue background */
+.user_container input:checked ~ .user_checkmark {
+  background-color: #A4DDD4;
+}
+
+
+.user_question2 {
+  position: absolute;
+  width: 45.5%;
+  height: 35%;
+  background: #FF83C1;
+  left: 35.2%;
+  top: 0;
+  padding: .9% 0%;
+}
+.user_qualities_block {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 85%;
+  /* background: blue; */
+  display: block;
+  justify-content: space-between;
+  padding: 2% 0;
+}
+.user_qualities {
+  position: relative;
+  display: inline-block;
+  /* margin-top: 2.6%; */
+  /* background: red; */
+  width: 45%;
+  height: 100%;
+}
+.user_qualities1 {
+  margin-left: 7.9%;
+}
+.user_qualities2 {
+  margin-left: 5.5%;
+  width: 35%;
+  /* margin-top: 2%; */
+
+}
+.user_qualities .user_container {
+  margin-top: 3%;
+  padding-left: 11%;
+}
+.user_qualities1 .user_container {
+  margin-bottom: 3.5%;
+}
+.user_qualities2 .user_container {
+  margin-bottom: 4.4%;
+  padding-left: 13%;
+}
+.user_question2 .user_question_text {
+  margin-left: 2.5%;
+}
+
+.user_question3 {
+  position: absolute;
+  width: 13.7%;
+  height: 35%;
+  background: #A4DDD4;
+  padding: .9% 1.4%;
+  right: 3.5%;
+  top: 0;
+}
+
+.user_colors_line {
+  position: relative;
+  display: block;
+  justify-content: space-between;
+  height: 23.6%;
+  width: 100%;
+  /* background: yellow; */
+}
+.user_colors_line1 {
+  margin-bottom: 8.8%;
+  margin-top: 20.5%;
+}
+.user_color {
+  width: 27.94%;
+  height: 100%;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  /* background: green; */
+}
+.user_color1 {background: #F8E436; left: 0;}
+.user_color2 {background: #FF83C1; left: 36%;}
+.user_color3 {background: #FFA883; right: 0;}
+.user_color4 {background: #FFFFFF; left: 0;}
+.user_color5 {background: #000000; left: 36%;}
+.user_color6 {background: #8683FF; right: 0;}
+.user_color .user_container {
+  left: calc(50% - 9px);
+  top: calc(50% - 9px);
+}
+.user_color .user_checkmark {
+  width: 18px;
+  height: 18px;
+  background-color: inherit;
+}
+.user_color .user_container:hover input ~ .user_checkmark {
+  background-color: #343434;
+}
+.user_color .user_container input:checked ~ .user_checkmark {
+  background-color: black;
+}
+
+.user_color5 .user_container:hover input ~ .user_checkmark {
+  background-color: #76B1A8;
+}
+.user_color5 .user_container input:checked ~ .user_checkmark {
+  background-color: #A4DDD4;
+}
+
+
+.user_question4 {
+  position: absolute;
+  width: 29.6%;
+  height: 60.6%;
+  background:#A4DDD4;
+  padding: 1% 1.4%;
+  bottom: 0;
+  left: 35.2%;
+}
+.user_drag_block {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 86%;
+  height: 52.6%;
+  margin-top: 15%;
+  margin-left: 7%;
+  /* background: red; */
+}
+.user_drag_block_left {
+  width: 5%;
+  position: relative;
+  height: 100%;
+  margin-left: 2%;
+  /* background: yellow; */
+}
+.user_drag_block_left p {
+  line-height: 37px;
+  margin-bottom: 60%;
+  color: black;
+}
+.user_drag_block_right {
+  width: 84%;
+  position: relative;
+  height: 100%;
+  margin-right: 2%;
+  /* background: yellow; */
+}
+.user_drag_varient {
+  position: relative;
+  width: 100%;
+  margin-top: 1%;
+  margin-bottom: 5.3%;
+  height: 18%;
+  border-radius: 40px;
+  background: #FF83C1;
+  padding: 1.6% 7%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  cursor: grab;
+}
+
+.user_question5 {
+  position: absolute;
+  right: 3.5%;
+  width: 29.6%;
+  height: 39.9%;
+  background: #FF83C1;
+  padding: 1% 1.3%;
+  bottom: 20.7%;
+}
+.user_message {
+  position: relative;
+  margin-top: 6%;
+  background-color: #A4DDD4;
+  height: 71.5%;
+  width: 100%;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  padding: 2%;
+}
+textarea::placeholder {
+  color: black;
+}
+
+.user_button {
+  position: absolute;
+  height: 9.3%;
+  width: 14.8%;
+  /* background: black; */
+  right: 11.1%;
+  bottom: 5.7%;
+  cursor: pointer;
+}
+.user_button_back {
+  position: absolute;
+  width: 100%;
+  height: 83%;
+  background: #B95E8B;
+  border-radius: 50px;
+  bottom: 0;
+  left: 0;
+  transition: all .5s;
+
+}
+.user_button_front {
+  position: absolute;
+  width: 100%;
+  height: 83%;
+  background: #FF83C1;
+  border-radius: 50px;
+  top: 0;
+  left: 0;
+  transition: all .5s;
+
+}
+.user_button_back_extra {
+  position: absolute;
+  width: 100%;
+  height: 15%;
+  background: #B95E8B;
+  bottom: 45%;
+  left: 0;
+  transition: all .5s;
+
+}
+.user_button_front p {
+  font-weight: 700;
+  color: black;
+  width: auto;
+  position: absolute;
+  left: calc(50% - 52px);
+  top:  calc(50% - 11px);
+}
+.user_button:hover .user_button_front {
+  background: #A4DDD4;
+  transition: all .2s;
+}
+.user_button:hover .user_button_back, .user_button:hover .user_button_back_extra {
+  background: #76B1A8;
+  transition: all .2s;
+
+}
+.user_notification {
+  position: fixed;
+  background: #FF83C1;
+  padding: 2.2% 1.5% 2.2% 1.5%;
+  margin-top: 24%;
+  margin-left: 38%;
+  opacity: 0;
+  display: none;
+  transition: all .5s;
+  z-index: 400;
+}
+.user_notification p {
+  color: black;
+}
+.user_menu_krest_notification {
+  right: 1.5%;
+  width: 5%;
+  top: 2.5%;
+  position: absolute;
+}
