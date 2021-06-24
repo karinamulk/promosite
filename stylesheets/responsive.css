@@ -154,6 +154,51 @@
   .con_text_block_ipad p { color: black; font-size: 18px; line-height: 27px; position: absolute;}
   .con_text_block_ipad1 {left: 4.2%;}
   .con_text_block_ipad2 {right: 4.2%;}
+
+
+
+
+  .user_sootnosheniye {padding-bottom: 188.54%;}
+  .user_menubar_extra, .user_futter {height: 4.1%;}
+  .user_text_block {height: 14.5%; padding: 0.1% 3%;}
+  .user_question_block {height: 77.6%; padding: 0.1% 3%}
+  .user_text_left {width: 100%;}
+  .user_text_left h1 {line-height: 44px;}
+  .user_text_left p {margin-left: 1%; width: 64%;}
+  .user_icon1, .user_icon2 {width: 12%; top: 13.3%;}
+  .user_icon1 p, .user_icon2 p {font-size: 16px; line-height: 25px; bottom: -8%;}
+  .user_icon2 p {left: calc(50% - 47px)}
+  .user_icon1 p {left: calc(50% - 39px)}
+  .user_icon2 {right: 5%;}
+  .user_icon1 {right: 20.4%;}
+  .user_question1 {left: 3.9%; width: 60.2%; height: 51.6%; padding: 1.7% 0 1% 1.2%;}
+  .user_question2 {left: 3.9%; top: 53.5%; width: 92.5%; height: 18.6%; padding: 1.5% 0%;}
+  .user_question3 {right: 3.9%; width: 29.3%; height: 18.7%; padding: 1.7% 1.6%;}
+  .user_question4 {bottom: 0; left: 3.9%; height: 25.8%; width: 44.8%; padding: 1.8% 2.5%;}
+  .user_question5 {right: 3.9%; top: 20.7%; width: 29.3%; height: 30.9%; padding: 1.6% 1.6%;}
+  .user_portrets_line {margin-top: 5.5%; height: 43.5%; padding: 0% 0 0 2.8%}
+  .user_line2 {margin-top: 3.5%;}
+  .user_portret_block {width: 45.6%;}
+  .user_portret_block_left {margin-right: 3%;}
+  .user_portrets_line p {line-height: 17px;}
+  .user_question2 .user_question_text {margin-left: 1.3%;}
+  .user_qualities_block {padding: 1.6% 0;}
+  .user_qualities1 {margin-left: 9.5%;}
+  .user_qualities2 {margin-left: 1.4%;}
+  .user_colors_line1 {margin-top: 12.5%;}
+  .user_colors_line {height: 27%;}
+  .user_color {width: 24.78%;}
+  .user_color1, .user_color4 {left: 6%;}
+  .user_color2, .user_color5 {left: 37.61%;}
+  .user_color3, .user_color6 {right: 6%;}
+  .user_drag_block {margin-left: 0; margin-top: 7.5%; width: 100%;}
+  .user_drag_block p { font-size: 24px; margin-bottom: 69%;}
+  .user_drag_block_left {margin-left: 0;}
+  .user_drag_varient {height: 22%; margin-bottom: 6.5%;}
+  .user_message {height: 79%; margin-top: 12.6%; font-size: 16px; line-height: 20px; padding: 2% 4%;}
+  .user_button {width: 27.4%; right: 12.6%; bottom: 10.7%; height: 5%;}
+  .user_notification {margin-left: 26%; margin-top: 55%;}
+
 }
 
 
@@ -333,4 +378,48 @@
   .con_text_block_ipad p { color: black; font-size: 15px; line-height: 23px; position: absolute;}
   .con_text_block_ipad1 {left: 4.5%;}
   .con_text_block_ipad2 {left: 4.5%; bottom: 4.3%;}
+
+
+
+
+
+  .user_sootnosheniye {padding-bottom: 914.688%;}
+  .user_menubar_extra, .user_futter {height: 1.362%;}
+  .user_text_block {height: 14.5%; padding: 0.1% 3%;}
+  .user_question_block {height: 77.6%; padding: 0.1% 3%}
+  .user_text_left {width: 100%;}
+  .user_text_left h1 {line-height: 44px;}
+  .user_text_left p {margin-left: 1%; width: 64%;}
+  .user_icon1, .user_icon2 {width: 12%; top: 13.3%;}
+  .user_icon1 p, .user_icon2 p {font-size: 15px; line-height: 23px; bottom: -8%;}
+  .user_icon2 p {left: calc(50% - 47px)}
+  .user_icon1 p {left: calc(50% - 39px)}
+  .user_icon2 {right: 5%;}
+  .user_icon1 {right: 20.4%;}
+  .user_question1 {left: 3.9%; width: 60.2%; height: 51.6%; padding: 1.7% 0 1% 1.2%;}
+  .user_question2 {left: 3.9%; top: 53.5%; width: 92.5%; height: 18.6%; padding: 1.5% 0%;}
+  .user_question3 {right: 3.9%; width: 29.3%; height: 18.7%; padding: 1.7% 1.6%;}
+  .user_question4 {bottom: 0; left: 3.9%; height: 25.8%; width: 44.8%; padding: 1.8% 2.5%;}
+  .user_question5 {right: 3.9%; top: 20.7%; width: 29.3%; height: 30.9%; padding: 1.6% 1.6%;}
+  .user_portrets_line {margin-top: 5.5%; height: 43.5%; padding: 0% 0 0 2.8%}
+  .user_line2 {margin-top: 3.5%;}
+  .user_portret_block {width: 45.6%;}
+  .user_portret_block_left {margin-right: 3%;}
+  .user_portrets_line p {line-height: 17px;}
+  .user_question2 .user_question_text {margin-left: 1.3%;}
+  .user_qualities_block {padding: 1.6% 0;}
+  .user_qualities1 {margin-left: 9.5%;}
+  .user_qualities2 {margin-left: 1.4%;}
+  .user_colors_line1 {margin-top: 12.5%;}
+  .user_colors_line {height: 27%;}
+  .user_color {width: 24.78%;}
+  .user_color1, .user_color4 {left: 6%;}
+  .user_color2, .user_color5 {left: 37.61%;}
+  .user_color3, .user_color6 {right: 6%;}
+  .user_drag_block {margin-left: 0; margin-top: 7.5%; width: 100%;}
+  .user_drag_block p { font-size: 24px; margin-bottom: 69%;}
+  .user_drag_block_left {margin-left: 0;}
+  .user_drag_varient {height: 22%; margin-bottom: 6.5%;}
+  .user_message {height: 79%; margin-top: 12.6%; font-size: 16px; line-height: 20px; padding: 2% 4%;}
+  .user_button {width: 27.4%; right: 12.6%; bottom: 10.7%; height: 5%;}
   }
