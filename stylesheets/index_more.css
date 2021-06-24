@@ -1,0 +1,65 @@
+.con_menubar {
+  background: #A4DDD4;
+
+}
+.con_main_block {
+  position: relative;
+  display: block;
+  height: 85.46%;
+  width: 100%;
+  /* background: blue; */
+  /* opacity: .5; */
+  padding: 2.8% 0% 0.3% 3.5%;
+}
+.con_futter a {
+  color: black;
+}
+.con_logo_img path, .con_burger rect {
+  fill: black;
+}
+.con_logo_img:hover path {
+  fill: #FF83C1;
+}
+.con_burger:hover rect {
+  fill: #FF83C1;
+}
+.con_text_block {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 32.8%;
+  height: 100%;
+  /* background: yellow; */
+}
+.con_foto_block {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 63.3%;
+  height: 100%;
+  background: green;
+  background-image: url('../images/plan.svg');
+  background-size: 103% auto;
+  background-position: left 3%;
+  border: 3px solid black;
+}
+.con_text_block > * {
+  color: black;
+}
+.con_text_block h2 {
+  margin-left: 1%;
+
+}
+.con_text_block .p_tall {
+  margin-left: 1%;
+  margin-top: 43.5%;
+}
+.con_text_block p {
+  margin-left: 1%;
+  margin-top: 11.7%;
+  line-height: 27px;
+}
+.con_futter a:hover {
+  color: #FF83C1;
+}
+.con_text_block_ipad  {display: none;}
