@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="js/all.js" charset="utf-8"></script>
+
 
     <style media="screen">
       .wrapper {
@@ -126,48 +128,7 @@
 
       }
 
-      .button {
-        position: absolute;
-        height: 15.2%;
-        width: 49.44%;
-        background: black;
-        left: 24.7%;
-        top: 75.4%;
-      }
-      .button_back {
-        position: absolute;
-        width: 100%;
-        height: 83%;
-        background: #B95E8B;
-        border-radius: 50px;
-        bottom: 0;
-        left: 0;
-      }
-      .button_front {
-        position: absolute;
-        width: 100%;
-        height: 83%;
-        background: #FF83C1;
-        border-radius: 50px;
-        top: 0;
-        left: 0;
-      }
-      .button_back_extra {
-        position: absolute;
-        width: 100%;
-        height: 15%;
-        background: #B95E8B;
-        bottom: 45%;
-        left: 0;
-      }
-      .button_front p {
-        font-weight: 700;
-        color: black;
-        width: auto;
-        position: absolute;
-        left: calc(50% - 52px);
-        top:  calc(50% - 11px);
-      }
+
       .question_text {
         font-weight: 700;
       }
@@ -380,7 +341,176 @@
         background-color: #A4DDD4;
       }
 
+
+      .question4 {
+        position: absolute;
+        width: 29.6%;
+        height: 60.6%;
+        background:#A4DDD4;
+        padding: 1% 1.4%;
+        bottom: 0;
+        left: 35.2%;
+      }
+      .drag_block {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        width: 86%;
+        height: 52.6%;
+        margin-top: 15%;
+        margin-left: 7%;
+        /* background: red; */
+      }
+      .drag_block_left {
+        width: 5%;
+        position: relative;
+        height: 100%;
+        margin-left: 2%;
+        /* background: yellow; */
+      }
+      .drag_block_left p {
+        line-height: 37px;
+        margin-bottom: 60%;
+        color: black;
+      }
+      .drag_block_right {
+        width: 84%;
+        position: relative;
+        height: 100%;
+        margin-right: 2%;
+        /* background: yellow; */
+      }
+      .drag_varient {
+        position: relative;
+        width: 100%;
+        margin-top: 1%;
+        margin-bottom: 5.3%;
+        height: 18%;
+        border-radius: 40px;
+        background: #FF83C1;
+        padding: 1.6% 7%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22px;
+      }
+
+      .question5 {
+        position: absolute;
+        right: 3.5%;
+        width: 29.6%;
+        height: 39.9%;
+        background: #FF83C1;
+        padding: 1% 1.3%;
+        bottom: 20.7%;
+      }
+      .message {
+        position: relative;
+        margin-top: 6%;
+        background-color: #A4DDD4;
+        height: 71.5%;
+        width: 100%;
+        border: none;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22px;
+        padding: 2%;
+      }
+      textarea::placeholder {
+        color: black;
+      }
+
+      .button {
+        position: absolute;
+        height: 9.3%;
+        width: 14.8%;
+        /* background: black; */
+        right: 11.1%;
+        bottom: 5.7%;
+        cursor: pointer;
+      }
+      .button_back {
+        position: absolute;
+        width: 100%;
+        height: 83%;
+        background: #B95E8B;
+        border-radius: 50px;
+        bottom: 0;
+        left: 0;
+        transition: all .5s;
+
+      }
+      .button_front {
+        position: absolute;
+        width: 100%;
+        height: 83%;
+        background: #FF83C1;
+        border-radius: 50px;
+        top: 0;
+        left: 0;
+        transition: all .5s;
+
+      }
+      .button_back_extra {
+        position: absolute;
+        width: 100%;
+        height: 15%;
+        background: #B95E8B;
+        bottom: 45%;
+        left: 0;
+        transition: all .5s;
+
+      }
+      .button_front p {
+        font-weight: 700;
+        color: black;
+        width: auto;
+        position: absolute;
+        left: calc(50% - 52px);
+        top:  calc(50% - 11px);
+      }
+      .button:hover .button_front {
+        background: #A4DDD4;
+        transition: all .2s;
+      }
+      .button:hover .button_back, .button:hover .button_back_extra {
+        background: #76B1A8;
+        transition: all .2s;
+
+      }
+      .notification {
+        position: fixed;
+        background: #FF83C1;
+        padding: 2.2% 1.5% 2.2% 1.5%;
+        margin-top: 24%;
+        margin-left: 38%;
+        opacity: .5;
+      }
+      .notification p {
+        color: black;
+      }
+      .menu_krest_notification {
+        right: 1.5%;
+        width: 5%;
+        top: 2.5%;
+      }
     </style>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $(function() {
+             $('.drag_block_right').sortable();
+        });
+
+        $(".kids_button").click(function(){
+          $(".kids_cloud6").css("opacity", "0");
+          setTimeout(function(){
+            $(".kids_cloud6").css("display", "none");
+          }, 10);
+        });
+      });
+
+    </script>
   </head>
   <body>
     <div class="wrapper">
@@ -407,6 +537,37 @@
             </svg>
 
           </div>
+          <div class="right_menu">
+            <img class="right_menu_img" src="images/right_menu.svg" alt="">
+            <div class="menu_round" id="menu_round1"><a href="catalog.html"></a></div>
+            <div class="menu_round" id="menu_round2"><a href="gallery.html"></a></div>
+            <div class="menu_round" id="menu_round3"><a href="order.html"></a></div>
+            <div class="menu_round" id="menu_round4"><a href="space.html"></a></div>
+            <div class="menu_round" id="menu_round5"><a href="kids.html"></a></div>
+            <div class="menu_round" id="menu_round6"><a href="contacts.html"></a></div>
+            <a href="catalog.html" id="menu_text1">купить&nbsp;мозги</a>
+            <a href="gallery.html" id="menu_text2">развлечения<br>и&nbsp;лекции</a>
+            <a href="order.html" id="menu_text3">отследить&nbsp;заказ</a>
+            <a href="space.html" id="menu_text4">о&nbsp;центре</a>
+            <a href="kids.html" id="menu_text5">для&nbsp;детей</a>
+            <a href="contacts.html" id="menu_text6">контакты</a>
+            <div class="menu_krest">
+              <svg class="menu_krest_img" width="30" height="21" viewBox="0 0 30 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M26.5323 0.644504C27.4709 0.0622081 28.7039 0.351066 29.2862 1.28968C29.8685 2.2283 29.5796 3.46125 28.641 4.04354L18.6205 10.26L28.6415 16.4767C29.5801 17.059 29.869 18.292 29.2867 19.2306C28.7044 20.1692 27.4714 20.4581 26.5328 19.8758L14.8267 12.6136L3.12053 19.8758C2.18192 20.4581 0.948971 20.1692 0.366676 19.2306C-0.21562 18.292 0.0732384 17.059 1.01186 16.4767L11.0328 10.26L1.01236 4.04354C0.0737359 3.46125 -0.215122 2.2283 0.367174 1.28968C0.949469 0.351066 2.18241 0.0622081 3.12103 0.644504L14.8267 7.90639L26.5323 0.644504Z" fill="black"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="notification">
+            <div class="menu_krest menu_krest_notification">
+              <svg class="menu_krest_img" width="30" height="21" viewBox="0 0 30 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M26.5323 0.644504C27.4709 0.0622081 28.7039 0.351066 29.2862 1.28968C29.8685 2.2283 29.5796 3.46125 28.641 4.04354L18.6205 10.26L28.6415 16.4767C29.5801 17.059 29.869 18.292 29.2867 19.2306C28.7044 20.1692 27.4714 20.4581 26.5328 19.8758L14.8267 12.6136L3.12053 19.8758C2.18192 20.4581 0.948971 20.1692 0.366676 19.2306C-0.21562 18.292 0.0732384 17.059 1.01186 16.4767L11.0328 10.26L1.01236 4.04354C0.0737359 3.46125 -0.215122 2.2283 0.367174 1.28968C0.949469 0.351066 2.18241 0.0622081 3.12103 0.644504L14.8267 7.90639L26.5323 0.644504Z" fill="black"/>
+              </svg>
+            </div>
+            <p class="question_text">Спасибо! Ваша анкета отпралена.</p>
+          </div>
+
+          <div class="black_square"></div>
           <div class="menubar_extra"></div>
 
           <div class="text_block">
@@ -558,6 +719,38 @@
                 </div>
               </div>
             </div>
+
+            <div class="question4">
+              <p class="question_text">Раставьте сферы жизни<br>по&nbsp;приоритетности.</p>
+              <div class="drag_block">
+                <div class="drag_block_left">
+                  <p class="p_tall">1</p>
+                  <p class="p_tall">2</p>
+                  <p class="p_tall">3</p>
+                  <p class="p_tall">4</p>
+                </div>
+                <div class="drag_block_right">
+                  <div class="drag_varient">творчество</div>
+                  <div class="drag_varient">общение</div>
+                  <div class="drag_varient">работа/учеба</div>
+                  <div class="drag_varient">саморазвитие</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="question5">
+              <p class="question_text">Что вас не&nbsp;устраивает в&nbsp;вашем мозге?</p>
+              <textarea class="message" name="" rows="8" cols="20" placeholder="Напиши кратко, специалист проведет подробный разбор."></textarea>
+            </div>
+
+            <div class="button">
+              <div class="button_back"></div>
+              <div class="button_back_extra"></div>
+              <div class="button_front">
+                <p>Отправить</p>
+              </div>
+            </div>
+
           </form>
 
           <div class="futter">
