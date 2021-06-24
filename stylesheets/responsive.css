@@ -125,7 +125,6 @@
 
 
 
-
   .mach_main_block {padding: 0% 3.5% 0 3.9%;}
   .mach_text_block {width: 100%; display: block; height: 34.7%;}
   .mach_image {height: 65.3%; width: 65.5%;}
@@ -141,10 +140,20 @@
   .mach_points p {margin-left: 7.5%; margin-top: 26%;}
 
 
-  /* .space_standart_sootnosheniye {padding-bottom: 180.99%;} */
+  .space_standart_sootnosheniye {padding-bottom: 180.99%;}
   /* .space_menubar_extra, .space_futter {height: 5.453%;} */
 
 
+
+  .con_futter {height: 5.8%; padding: 2.8% 4% 0% 4%;}
+  .con_main_block {height: 88.4%; padding: 2.8% 4% 0.3% 4%;}
+  .con_text_block {width: 100%; height: 22.6%; display: block;}
+  .con_foto_block {width: 100%; height: 66%; display: block; background-image: url('../images/plan_ipad.jpg'); background-size: 102% 102%; background-position: 10% 10%;}
+  .con_text_block p {display: none;}
+  .con_text_block_ipad {display: block; height: 6%; margin-top: 1%;}
+  .con_text_block_ipad p { color: black; font-size: 18px; line-height: 27px; position: absolute;}
+  .con_text_block_ipad1 {left: 4.2%;}
+  .con_text_block_ipad2 {right: 4.2%;}
 }
 
 
@@ -312,4 +321,16 @@
   .mach_point2, .mach_point3, .mach_point4, .mach_point5 {display: none;}
   .mach_point1 {margin-top: 6% !important; width: 100%; text-align: center;}
 
+
+
+
+  .con_futter {height: 5.8%; padding: 2.8% 4% 0% 4%;}
+  .con_main_block {height: 88.4%; padding: 7.3% 4.6% 0.3% 4.6%;}
+  .con_text_block {width: 100%; height: 23.5%; display: block;}
+  .con_foto_block {width: 100%; height: 51.2%; display: block; background-image: url('../images/plan_iphone.jpg'); background-size: 102% 102%; background-position: 10% 10%;}
+  .con_text_block p {display: none;}
+  .con_text_block_ipad {display: block; height: 17%; margin-top: 10%;}
+  .con_text_block_ipad p { color: black; font-size: 15px; line-height: 23px; position: absolute;}
+  .con_text_block_ipad1 {left: 4.5%;}
+  .con_text_block_ipad2 {left: 4.5%; bottom: 4.3%;}
   }
