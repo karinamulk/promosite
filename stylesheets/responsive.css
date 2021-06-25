@@ -721,7 +721,14 @@ ul, p {font-size: 17px; line-height: 21px;}
 
 
   @media only screen and (min-width: 450px) and (max-width: 502px) {
-    h1 {font-size: 36px;}
+    p {font-size: 17px; line-height: 20px;}
+    .p_tall_index {width: 70%;}
+    .cat_line_plus_ipad p {margin-top: -10%;}
+    .order_input_button {top: 15%; left: 45%;}
+    .user_portrets_line p {font-size: 17px; line-height: 20px;}
+    .user_qualities2 .user_container { padding-left: 11%;}
+    .user_drag_varient {padding: 3.5% 7%;}
+    .user_drag_block_left p {margin-bottom: 79%; line-height: 59px;}
 
 
 
