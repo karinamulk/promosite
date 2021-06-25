@@ -549,7 +549,7 @@ $(document).ready(function(){
     });
   }
 
-  if ($(window).width() < 501) {
+  if ($(window).width() < 502) {
     $(".mach_point1").html("Кликай на черные кнопки, чтобы"+ "<br>" + "узнать об устройстве аппарата");
     $(".mach_button1").click(function(){
       $(".mach_point1").html("Лазерная шапка");
