@@ -19,36 +19,6 @@
 
     </style>
     <script type="text/javascript">
-      $(document).ready(function(){
-        $(function() {
-             $('.user_drag_block_right').sortable();
-        });
-
-        $(".user_button").click(function(){
-          $(".black_square").css("width", "100%");
-          $(".user_notification").css("display", "inline-block");
-          $(".black_square").css("display", "inline-block");
-
-          setTimeout(function(){
-            $(".user_notification").css("opacity", "100%");
-            $(".black_square").css("opacity", .5);
-          }, 10);
-
-
-        });
-
-        $(".user_menu_krest_notification, .black_square").click(function(){
-          $(".user_notification").css("opacity", "0");
-          $(".black_square").css("opacity", "0");
-
-          setTimeout(function(){
-            $(".user_notification").css("display", "none");
-            $(".black_square").css("width", "51.1%");
-            $(".black_square").css("display", 'none');
-          }, 500);
-
-        });
-      });
 
     </script>
   </head>
@@ -79,6 +49,8 @@
           </div>
           <div class="right_menu">
             <img class="right_menu_img" src="images/right_menu.svg" alt="">
+            <img class="right_menu_img_ipad" src="images/right_menu_ipad.svg" alt="">
+            <img class="right_menu_img_iphone" src="images/right_menu_iphone.svg" alt="">
             <div class="menu_round" id="menu_round1"><a href="catalog.html"></a></div>
             <div class="menu_round" id="menu_round2"><a href="gallery.html"></a></div>
             <div class="menu_round" id="menu_round3"><a href="order.html"></a></div>
