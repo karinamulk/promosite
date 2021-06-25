@@ -337,10 +337,10 @@ ul, p {font-size: 17px; line-height: 21px;}
 
 }
 
-@media only screen and (min-width: 500px) and (max-width: 710px)  {
+@media only screen and (min-width: 504px) and (max-width: 710px)  {
   .user_text_left p {width: 90%;}
 }
-@media only screen and (min-width: 500px) and (max-width: 590px)  {
+@media only screen and (min-width: 503px) and (max-width: 590px)  {
   .user_text_left h1 {font-size: 36px; line-height: 44px;}
   .user_text_block h1 {margin-bottom: 0;}
   ul, p, .user_drag_varient {font-size: 15px; line-height: 17px;}
@@ -405,7 +405,7 @@ ul, p {font-size: 17px; line-height: 21px;}
 
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 502px) {
   .standart_sootnosheniye {padding-bottom: 177.5%;}
   .menubar {height: 6.2%; padding: 2.34% 4.9% 0% 4.5%;}
   .menubar_extra {height: 6.2%;}
@@ -716,4 +716,13 @@ ul, p {font-size: 17px; line-height: 21px;}
   #menu_text5 {left: 39%; bottom: 27.8%;}
   #menu_text6 {right: 40.2%; bottom: 11.9%;}
   .menu_krest {width: 7%; right: 5%; top: 1.15%;}
+  }
+
+
+
+  @media only screen and (min-width: 450px) and (max-width: 502px) {
+    h1 {font-size: 36px;}
+
+
+
   }
