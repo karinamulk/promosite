@@ -20,7 +20,7 @@
   background-size: auto 120%;
   background-position: left 65%;
   -webkit-mask-size: cover;
-  /* animation: fp_row_anim 15s linear infinite; */
+  animation: fp_row_anim 15s linear infinite;
 }
 @keyframes fp_row_anim {
   0% {-webkit-mask-position: -235.15% top;}
