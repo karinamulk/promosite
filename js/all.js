@@ -18,6 +18,7 @@ $(document).ready(function(){
   });
 
 
+
   let cat_a = 0;
   let cat_b = 1000;
   $(".cat_game_container").clone().appendTo(".cat_game");
@@ -576,26 +577,35 @@ $(document).ready(function(){
       $('.order_img_desktop2').css('display', 'none');
     } else {
       $('.order_img_desktop2').css('display', 'block');
+
       setTimeout(function(){
         $('.order_img_desktop2').css('opacity', '100%');
+        $('.o_data').css('opacity', '100%');
+
       }, 10);
     }
   } else if ($(window).width() > 500 && $(window).width() < 769) {
     if (!$(".input_order").val()) {
       $('.order_img_ipad2').css('display', 'none');
+
     } else {
       $('.order_img_ipad2').css('display', 'block');
+
       setTimeout(function(){
         $('.order_img_ipad2').css('opacity', '100%');
+          $('.o_data').css('opacity', '100%');
       }, 10);
     }
   } else if ($(window).width() < 501) {
     if (!$(".input_order").val()) {
       $('.order_img_iphone2').css('display', 'none');
+
     } else {
       $('.order_img_iphone2').css('display', 'block');
+
       setTimeout(function(){
         $('.order_img_iphone2').css('opacity', '100%');
+        $('.o_data').css('opacity', '100%');
       }, 10);
     }
   }
