@@ -15,104 +15,7 @@
 
     </style>
     <script type="text/javascript">
-    $(document).ready(function(){
-      let a = 0;
-      console.log(a);
-
-      $(".space_step1").click(function(){
-      if ($(window).width() > 768) {
-        $('.space_image').css("background-image", "url('images/space_image1.jpg')");
-      } else if ($(window).width() > 500 && $(window).width() < 769) {
-        $('.space_image').css("background-image", "url('images/space_image1_ipad.jpg')");
-      } else if ($(window).width() < 501) {
-        $('.space_image').css("background-image", "url('images/space_image1_iphone.jpg')");
-      }
-        $('.space_image').css("background-size", "300% 100%");
-        $('.space_image').css("animation", "image1 9s ease infinite");
-        $('.space_step1').css("background", "#A4DDD4");
-        $('.space_step2').css("background", "#FF83C1");
-        $('.space_step3').css("background", "#FF83C1");
-        $('.space_step4').css("background", "#FF83C1");
-        $(".space_point1").html("вход");
-        $(".space_point2").html("");
-        $(".space_point3").html("");
-        $(".space_point4").html("");
-      });
-      $(".space_step2").click(function(){
-        if ($(window).width() > 768) {
-          $('.space_image').css("background-image", "url('images/space_image2.jpg')");
-        } else if ($(window).width() > 500 && $(window).width() < 769) {
-          $('.space_image').css("background-image", "url('images/space_image2_ipad.jpg')");
-        } else if ($(window).width() < 501) {
-          $('.space_image').css("background-image", "url('images/space_image2_iphone.jpg')");
-        }
-        $('.space_image').css("background-size", "800% 100%");
-        $('.space_image').css("animation", "image2 24s ease infinite");
-        $('.space_step2').css("background", "#A4DDD4");
-        $('.space_step1').css("background", "#FF83C1");
-        $('.space_step3').css("background", "#FF83C1");
-        $('.space_step4').css("background", "#FF83C1");
-        $(".space_point1").html("холл");
-        $(".space_point2").html("кафе");
-        $(".space_point3").html("игровая зона");
-        $(".space_point4").html("гардероб");
-
-      });
-      $(".space_step3").click(function(){
-        if ($(window).width() > 768) {
-          $('.space_image').css("background-image", "url('images/space_image3.jpg')");
-        } else if ($(window).width() > 500 && $(window).width() < 769) {
-          $('.space_image').css("background-image", "url('images/space_image3_ipad.jpg')");
-        } else if ($(window).width() < 501) {
-          $('.space_image').css("background-image", "url('images/space_image3_iphone.jpg')");
-        }
-        $('.space_image').css("background-size", "500% 100%");
-        $('.space_image').css("animation", "image3 15s ease infinite");
-        $('.space_step3').css("background", "#A4DDD4");
-        $('.space_step1').css("background", "#FF83C1");
-        $('.space_step2').css("background", "#FF83C1");
-        $('.space_step4').css("background", "#FF83C1");
-        $(".space_point1").html("кинозал");
-        $(".space_point2").html("выставка");
-        $(".space_point3").html("");
-        $(".space_point4").html("");
-      });
-      $(".space_step4").click(function(){
-        if ($(window).width() > 768) {
-          $('.space_image').css("background-image", "url('images/space_image4.jpg')");
-        } else if ($(window).width() > 500 && $(window).width() < 769) {
-          $('.space_image').css("background-image", "url('images/space_image4_ipad.jpg')");
-        } else if ($(window).width() < 501) {
-          $('.space_image').css("background-image", "url('images/space_image4_iphone.jpg')");
-        }
-        $('.space_image').css("background-size", "400% 100%");
-        $('.space_image').css("animation", "image4 12s ease infinite");
-        $('.space_step4').css("background", "#A4DDD4");
-        $('.space_step1').css("background", "#FF83C1");
-        $('.space_step2').css("background", "#FF83C1");
-        $('.space_step3').css("background", "#FF83C1");
-        $(".space_point1").html("операционная");
-        $(".space_point2").html("");
-        $(".space_point3").html("");
-        $(".space_point4").html("");
-      });
-
-      $(".space_before_steps").mouseover(function() {
-        $(".space_image").css("animation-play-state", "paused");
-      });
-      $(".space_before_steps").mouseout(function() {
-          $(".space_image").css("animation-play-state", "running");
-      });
-
-
-      $(".space_step").mouseover(function() {
-        $(this).css("background", "#A4DDD4");
-      });
-      $(".space_step").mouseout(function() {
-        $(this).css("background", "#FF83C1");
-
-      });
-    });
+    
     </script>
   </head>
   <body>
@@ -144,6 +47,8 @@
           </div>
           <div class="right_menu">
             <img class="right_menu_img" src="images/right_menu.svg" alt="">
+            <img class="right_menu_img_ipad" src="images/right_menu_ipad.svg" alt="">
+            <img class="right_menu_img_iphone" src="images/right_menu_iphone.svg" alt="">
             <div class="menu_round" id="menu_round1"><a href="catalog.html"></a></div>
             <div class="menu_round" id="menu_round2"><a href="gallery.html"></a></div>
             <div class="menu_round" id="menu_round3"><a href="order.html"></a></div>
