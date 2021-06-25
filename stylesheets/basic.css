@@ -18,7 +18,7 @@ body::before{
   left: 0;
   top: 0;
   right: 0;
-  background: url('../images/kids_iphone.jpg');
+  background: url('../images/ipad_menu.jpg');
   width: 100%;
   height: 100%;
   background-size: 100% auto ;
@@ -58,6 +58,7 @@ html{
   z-index: 600;
   justify-content: space-between;
   padding: 1.4% 3.3% 1.4% 3.3%;
+
 }
 .futter {
   position: relative;
@@ -178,10 +179,11 @@ ul, p {
   height: 100%;
   width: 48.9%;
   background: #FF83C1;
-  z-index: 300;
+  z-index: 2000;
   right: 0;
-  opacity: 0;
-  display: none;
+  /* opacity: 0; */
+  opacity: .8;
+  /* display: none; */
   transition: all .3s;
 
 }
@@ -202,6 +204,12 @@ ul, p {
   width: 82.182%;
   left: 6.5%;
   top: 4.8%;
+}
+.right_menu_img_ipad {
+  display: none;
+}
+.right_menu_img_iphone {
+  display: none;
 }
 .menu_round {
   position: absolute;
