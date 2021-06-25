@@ -16,42 +16,6 @@
 
     <!-- И вот такой скрипт -->
     <script type="text/javascript">
-    $(document).ready(function(){
-      let a = 0;
-      let b = 1000;
-      console.log(a);
-      $(".cat_game_container").clone().appendTo(".cat_game");
-
-      $(".cat_g_card1, .cat_g_card2, .cat_g_card3, .cat_g_card4, .cat_g_card5").mouseover(function() {
-        if (a == 0) {
-          $(".cat_game_container").css("animation-play-state", "paused");
-
-          console.log(a);
-        }
-
-
-      });
-      $(".cat_g_card1, .cat_g_card2, .cat_g_card3, .cat_g_card4, .cat_g_card5").mouseout(function() {
-        if (a == 0) {
-          $(".cat_game_container").css("animation-play-state", "running");
-          console.log(a);
-        }
-
-      });
-
-
-      $(".cat_g_card1, .cat_g_card2, .cat_g_card3, .cat_g_card4, .cat_g_card5").click(function(){
-        a += 1;
-        $(this).css({
-          "animation": "blinking3 1.5s linear",
-          "background-color": "#A4DDD4",
-          "animation-play-state": "running"
-        });
-        $(".cat_game_container").css("animation-play-state", "paused");
-        $(this).children().css("display", "block");
-      });
-
-    });
 
 
     </script>
@@ -93,6 +57,8 @@
 
           <div class="right_menu">
             <img class="right_menu_img" src="images/right_menu.svg" alt="">
+            <img class="right_menu_img_ipad" src="images/right_menu_ipad.svg" alt="">
+            <img class="right_menu_img_iphone" src="images/right_menu_iphone.svg" alt="">
             <div class="menu_round" id="menu_round1"><a href="catalog.html"></a></div>
             <div class="menu_round" id="menu_round2"><a href="gallery.html"></a></div>
             <div class="menu_round" id="menu_round3"><a href="order.html"></a></div>
