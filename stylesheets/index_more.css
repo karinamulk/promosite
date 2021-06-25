@@ -606,13 +606,7 @@ textarea::placeholder {
 .o_main_block input[type="text"]::-ms-input-placeholder { color: black; white-space: pre-wrap;}
 .o_main_block input[type="text"]::placeholder { color: black; white-space: pre-wrap;}
 
-.o_main_block img {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  bottom: 10%;
-  z-index: 90;
-}
+
 
 .o_text {
   position: absolute;
@@ -651,4 +645,54 @@ textarea::placeholder {
 .order_menubar_extra {height: 3.1%;}
 .order_input_button {position: absolute; color: #A4DDD4; top: 28.7%; left: 23%; z-index: 200; transition: all .5s;}
 .order_input_button:hover {color: #FF83C1; cursor: pointer; transition: all .2s;}
-.order_img {display: none; opacity: 0; transition: all .8s;}
+
+
+.order_img_desktop1 {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 10%;
+  z-index: 90;
+}
+.order_img_desktop2 {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 10%;
+  z-index: 90;
+  display: none; opacity: 0; transition: all .8s;
+}
+.order_img_ipad1 {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 10%;
+  z-index: 90;
+  display: none;
+}
+.order_img_ipad2 {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 10%;
+  z-index: 90;
+  display: none; opacity: 0; transition: all .8s;
+  display: none;
+}
+.order_img_iphone1 {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 10%;
+  z-index: 90;
+  display: none;
+}
+.order_img_iphone2 {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 10%;
+  z-index: 90;
+  display: none; opacity: 0; transition: all .8s;
+  display: none;
+}
