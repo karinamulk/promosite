@@ -645,7 +645,10 @@ textarea::placeholder {
 .order_menubar_extra {height: 3.1%;}
 .order_input_button {position: absolute; color: #A4DDD4; top: 28.7%; left: 23%; z-index: 200; transition: all .5s;}
 .order_input_button:hover {color: #FF83C1; cursor: pointer; transition: all .2s;}
-
+.o_data {
+  transition: all .5s;
+  opacity: 0;
+}
 
 .order_img_desktop1 {
   position: absolute;
