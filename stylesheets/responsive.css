@@ -5,6 +5,7 @@ h1 {font-size: 48px; line-height: 59px;}
 h2 {font-size: 40px;}
 h4 {font-size: 16px; line-height: 20px;}
 
+
 .cat_g_card1 h2, .cat_g_card4 h2 {margin-top: 0%; margin-left: calc(50% - 115px);}
 .cat_g_card1 h4 {margin-left: calc(50% - 138px);}
 .cat_g_card2 h2, .cat_g_card3 h2, .cat_g_card5 h2 {margin-top: 0%; margin-left: calc(50% - 124px);}
@@ -55,7 +56,7 @@ ul, p {font-size: 17px; line-height: 21px;}
   .futter_left1 {margin-right: 14%;}
   .fp_main {height: 64.4%;}
   .p_tall, .p_bron {font-size: 20px; line-height: 24px;}
-  .p_tall_index {right: 10.7%; top: 3.5%;}
+  .p_tall_index {right: 8%; top: 3.5%; width: 60%;}
   .fp_events {width: 41.3%; right: 7.8%; left: auto; top: 41.5%;}
   .fp_catalog {width: 35%; left: 4%; bottom: auto; top: 24.5%;}
   .fp_promokod {width: 44.3%; right: auto; left: 20%; top: auto; bottom: 6.6%;}
