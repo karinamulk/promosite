@@ -881,6 +881,7 @@
   transition: transform 1.5s;
   transform: rotateY(0deg);
   transform-style: preserve-3d;
+  cursor: pointer;
 }
 .gal_birka1 {
   width: 40.15%;
@@ -1406,6 +1407,7 @@
   width: 1.67%;
   top: 49.958%;
   z-index: 200;
+  cursor: pointer;
 
 }
 .gal_strelka1 path, .gal_strelka2 path {
@@ -1738,7 +1740,7 @@ h1 {
   position: absolute;
   height: 1.5%;
   width: 7.7%;
-  background: red;
+  /* background: red; */
   bottom: 10.5%;
   left: 46.15%;
   display: flex;
