@@ -15,38 +15,7 @@
 
     </style>
     <script type="text/javascript">
-    $(document).ready(function(){
-      $(".order_input_button").click(function(){
-      if ($(window).width() > 768) {
-        if (!$(".input_order").val()) {
-          $('.order_img_desktop2').css('display', 'none');
-        } else {
-          $('.order_img_desktop2').css('display', 'block');
-          setTimeout(function(){
-            $('.order_img_desktop2').css('opacity', '100%');
-          }, 10);
-        }
-      } else if ($(window).width() > 500 && $(window).width() < 769) {
-        if (!$(".input_order").val()) {
-          $('.order_img_ipad2').css('display', 'none');
-        } else {
-          $('.order_img_ipad2').css('display', 'block');
-          setTimeout(function(){
-            $('.order_img_ipad2').css('opacity', '100%');
-          }, 10);
-        }
-      } else if ($(window).width() < 501) {
-        if (!$(".input_order").val()) {
-          $('.order_img_iphone2').css('display', 'none');
-        } else {
-          $('.order_img_iphone2').css('display', 'block');
-          setTimeout(function(){
-            $('.order_img_iphone2').css('opacity', '100%');
-          }, 10);
-        }
-      }
-      });
-    });
+    
     </script>
   </head>
   <body>
@@ -77,6 +46,8 @@
 
           </div>
           <div class="right_menu">
+            <img class="right_menu_img_ipad" src="images/right_menu_ipad.svg" alt="">
+            <img class="right_menu_img_iphone" src="images/right_menu_iphone.svg" alt="">
             <img class="right_menu_img" src="images/right_menu.svg" alt="">
             <div class="menu_round" id="menu_round1"><a href="catalog.html"></a></div>
             <div class="menu_round" id="menu_round2"><a href="gallery.html"></a></div>
