@@ -20,7 +20,7 @@
   background-size: auto 120%;
   background-position: left 65%;
   -webkit-mask-size: cover;
-  animation: fp_row_anim 15s linear infinite;
+  /* animation: fp_row_anim 15s linear infinite; */
 }
 @keyframes fp_row_anim {
   0% {-webkit-mask-position: -235.15% top;}
@@ -1692,11 +1692,14 @@ h1 {
 .space_steps {
   position: absolute;
   height: 6.75%;
-  background: green;
+  background: #FF83C1;;
   bottom: 0%;
   width: 100%;
   display: flex;
   justify-content: flex-start;
+}
+#text1_iphone {
+  display: none;
 }
 .space_before_steps {
   position: absolute;
