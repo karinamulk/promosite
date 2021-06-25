@@ -17,194 +17,8 @@
 
     <script type="text/javascript">
       $(document).ready(function(){
-        let a = 0;
-        let slider_merch = 0;
-        let slider_merch_result = 0;
-        let slider_merch_text = 0;
-        console.log(slider_merch);
-        console.log(slider_merch_result);
-        $(".gal_birka").click(function(){
-            $(this).addClass("gal_back");
-            if ($(this).hasClass("gal_birka1")) {
-              setTimeout(function(){
-                $(".gal_birka1").removeClass("gal_back");
-              }, 4000);
-            }
-            if ($(this).hasClass("gal_birka2")) {
-              setTimeout(function(){
-                $(".gal_birka2").removeClass("gal_back");
-              }, 4000);
-            }
-            if ($(this).hasClass("gal_birka3")) {
-              setTimeout(function(){
-                $(".gal_birka3").removeClass("gal_back");
-              }, 4000);
-            }
-            if ($(this).hasClass("gal_birka4")) {
-              setTimeout(function(){
-                $(".gal_birka4").removeClass("gal_back");
-              }, 4000);
-            }
-            if ($(this).hasClass("gal_birka5")) {
-              setTimeout(function(){
-                $(".gal_birka5").removeClass("gal_back");
-              }, 4000);
-            }
-            if ($(this).hasClass("gal_birka6")) {
-              setTimeout(function(){
-                $(".gal_birka6").removeClass("gal_back");
-              }, 4000);
-            }
-            if ($(this).hasClass("gal_birka7")) {
-              setTimeout(function(){
-                $(".gal_birka7").removeClass("gal_back");
-              }, 4000);
-            }
-            if ($(this).hasClass("gal_birka8")) {
-              setTimeout(function(){
-                $(".gal_birka8").removeClass("gal_back");
-              }, 4000);
-            }
+        let gal_a = 0;
 
-        });
-
-        $(".gal_strelka2, .gal_slider_right").click(function(){
-            slider_merch -= 100;
-            slider_merch_result = slider_merch+"%";
-            $(".gal_merch").css("background-position", slider_merch_result);
-            slider_merch_text += 1;
-            console.log(slider_merch_text);
-            if (slider_merch_text == 1) {
-              $(".slider_merch_text").html("конверт"+ "<br>" + "блокнот" + "<br>" + "карандаш");
-              $(".gal_merch_tablo1").html("90 р."+ "<br>" + "490 р." + "<br>" + "90 р.");
-            } else if (slider_merch_text == 2) {
-              $(".slider_merch_text").html("худи"+ "<br>" + "шапка");
-              $(".gal_merch_tablo1").html("2900 р."+ "<br>" + "990р.");
-            } else if (slider_merch_text == 3) {
-              $(".slider_merch_text").html("наклейки");
-              $(".gal_merch_tablo1").html("290 р.");
-            } else if (slider_merch_text == 4) {
-              $(".slider_merch_text").html("шопер");
-              $(".gal_merch_tablo1").html("1100 р.");
-              slider_merch_text = -1;
-            } else if (slider_merch_text == 0) {
-              $(".slider_merch_text").html("каталог" + "<br>" + "сертификат");
-              $(".gal_merch_tablo1").html("990 р.");
-            } else if (slider_merch_text == -3) {
-              $(".slider_merch_text").html("худи"+ "<br>" + "шапка");
-              $(".gal_merch_tablo1").html("2900 р."+ "<br>" + "990р.");
-            } else if (slider_merch_text == -2) {
-              $(".slider_merch_text").html("наклейки");
-              $(".gal_merch_tablo1").html("290 р.");
-            } else if (slider_merch_text == -1) {
-              $(".slider_merch_text").html("шопер");
-              $(".gal_merch_tablo1").html("1100 р.");
-            } else if (slider_merch_text == -4) {
-              $(".slider_merch_text").html("конверт"+ "<br>" + "блокнот" + "<br>" + "карандаш");
-              $(".gal_merch_tablo1").html("90 р."+ "<br>" + "490 р." + "<br>" + "90 р.");
-              slider_merch_text = 1;
-            }
-        });
-        $(".gal_strelka1, .gal_slider_left").click(function(){
-            slider_merch += 100;
-            slider_merch_result = slider_merch+"%";
-            $(".gal_merch").css("background-position", slider_merch_result);
-            slider_merch_text -= 1;
-            console.log(slider_merch_text);
-            if (slider_merch_text == -4) {
-              $(".slider_merch_text").html("конверт"+ "<br>" + "блокнот" + "<br>" + "карандаш");
-              $(".gal_merch_tablo1").html("90 р."+ "<br>" + "490 р." + "<br>" + "90 р.");
-              slider_merch_text = 1;
-            } else if (slider_merch_text == -3) {
-              $(".slider_merch_text").html("худи"+ "<br>" + "шапка");
-              $(".gal_merch_tablo1").html("2900 р."+ "<br>" + "990р.");
-            } else if (slider_merch_text == -2) {
-              $(".slider_merch_text").html("наклейки");
-              $(".gal_merch_tablo1").html("290 р.");
-            } else if (slider_merch_text == -1) {
-              $(".slider_merch_text").html("шопер");
-              $(".gal_merch_tablo1").html("1100 р.");
-            } else if (slider_merch_text == 0) {
-              $(".slider_merch_text").html("каталог" + "<br>" + "сертификат");
-              $(".gal_merch_tablo1").html("990 р.");
-            } else if (slider_merch_text == 2) {
-              $(".slider_merch_text").html("худи"+ "<br>" + "шапка");
-              $(".gal_merch_tablo1").html("2900 р."+ "<br>" + "990р.");
-            } else if (slider_merch_text == 3) {
-              $(".slider_merch_text").html("наклейки");
-              $(".gal_merch_tablo1").html("290 р.");
-            } else if (slider_merch_text == 4) {
-              $(".slider_merch_text").html("шопер");
-              $(".gal_merch_tablo1").html("1100 р.");
-              slider_merch_text = -1;
-            } else if (slider_merch_text == 1) {
-              $(".slider_merch_text").html("конверт"+ "<br>" + "блокнот" + "<br>" + "карандаш");
-              $(".gal_merch_tablo1").html("90 р."+ "<br>" + "490 р." + "<br>" + "90 р.");
-
-            }
-
-        });
-
-        $(".gal_birka_front1").mouseover(function(){
-            $(".gal_birka_front1").addClass('animation');
-            setTimeout(function(){
-              $(".gal_birka_front1").removeClass('animation');
-            }, 500);
-        });
-        $(".gal_birka_front1").mouseout(function(){
-          $(".gal_birka_front1").addClass('animation1');
-          setTimeout(function(){
-            $(".gal_birka_front1").removeClass('animation1');
-          }, 500);
-        });
-        $(".gal_birka_front3").mouseover(function(){
-            $(".gal_birka_front3").addClass('animation');
-            setTimeout(function(){
-              $(".gal_birka_front3").removeClass('animation');
-            }, 500);
-        });
-        $(".gal_birka_front3").mouseout(function(){
-          $(".gal_birka_front3").addClass('animation1');
-          setTimeout(function(){
-            $(".gal_birka_front3").removeClass('animation1');
-          }, 500);
-        });
-        $(".gal_birka_front5").mouseover(function(){
-            $(".gal_birka_front5").addClass('animation');
-            setTimeout(function(){
-              $(".gal_birka_front5").removeClass('animation');
-            }, 500);
-        });
-        $(".gal_birka_front5").mouseout(function(){
-          $(".gal_birka_front5").addClass('animation1');
-          setTimeout(function(){
-            $(".gal_birka_front5").removeClass('animation1');
-          }, 500);
-        });
-        $(".gal_birka_front6").mouseover(function(){
-            $(".gal_birka_front6").addClass('animation');
-            setTimeout(function(){
-              $(".gal_birka_front6").removeClass('animation');
-            }, 500);
-        });
-        $(".gal_birka_front6").mouseout(function(){
-          $(".gal_birka_front6").addClass('animation1');
-          setTimeout(function(){
-            $(".gal_birka_front6").removeClass('animation1');
-          }, 500);
-        });
-        $(".gal_birka_front7").mouseover(function(){
-            $(".gal_birka_front7").addClass('animation');
-            setTimeout(function(){
-              $(".gal_birka_front7").removeClass('animation');
-            }, 500);
-        });
-        $(".gal_birka_front7").mouseout(function(){
-          $(".gal_birka_front7").addClass('animation1');
-          setTimeout(function(){
-            $(".gal_birka_front7").removeClass('animation1');
-          }, 500);
-        });
       });
     </script>
   </head>
@@ -236,6 +50,8 @@
           </div>
           <div class="right_menu">
             <img class="right_menu_img" src="images/right_menu.svg" alt="">
+            <img class="right_menu_img_ipad" src="images/right_menu_ipad.svg" alt="">
+            <img class="right_menu_img_iphone" src="images/right_menu_iphone.svg" alt="">
             <div class="menu_round" id="menu_round1"><a href="catalog.html"></a></div>
             <div class="menu_round" id="menu_round2"><a href="gallery.html"></a></div>
             <div class="menu_round" id="menu_round3"><a href="order.html"></a></div>
@@ -281,7 +97,7 @@
               </div>
             </div>
 
-            <div class="gal_birka gal_birka4 gal_back">
+            <div class="gal_birka gal_birka4">
               <div class="gal_birka_front gal_birka_front4">
                 <img src="images/birka4_1.svg" alt="" class="gal_img4_1">
                 <img src="images/birka4_2.svg" alt="" class="gal_img4_2">
@@ -294,7 +110,7 @@
               </div>
             </div>
 
-            <div class="gal_birka gal_birka1 gal_back">
+            <div class="gal_birka gal_birka1">
               <div class="gal_birka_front gal_birka_front1"></div>
               <div class="gal_birka_back gal_birka_back1">
                 <img class="gal_img1" src="images/birka1.svg" alt="">
@@ -311,7 +127,7 @@
 
 
 
-            <div class="gal_birka gal_birka3 gal_back">
+            <div class="gal_birka gal_birka3">
               <div class="gal_birka_front gal_birka_front3"></div>
               <div class="gal_birka_back gal_birka_back3">
                 <img class="gal_img3" src="images/birka3.svg" alt="">
@@ -327,7 +143,7 @@
 
 
 
-            <div class="gal_birka gal_birka5 gal_back">
+            <div class="gal_birka gal_birka5">
               <div class="gal_birka_front gal_birka_front5"></div>
               <div class="gal_birka_back gal_birka_back5">
                 <img class="gal_img5" src="images/birka5.svg" alt="">
@@ -341,7 +157,7 @@
               </div>
             </div>
 
-            <div class="gal_birka gal_birka6 gal_back">
+            <div class="gal_birka gal_birka6">
               <div class="gal_birka_front gal_birka_front6"></div>
               <div class="gal_birka_back gal_birka_back6">
                 <img class="gal_img6" src="images/birka6.svg" alt="">
@@ -355,7 +171,7 @@
               </div>
             </div>
 
-            <div class="gal_birka gal_birka8 gal_back">
+            <div class="gal_birka gal_birka8">
               <div class="gal_birka_front gal_birka_front8">
                 <img src="images/birka8_1.svg" alt="" class="gal_img8_1">
                 <img src="images/birka8_2.svg" alt="" class="gal_img8_2">
@@ -368,7 +184,7 @@
               </div>
             </div>
 
-            <div class="gal_birka gal_birka7 gal_back">
+            <div class="gal_birka gal_birka7">
               <div class="gal_birka_front gal_birka_front7"></div>
               <div class="gal_birka_back gal_birka_back7">
                 <img class="gal_img7" src="images/birka7.svg" alt="">
