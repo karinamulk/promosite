@@ -42,7 +42,7 @@ ul, p {font-size: 17px; line-height: 21px;}
 
 
 
-@media only screen and (min-width: 500px) and (max-width: 1024px) {
+@media only screen and (min-width: 503px) and (max-width: 1024px) {
   .standart_sootnosheniye {padding-bottom: 133.33%;}
   .menubar {height: 5.8%; padding: 2.6% 0.1% 1.4% 3.3%;}
   .menubar_extra {height: 5.8%;}
@@ -406,6 +406,7 @@ ul, p {font-size: 17px; line-height: 21px;}
 
 
 @media only screen and (max-width: 502px) {
+  /* .gal_rope7 {z-index: 1;} */
   .standart_sootnosheniye {padding-bottom: 177.5%;}
   .menubar {height: 6.2%; padding: 2.34% 4.9% 0% 4.5%;}
   .menubar_extra {height: 6.2%;}
