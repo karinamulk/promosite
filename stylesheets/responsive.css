@@ -199,6 +199,26 @@
   .user_button {width: 27.4%; right: 12.6%; bottom: 10.7%; height: 5%;}
   .user_notification {margin-left: 26%; margin-top: 55%;}
 
+
+
+  .o_main_block h1 {padding-top: 0; margin-top: 1.3%;}
+  .o_main_block input { margin-top: 6.8%; width: 33%;}
+  .order_input_button {top: 22.5%; left: 16.5%;}
+  .order_img_ipad1 {display: block;}
+  .order_img_desktop1, .order_img_desktop2 {display: none;}
+  .order_img_iphone1, .order_img_iphone2 {display: none;}
+  .order_img_ipad1, .order_img_ipad2 {bottom: 5%;}
+  .o_text1 {left: 4.9%; bottom: 53.4%;}
+  .o_text2 {left: 24%; bottom: 26.2%;}
+  .o_text3 {left: auto; right: 19.8%; top: 22.9%;}
+  .o_text4 {right: 22.6%; bottom: 12.2%;}
+  .o_text5 {top: auto; bottom: 1%; right: 18%;}
+
+
+
+
+
+  .kids_sootnosheniye {padding-bottom: 232%;}
 }
 
 
@@ -425,4 +445,22 @@
   .user_message {height: 72%; margin-top: 6.5%; font-size: 15px; line-height: 19px; padding: 2% 4%;}
   .user_button {width: 66%; right: 15%; bottom: .3%; height: 1.9%;}
   .user_button_front p {left: calc(50% - 44px); top: calc(50% - 9px);}
+
+
+
+  .order_standart_sootnosheniye {padding-bottom: 250%;}
+  .order_menubar_extra, .order_futter {height: 4.4%;}
+  .o_main_block {height: 91.2%;}
+  .o_main_block h1 {padding-top: 0; margin-top: 6.9%; line-height: 28px;}
+  .o_main_block input { margin-top: 8.3%; width: 66%; margin-left: 17.3%; height: 4.8%; font-size: 15px; line-height: 23px;}
+  .order_input_button {top: 10.5%; left: 41.5%;}
+  .order_img_desktop1, .order_img_desktop2 {display: none;}
+  .order_img_ipad1, .order_img_ipad2 {display: none;}
+  .order_img_iphone1 {display: block;}
+  .order_img_iphone1, .order_img_iphone2 {bottom: 7.8%;}
+  .o_text1 {left: 14.9%; bottom: 62%;}
+  .o_text2 {left: 33%; bottom: 47%;}
+  .o_text3 {left: auto; right: 30.5%; top: auto; bottom: 36%;}
+  .o_text4 {right: 33.4%; bottom: 19.6%;}
+  .o_text5 {top: auto; bottom: 4.8%; right: 8%;}
   }
