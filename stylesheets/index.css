@@ -1072,20 +1072,20 @@
 }
 
 .gal_rope1 {
-  height: 20%;
-  top: -5%;
+  height: 25%;
+  top: 0%;
   left: calc(25.675% - 4px);
   background: #FF83C1;
 }
 .gal_rope2 {
-  height: 20%;
-  top: -5%;
+  height: 25%;
+  top: 0%;
   left: calc(49.65% - 4px);
   background: #A4DDD4;
 }
 .gal_rope3 {
-  height: 20%;
-  top: -5%;
+  height: 25%;
+  top: 0%;
   right: calc(19.4% - 4px);
   background: #FF83C1;
 }
