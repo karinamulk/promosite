@@ -1,3 +1,47 @@
+@media only screen and (min-width: 1025px) and (max-width: 1330px) {
+.p_tall, .p_bron {font-size: 20px; line-height: 24px;}
+.cat_step3 {top: -8%;}
+h1 {font-size: 48px; line-height: 59px;}
+h2 {font-size: 40px;}
+h4 {font-size: 16px; line-height: 20px;}
+
+.cat_g_card1 h2, .cat_g_card4 h2 {margin-top: 0%; margin-left: calc(50% - 115px);}
+.cat_g_card1 h4 {margin-left: calc(50% - 138px);}
+.cat_g_card2 h2, .cat_g_card3 h2, .cat_g_card5 h2 {margin-top: 0%; margin-left: calc(50% - 124px);}
+.cat_g_card2 h4, .cat_g_card4 h4 {margin-left: calc(50% - 120px);}
+
+.gal_birka_back h1 {font-size: 48px; line-height: 59px;}
+.p_date {font-size: 48px; line-height: 59px;}
+.gal_birka_back4 a, .gal_birka_back8 a {left: calc(50% - 114px);}
+.kids_text_block p {width: 60%;}
+
+.kids_cloud1 p {left: calc(50% - 110px); top: calc(50% - 29px);}
+.kids_cloud2 p {left: calc(50% - 140px); top: calc(50% - 23px);}
+.kids_cloud3 p {left: calc(50% - 136px); top: calc(50% - 41px);}
+.kids_cloud4 p {left: calc(50% - 118px); top: calc(50% - 30px);}
+.kids_cloud5 p, .kids_cloud6 p {left: calc(50% - 114px);top: calc(50% - 23px);}
+
+ul, p {font-size: 17px; line-height: 21px;}
+
+.order_input_button {top: 31.7%;}
+.o_text1 {left: 1.5%; bottom: 25.7%;}
+.o_text2 {left: 13.8%; bottom: 4%;}
+.o_text3 {left: 33.7%;top: 49.5%;}
+.o_text4 {right: 23.6%;bottom: 0%;}
+.o_text5 {right: 20.35%;top: 34.2%;}
+
+.user_text_block p {width: 100%;}
+.user_text_block h1 {margin-bottom: 3.2%;}
+.user_portrets_line {height: 42%;}
+.user_qualities .user_container {margin-top: 0;}
+.user_drag_varient {padding: 0% 7%;}
+.user_drag_block_left p {line-height: 32px; margin-bottom: 0%;}
+.user_message {margin-top: 2%;}
+
+}
+
+
+
 @media only screen and (min-width: 500px) and (max-width: 1024px) {
   .standart_sootnosheniye {padding-bottom: 133.33%;}
   .menubar {height: 5.8%; padding: 2.6% 0.1% 1.4% 3.3%;}
@@ -293,8 +337,66 @@
 
 }
 
+@media only screen and (min-width: 500px) and (max-width: 710px)  {
+  .user_text_left p {width: 90%;}
+}
+@media only screen and (min-width: 500px) and (max-width: 590px)  {
+  .user_text_left h1 {font-size: 36px; line-height: 44px;}
+  .user_text_block h1 {margin-bottom: 0;}
+  ul, p, .user_drag_varient {font-size: 15px; line-height: 17px;}
+  .user_container {line-height: 18px;}
+  .user_qualities .user_container {margin-top: 0;}
+  .user_qualities1 {margin-left: 5%;}
+  .user_qualities2 {margin-left: 4.4%;}
+  .user_drag_varient {padding: 0% 7%;}
+  .user_drag_block p { font-size: 20px; margin-bottom: -90%;}
+  .user_message {height: 67%;}
+  .user_notification {padding: 4% 3% 4% 3%;margin-left: 20%;}
+  .user_icon1 p, .user_icon2 p {font-size: 14px;}
+  .user_icon2 p {left: calc(50% - 41px);}
+  .user_icon1 p {left: calc(50% - 34px);}
+  .futter_left {width: 70%;}
+  .user_button_front p {left: calc(50% - 44px); top: calc(50% - 9px);}
 
 
+  .o_text1 {left: .9%;}
+  .o_text2 {left: 20%;}
+  .o_text3 {right: 17%;}
+  .o_text4 {right: 20%;}
+  .o_text5 {right: 16%;}
+
+  .space_text_block p + p {margin-top: 2.4%; margin-top: 2%;}
+
+  .mach_futter {margin-top: 19%;}
+  .mach_points {margin-top: 11%;}
+  .mach_image {margin-top: 20%;}
+
+  .kids_foto_block {margin-top: 14%;}
+  .kids_futter {margin-top: 14%;}
+
+  .kids_cloud6 {width: 55%;}
+  .kids_cloud1 {width: 55%;}
+  .kids_cloud2 { width: 64%;}
+  .kids_cloud3 {width: 63%;}
+  .kids_cloud4 {width: 59%;}
+  .kids_cloud5 {width: 55%;}
+
+  .p_tall_index {font-size: 16px; line-height: 19px;}
+
+  .p_date {display: none;}
+  .p_bron {display: none;}
+  h2 {font-size: 20px; line-height: 22px;}
+  .gal_birka_back4 a, .gal_birka_back8 a {font-size: 24px; line-height: 29px; left: calc(50% - 57px);}
+  .gal_birka_back p {font-size: 15px; line-height: 18px;}
+  .gal_birka_back h1 {font-size: 30px; line-height: 32px;}
+  .cat_item_info .p_tall, .cat_timeline .dontknow, .cat_timeline .p_tall, .cat_timeline a {font-size: 15px; line-height: 18px;}
+  .cat_line_plus_ipad p {bottom: -15%; line-height: 18px;}
+  .cat_timeline {margin-top: 20%;}
+  .cat_timeline h1 {font-size: 30px; line-height: 29px;}
+  .cat_game {margin-top: 10%;}
+  .cat_futter {margin-top: 20%;}
+
+}
 
 
 
