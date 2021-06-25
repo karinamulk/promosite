@@ -219,6 +219,35 @@
 
 
   .kids_sootnosheniye {padding-bottom: 232%;}
+  .kids_futter, .kids_menubar_extra {height: 3.33%;}
+  .kids_main_block {height: 93.34%;}
+  .kids_text_block {height: 15%; padding: 0 3%}
+  .kids_foto_block {height: 85%; padding: 0 0 0 4%; opacity: .5;}
+  .kids_text_block h1 {margin-top: 1.5%; margin-bottom: 10%;}
+  .kids_text_block p {width: 80%;}
+  .kids_foto1 {width: 96%; height: 32%; margin-bottom: 2.5%;}
+  .kids_foto2 {width: 31.2%; height: 29.5%; margin-bottom: 2.5%; margin-left: 0; margin-right: 2.2%;}
+  .kids_foto3 {width: 62%; height: 29.5%; margin-bottom: 2.5%;}
+  .kids_foto4 {width: 96%; height: 36%;}
+  .kids_button {width: 4.346%; height: 2.36%;}
+  .kids_button1 {top: 18%; left: 27%;}
+  .kids_button2 {right: 28.5%; top: 26%;}
+  .kids_button3 {bottom: auto; top: 43.5%; left: auto; right: 29%;}
+  .kids_button4 {bottom: 19%; right: auto; left: 22%;}
+  .kids_button5 {right: 12%; bottom: 12%;}
+  .kids_character {width: 55%; right: -23%; top: 24%;}
+  .kids_cloud1 {width: 35%;}
+  .kids_cloud2 {width: 44%;}
+  .kids_cloud3 {width: 43%;}
+  .kids_cloud4 {width: 39%;}
+  .kids_cloud5 {width: 39%;}
+  .kids_cloud6 {width: 35%; right: 19%; bottom: 36.7%;}
+  .kids_cloud5 p, .kids_cloud6 p {left: calc(50% - 112px); top: calc(50% - 22px)}
+  .kids_cloud1 p {left: calc(50% - 107px); top: calc(50% - 30px);}
+  .kids_cloud2 p {left: calc(50% - 142px); top: calc(50% - 22px);}
+  .kids_cloud3 p {left: calc(50% - 140px); top: calc(50% - 42px);}
+  .kids_cloud4 p {left: calc(50% - 119px); top: calc(50% - 30px);}
+  .kids_cloud5 p {left: calc(50% - 117px); top: calc(50% - 24px);}
 }
 
 
@@ -463,4 +492,38 @@
   .o_text3 {left: auto; right: 30.5%; top: auto; bottom: 36%;}
   .o_text4 {right: 33.4%; bottom: 19.6%;}
   .o_text5 {top: auto; bottom: 4.8%; right: 8%;}
+
+
+
+
+  .kids_sootnosheniye {padding-bottom: 460.938%;}
+  .kids_futter, .kids_menubar_extra {height: 3.33%;}
+  .kids_main_block {height: 93.34%;}
+  .kids_text_block {height: 15%; padding: 0 3%}
+  .kids_foto_block {height: 85%; padding: 0 0 0 4%; opacity: .5;}
+  .kids_text_block h1 {margin-top: 1.5%; margin-bottom: 10%;}
+  .kids_text_block p {width: 80%;}
+  .kids_foto1 {width: 96%; height: 32%; margin-bottom: 2.5%;}
+  .kids_foto2 {width: 31.2%; height: 29.5%; margin-bottom: 2.5%; margin-left: 0; margin-right: 2.2%;}
+  .kids_foto3 {width: 62%; height: 29.5%; margin-bottom: 2.5%;}
+  .kids_foto4 {width: 96%; height: 36%;}
+  .kids_button {width: 4.346%; height: 2.36%;}
+  .kids_button1 {top: 18%; left: 27%;}
+  .kids_button2 {right: 28.5%; top: 26%;}
+  .kids_button3 {bottom: auto; top: 43.5%; left: auto; right: 29%;}
+  .kids_button4 {bottom: 19%; right: auto; left: 22%;}
+  .kids_button5 {right: 12%; bottom: 12%;}
+  .kids_character {width: 55%; right: -23%; top: 24%;}
+  .kids_cloud1 {width: 35%;}
+  .kids_cloud2 {width: 44%;}
+  .kids_cloud3 {width: 43%;}
+  .kids_cloud4 {width: 39%;}
+  .kids_cloud5 {width: 39%;}
+  .kids_cloud6 {width: 35%; right: 19%; bottom: 36.7%;}
+  .kids_cloud5 p, .kids_cloud6 p {left: calc(50% - 112px); top: calc(50% - 22px)}
+  .kids_cloud1 p {left: calc(50% - 107px); top: calc(50% - 30px);}
+  .kids_cloud2 p {left: calc(50% - 142px); top: calc(50% - 22px);}
+  .kids_cloud3 p {left: calc(50% - 140px); top: calc(50% - 42px);}
+  .kids_cloud4 p {left: calc(50% - 119px); top: calc(50% - 30px);}
+  .kids_cloud5 p {left: calc(50% - 117px); top: calc(50% - 24px);}
   }
